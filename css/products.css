@@ -5,8 +5,8 @@
 }
 .boxs {
     width: 85%;
-    height: 600px;
-    
+    height: auto; 
+    border: 2px solid black;
     margin: 0 auto;
 }
 .product {
@@ -40,4 +40,12 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     font-style: bold;
+}
+/* .container {
+    clear: both;
+} */
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: block;
 }
