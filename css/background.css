@@ -50,7 +50,8 @@ body {
     float: left;
     background-size: cover;
     background-position: center;
-    overflow: scroll;
+    overflow: auto;
+    /* overflow: scroll; */
     background-attachment: local;
     /* background-attachment: fixed; */
     /* background-attachment: scroll; */

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+}
+.contanier {
+    width: 75%;
+    height: 92vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 15px 35px 25px rgb(0 0 0 / 30%);
+    text-align: center;
+
+}
+.data {
+    width: 50%;
+    height: 100%;
+    
+    float: left;
+}
+.image {
+    background: url(../Image/background.webp);
+    width: 1200px;
+    height: 1200px;
+    /* float: left; */
+    background-position: center right;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+}
+.data h1 {
+    color: lightpink;
+    text-align: center;
+    margin-top: 20%;
+}
+.data p {
+    color: black;
+    text-align: center;
+    font-size: 22px;
+}
+i {
+    padding-left: 100px;
+    /* padding-left: 20%; */
+    /* text-align: center; */
+}
+.formdata{
+    text-align: center;
+}
+input {
+    height: 40px;
+    width: 40%;
+    padding: 15px;
+    margin-left: 30%;
+}
+
+a {
+    margin-left: 40%;
+}
+
+button {
+    background-color: gray;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-left: 42%;
+
+}
