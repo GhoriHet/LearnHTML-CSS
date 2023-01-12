@@ -1,11 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url(../fonts/Caviar_Dreams_Bold.ttf);
+    font-style: bold;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'CavierDreams';
+    src: url(../fonts/CaviarDreams_BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'CavierDreams';
+    src: url(../fonts/CaviarDreams_Italic.ttf);
+    font-weight: 30px;
+    font-style: normal;
+}
+
 body {
     background-color: antiquewhite;
 }
+
 .contanier {
     width: 75%;
     height: 92vh;
@@ -19,12 +40,14 @@ body {
     text-align: center;
 
 }
+
 .data {
     width: 50%;
     height: 100%;
-    
+
     float: left;
 }
+
 .image {
     background: url(../Image/background.webp);
     width: 1200px;
@@ -37,41 +60,72 @@ body {
     top: -30px;
     left: 50%;
 }
+
 .data h1 {
-    color: lightpink;
+    color: brown;
     text-align: center;
     margin-top: 20%;
+    font-family: 'CavierDreams';
 }
+
 .data p {
-    color: black;
+    color: gray;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: 'CavierDreams';
+    font-style: italic;
 }
-i {
-    padding-left: 100px;
+
+a i {
+    /* padding-left: 100px; */
     /* padding-left: 20%; */
-    /* text-align: center; */
-}
-.formdata{
     text-align: center;
 }
+
 input {
     height: 40px;
+    width: 50%;
+    background-color: gainsboro;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+/* input {
+    height: 40px;
     width: 40%;
-    padding: 15px;
-    margin-left: 30%;
+    /* padding: 15px; */
+/* margin-left: 30%; */
 }
 
-a {
-    margin-left: 40%;
-}
+
 
 button {
-    background-color: gray;
+    background-color: brown;
     height: 40px;
     width: 100px;
     border-radius: 20px;
     font-size: 20px;
-    margin-left: 42%;
+    /* margin-left: 42%; */
+    font-family: 'CavierDreams';
+    font-style: normal;
+    color: white;
 
+
+
+}
+
+
+/* @font-face { */
+/* font-family: 'CaviarDreams'; */
+/* src: url(../fonts/CaviarDreams.ttf) */
+
+/* } */
+a i {
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+    color: brown;
+}
+
+a  {
+    font-family: CavierDreams;
+    font-style: normal;
 }
