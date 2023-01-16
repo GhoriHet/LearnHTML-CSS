@@ -67,3 +67,7 @@ h1 {
 .aligncontent1 {
     align-content: space-around;
 }
+
+.aligncenter {
+    align-self: flex-end;
+}
