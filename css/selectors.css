@@ -1,0 +1,40 @@
+.combi > p {
+    color: red;
+}
+.combi h2 + p {
+    font-weight:  bold;
+}
+.combi div ~ p {
+    font-size: 30px;
+}
+.anchor a:link {
+    color: navy;
+}
+.anchor a:hover {
+    color: yellow;
+}
+.anchor a:active {
+    color: darkgreen;
+}
+.anchor a:visited {
+    color: violet;
+}
+.uldummy ul li:first-child p {
+  font-weight: bold;
+}
+ul li:last-child p {
+    font-weight: bold;
+}
+ul li:nth-child(3) {
+    color: blue;
+}
+p i:first-child {
+    font-size: 30px;
+}
+p:first-child i {
+    font-style: italic;
+}
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+}
