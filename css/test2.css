@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Roboto' ;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+body {
+    font-family: 'Roboto';
+}
+.container {
+    width: 1004px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+.container h2 {
+    color: #111;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: bolder;
+}
+.container p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+.built {
+    width: 468px;
+}
+hr  {
+    width: 55px;
+    margin-top:-33px;
+    height: 2px;
+    border: 0 none;
+   background-color: #2777c6;
+ 
+}
+/* hr {
+    width: 40px;
+    color: blue;
+    margin-top: 10px;
+    height: 1px;
+} */
+.Solution {
+    box-shadow: -2px 0px 8px 1px;
+    width: 360px;
+    height: 220px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 4px 4px rgb(20 102 143 / 8%);
+}
+.Solution h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.Solution p {
+    font-size: 14px;
+    color: gray;
+}
+.Account {
+    width: 360px;
+    height: 220px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 4px 4px rgb(20 102 143 / 8%);margin: 10px;
+}
+.Account h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.Account p {
+    font-size: 14px;
+    color: gray;
+}
+.Invoicing {
+    width: 360px;
+    height: 220px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 4px 4px rgb(20 102 143 / 8%);
+    margin: 10px;
+}
+.Invoicing h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.Invoicing p {
+    font-size: 14px;
+     color: gray;
+}
+/* hr {
+    width: 100%;
+    margin: 100px auto;
+    height: 1px;
+    border: 0 none;
+    background-color: #9e9e9e;
+} */
