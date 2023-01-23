@@ -27,7 +27,7 @@ body {
 }
 
 .firstbox h1 {
-    font-size: 33px;
+    font-size: 32.5px;
     margin-bottom: 20px;
 }
 
@@ -66,17 +66,19 @@ hr {
 }
 
 .main img {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    /* height: 60px; */
     margin: 12px 0 0 15px;
 }
 .main p{
-    margin: 10px;
+    margin: 14px;
     color: gray;
     line-height: 25px;
+    font-size: 16.58px;
 }
 .main h3{
-    margin: 10px;
+    margin: 12px;
     font-size: 19px;
     color: black;
+   
 }

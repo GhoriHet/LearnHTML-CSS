@@ -1,7 +1,12 @@
-.combi > p {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .combi > p {
     color: red;
 }
-.combi h2 + p {
+.combi h2 + p{
     font-weight:  bold;
 }
 .combi div ~ p {
@@ -37,4 +42,112 @@ p:first-child i {
 input:focus {
     outline: none;
     border: 2px solid blue;
+} */
+/* .elements p::first-letter {
+    font-size: 50px;
+}
+
+.elements p::first-line {
+    color: red;
+}
+
+h1+p::first-line {
+    font-weight: bold;
+}
+
+h1::after {
+    content: '+';
+}
+
+h1::before {
+    content: '*';
+}
+
+.customlist ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.customlist ul li::before {
+
+    content: '*';
+    background-color: gray;
+    margin-left: 10px;
+}
+
+
+.custom ul li {
+    list-style-type: none;
+    position: relative;
+}
+.custom ul li::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0px;
+    left: -17px;
+}
+.custom ul li:first-child::before {
+   
+    background: url(../Image/homeicon.png);
+    background-size: 100%;
+
+}
+.custom ul li:nth-child(2)::before {
+    background: url(../Image/product.png);
+    background-size: 100%;
+
+}
+.custom ul li:nth-child(3)::before {
+    background: url(../Image/about.png);
+    background-size: 100%;
+
+}
+.custom ul li:last-child::before {
+    background: url(../Image/contact.png);
+    background-size: 100%;
+} */
+.container {
+    max-width: 1200px;
+    height: 600px;
+    border: 2px solid red;
+    margin: 0 auto;
+    
+}
+.hero {
+    display: flex;
+}
+.box1, .box2 {
+    flex-basis: 50%;
+    height: 500px;
+    border: 2px solid green;
+    position: relative;
+   
+}
+.box1 {
+    background: linear-gradient(to right, rgba(0 0 0 / .6), rgba(0 0 0 / .2)), url(../Image/naturimageselectors.webp)   ;
+    /* background:linear-gradient(to right, rgba(0 0 0 / .6), rgba(0 0 0 / .2),
+    url(../Image/naturimageselectors.webp)); */
+    background-size: cover;
+   
+}
+.box2::before {
+    content: '';
+    background: linear-gradient(to right, rgba(0 0 0 / .6), rgba(0 0 0 / .2)), url(../Image/naturimageselectors.webp);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.box1 h3, .box2 h3 {
+    color: #fff;
+    padding: 50px;
+    font-size: 42px;
+}
+.box2 h3 {
+    z-index: 99;
+    position: relative;
 }
