@@ -151,3 +151,41 @@ h1::before {
     z-index: 99;
     position: relative;
 }
+.home {
+    max-width: 1200px;
+    height: 600px;
+    border: 2px solid red;
+    margin: 0 auto;
+}
+.work {
+    display: flex;
+}
+.box3, .box4 {
+    flex-basis: 50%;
+    height: 500px;
+    border: 2px solid green;
+    position: relative;
+   
+}
+.box3 {
+    background: linear-gradient(to right, rgba(0 0 0 / .6), rgba(0 0 0 / .2));
+    background-size: cover;
+}
+.box3 img {
+   max-width:600px;
+   height: 496px;
+}
+.box4::before {
+    content: '';
+    background: linear-gradient(to right, rgba(0 0 0 / .6), rgba(0 0 0 / .2));
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.box4 img {
+    max-width: 590px;
+    height: 496px;
+}
