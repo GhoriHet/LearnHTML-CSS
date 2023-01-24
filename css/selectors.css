@@ -124,7 +124,11 @@ h1::before {
     height: 500px;
     border: 2px solid green;
     position: relative;
-   
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
 }
 .box1 {
     background: linear-gradient(to right, rgba(0 0 0 / .6), rgba(0 0 0 / .2)), url(../Image/naturimageselectors.webp)   ;
@@ -177,11 +181,14 @@ h1::before {
     background-size: cover;
     object-position: center left;
     inset: 0;
+    object-fit: cover;
 }
 .inner-data {
     color: #fff;
-    top: 50px;
-    left: 50px;
+    top: 50%;
+    left: 50%;
     position: absolute;
     font-size: 30px;
+    transform: translate(-50%, -50%);
+    text-align: cenetr;
 }
