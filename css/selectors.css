@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* .combi > p {
+.combi > p {
     color: red;
 }
 .combi h2 + p{
@@ -42,8 +42,8 @@ p:first-child i {
 input:focus {
     outline: none;
     border: 2px solid blue;
-} */
-/* .elements p::first-letter {
+}
+.elements p::first-letter {
     font-size: 50px;
 }
 
@@ -107,16 +107,17 @@ h1::before {
 .custom ul li:last-child::before {
     background: url(../Image/contact.png);
     background-size: 100%;
-} */
+}
 .container {
     max-width: 1200px;
     height: 600px;
     border: 2px solid red;
     margin: 0 auto;
-    
+    margin-bottom: 20px;
 }
 .hero {
     display: flex;
+    column-gap: 10px;
 }
 .box1, .box2 {
     flex-basis: 50%;
@@ -127,16 +128,14 @@ h1::before {
 }
 .box1 {
     background: linear-gradient(to right, rgba(0 0 0 / .6), rgba(0 0 0 / .2)), url(../Image/naturimageselectors.webp)   ;
-    /* background:linear-gradient(to right, rgba(0 0 0 / .6), rgba(0 0 0 / .2),
-    url(../Image/naturimageselectors.webp)); */
     background-size: cover;
-   
 }
 .box2::before {
     content: '';
     background: linear-gradient(to right, rgba(0 0 0 / .6), rgba(0 0 0 / .2)), url(../Image/naturimageselectors.webp);
     background-size: cover;
     position: absolute;
+    background-position: center left;
     top: 0;
     right: 0;
     bottom: 0;
@@ -145,21 +144,14 @@ h1::before {
 .box1 h3, .box2 h3 {
     color: #fff;
     padding: 50px;
-    font-size: 42px;
+    font-size: 30px;
 }
 .box2 h3 {
     z-index: 99;
     position: relative;
 }
-.home {
-    max-width: 1200px;
-    height: 600px;
-    border: 2px solid red;
-    margin: 0 auto;
-}
-.work {
-    display: flex;
-}
+
+
 .box3, .box4 {
     flex-basis: 50%;
     height: 500px;
@@ -167,25 +159,29 @@ h1::before {
     position: relative;
    
 }
-.box3 {
-    background: linear-gradient(to right, rgba(0 0 0 / .6), rgba(0 0 0 / .2));
-    background-size: cover;
+.box3 img, .box4 img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: relative;
 }
-.box3 img {
-   max-width:600px;
-   height: 496px;
+.box3 {
+    background: linear-gradient(to right, rgba(255 0 0 / .6), rgba(0 0 0 / .2));
+    object-fit: cover;
+    object-position: center left;
 }
 .box4::before {
     content: '';
-    background: linear-gradient(to right, rgba(0 0 0 / .6), rgba(0 0 0 / .2));
-    background-size: cover;
+    background: linear-gradient(to right, rgba(255 0 0 / .6), rgba(0 0 0 / .2));
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    background-size: cover;
+    object-position: center left;
+    inset: 0;
 }
-.box4 img {
-    max-width: 590px;
-    height: 496px;
+.inner-data {
+    color: #fff;
+    top: 50px;
+    left: 50px;
+    position: absolute;
+    font-size: 30px;
 }
