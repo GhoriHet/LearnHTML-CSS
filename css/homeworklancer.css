@@ -331,7 +331,7 @@ a {
     font-size: 16px;
     color: aliceblue;
     margin-bottom: 20px;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .footer ul a {
