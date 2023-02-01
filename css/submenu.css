@@ -1,4 +1,4 @@
-* {
+ /* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,10 +20,10 @@ header ul {
 header nav ul li {
     display: inline-block;   
     position: relative;
-    /* width: 100%; */
+   
 }
 header nav ul li a {
-    /* list-style-type: none; */
+   
     display: inline-block;
     text-decoration: none;
     color: #000;
@@ -69,6 +69,11 @@ header nav ul > i header nav i {
 }
 header nav ul li:hover a i {
     transform: rotate(90deg);
+   
+}
+.fa-bars:before, .fa-navicon:before {
+    content: "\f0c9";
+    padding-left: 65px;
 }
 header nav ul li ul li:hover a i {
     transform: rotate(360deg);
@@ -113,14 +118,13 @@ header nav ul li ul li:hover a i {
         width: 100%;
     }
 
-    nav ul i {
+    nav ul>i {
         color: #fff;
         padding: 20px;
         font-size: 20px;
         text-align: right;
         width: 100%;
         
-        /* display: inline-block !important; */
     }
     .showHide {
         right: 0%;
@@ -132,7 +136,141 @@ header nav ul li ul li:hover a i {
     header nav ul li:hover a i {
         transform: rotate(90deg);
     }
-    header nav ul li ul li :hover a i {
+    header nav ul li ul li:hover a i {
         transform: rotate(90deg);
+    }
+}  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 2px 2px 9px rgb(242, 231, 231);
+}
+header ul li{
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+header ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 20px;
+}
+header ul li a:hover{
+    background-color: black;
+    color: #fff;
+}
+header nav ul li ul {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 117px;
+    background-color: rgb(168, 165, 165);
+    display: none;
+}
+header nav ul li:hover a i{
+    transform: rotate(90deg);
+}
+header nav ul li ul li a{
+    display: inline-block;
+    padding: 20px;
+}
+header nav ul li ul li a ,header nav ul li ul li {
+    display: block;
+    position: relative;
+}
+header nav ul li ul li:hover a i{
+    transform: rotate(360deg);
+}
+header nav ul li:hover ul{
+    display: inline-block;
+}
+header nav ul li ul li ul {
+    position: absolute;
+    top: 0;
+    left: 117px;
+    display: none !important;
+}
+header nav ul li ul li:hover ul {
+    display: inline-block !important;
+}
+nav > i{
+    padding: 20px 0;
+}
+nav > i , nav ul > i{
+    display: none !important;
+}
+header nav li:hover > a, header nav a.active {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+header > i {
+    padding-left: 222px;
+}
+
+@media screen and (max-width:768px) {
+
+    nav > ul{
+        position: absolute;
+        top: 0;
+        right: -70%;
+        background-color: gray;
+        width: 70%;
+        height: 100vh;
+        transition: all 1s;
+    }
+    header nav ul li a{
+        width: 100%;
+    }
+    nav ul li{
+        display: block; 
+    }
+    nav ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header nav ul li ul li a {
+        padding-left: 60px;
+    }
+    header nav ul li ul li ul li a{
+        padding-left: 120px;
+    }
+    header nav ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header nav ul li ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    nav ul > i{
+        text-align: right;
+        display: inline-block !important;
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+    }
+    nav > i{
+        display: inline-block !important;
+    }
+    .showHide{
+        right: 0;
     }
 }
