@@ -65,11 +65,14 @@ header nav ul li ul li:hover ul {
 }
 header nav ul > i header nav i {
     display: none !important;
+    
 }
 header nav ul li:hover a i {
     transform: rotate(90deg);
 }
-
+header nav ul li ul li:hover a i {
+    transform: rotate(360deg);
+}
 @media screen and (max-width:720px){
     nav > ul {
         position: absolute;
@@ -129,5 +132,7 @@ header nav ul li:hover a i {
     header nav ul li:hover a i {
         transform: rotate(90deg);
     }
-    
+    header nav ul li ul li :hover a i {
+        transform: rotate(90deg);
+    }
 }
