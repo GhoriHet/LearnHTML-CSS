@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: gray;
+}
+.slickslide .slide{
+    width: 100%;
+    height: 100vh;
+}
+.slickslide .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slickslide .slick-prev::before {
+    content: "\f053";
+    font-family: "Font Awesome 6 Free";
+}
+.slickslide .slick-next::before {
+    content: "\f054";
+    font-family: "Font Awesome 6 Free" !important;
+}

@@ -1,8 +1,7 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 header {
     display: flex;
@@ -12,51 +11,112 @@ header {
     box-shadow: 2px 2px 9px rgb(242, 231, 231);
     position: relative;
 }
-a {
-    color: #000;
-    text-decoration: none;
-}
-header  nav  ul  li{
+header nav ul li{
     list-style-type: none;
     display: inline-block;
+    
 }
-header nav >ul> li> a{
+header nav ul li a{
     text-decoration: none;
     display: inline-block;
     color: black;
     padding: 20px;
+    font-size: 20px;
 }
-header > nav > ul > li > a:hover{
+header nav > ul > li > a:hover{
     background-color: black;
     color: #fff;
 }
-header nav ul li ul {
-    position: absolute;
-    top: 58px;
-    left: 0;
-    width: 117px;
-    background-color: rgb(168, 165, 165);
-    display: none;
-}
-.megamenu {
-    position: absolute;
-    top: 60px;
-    left: 25%;
-    background-color: gray;
-    width: 70%;
-    /* height: 200px; */
+header nav ul li:hover .megamenu{
     display: block;
 }
-.megamenu  h3 {
+.megamenu{
+    position: absolute;
+    top: 62px;
+    right: 60px;
+    background-color: rgb(221, 180, 180);
+    width: 66.2%;
+    /* height: 300px; */
+    display: flex;
+    justify-content: space-between;
+    display: none;
+
+}
+
+.megamenu li{
+    position: relative;
+    padding-right: 50px;      
+    flex-basis: 17%; 
+    /* border: 2px solid black; */
+}
+.megamenu li h3{
+    font-size: 25px;
     padding: 20px;
 }
-
-.megamenu ul li {
-    flex-basis: 23%;
-    justify-content: space-between;
-}
-.megamenu li  {
+.megamenu li a{
     display: block;
-    padding: 10px 30px;
 }
 
+.megamenu li::after{
+    content: '';
+    position: absolute;
+    top: 7%;
+    right: 0;
+    width: 1px;
+    height: 85%;
+    background-color: #fff;
+}
+.megamenu li:last-child::after{
+    display: none;
+}
+header nav ul li:hover a i{
+    transform: rotate(90deg);
+}
+@media screen and (max-width:768px) {
+    header nav > ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: brown;
+        width: 70%;
+        min-height: 100vh;
+        transition: all 1s;
+    }
+    header nav  ul  li{
+        display: block;
+    }
+    header nav ul li a{
+        width: 100%;
+    }
+    header nav ul li ul{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .megamenu{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-left: 40px;
+        /* flex-direction: column; */
+    }
+    /* header nav ul li:hover a i{
+        transform: rotate(90deg);
+    } */
+    /* .showHide{
+        right: 0;
+    } */
+
+    /* nav ul > i{
+        text-align: right;
+        display: inline-block !important;
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+    }
+    header nav ul li ul li ul li a{
+        padding-left: 120px;
+    } */
+}

@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 header {
-    display: flex;
+    display: ;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
@@ -169,14 +169,7 @@ header ul li a:hover{
     background-color: black;
     color: #fff;
 }
-header nav ul li ul {
-    position: absolute;
-    top: 58px;
-    left: 0;
-    width: 117px;
-    background-color: rgb(168, 165, 165);
-    display: none;
-}
+
 header nav ul li:hover a i{
     transform: rotate(90deg);
 }
