@@ -6,11 +6,11 @@
 body {
     background-color: gray;
 }
-.display{
+.slickslide2{
     position: relative;
     padding: 40px;
  }
- .display .redisplay{
+ .slickslide2 .slide2{
      width: 400px;
      height: 300px;
      margin: 0 auto;
