@@ -1,11 +1,11 @@
- /* * {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 header {
-    display: ;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
@@ -139,9 +139,9 @@ header nav ul li ul li:hover a i {
     header nav ul li ul li:hover a i {
         transform: rotate(90deg);
     }
-}  */
+} 
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -266,4 +266,4 @@ header > i {
     .showHide{
         right: 0;
     }
-}
+} */
