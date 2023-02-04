@@ -63,3 +63,18 @@ body {
      transition: all 0.5s;
      color: #fff;
  }
+ .slickslide2 .slick-next:hover , .slickslide2 .slick-prev:hover{
+    background-color: rgba(0 0 0/0.3);
+    /* color: #fff; */
+    border: 1px solid #fff;
+}
+.slickslide2 .slick-dots  button::before{
+    font-family: 'slick';
+    font-size: 50px;
+    color: #fff; 
+}
+.slickslide2 .slick-dots{
+    position: absolute;
+    bottom: 11px;
+    left: 0px;
+}
