@@ -178,7 +178,7 @@ header .row>a i {
     border-radius: 2.6rem;
 }
 /***********************/
-@media screen and (max-width:1250px) {
+@media screen and (max-width:992px) {
     header nav ul li a {
         margin: 0 2rem;
     }
@@ -187,6 +187,7 @@ header .row>a i {
     }
     header .row>a i {
         font-size: 1.5rem;
-        margin-left: 1.2rem;
+        margin-left: 1.2rem;   
     }
+
 }
