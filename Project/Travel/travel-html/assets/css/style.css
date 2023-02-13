@@ -178,7 +178,7 @@ header .row>a i {
     border-radius: 2.6rem;
 }
 /***********************/
-@media screen and (max-width:992px) {
+@media screen and (max-width:1250px) {
     header nav ul li a {
         margin: 0 2rem;
     }
@@ -189,5 +189,33 @@ header .row>a i {
         font-size: 1.5rem;
         margin-left: 1.2rem;   
     }
+}
+    @media screen and (max-width:992px) {
+    header .row nav > ul{
+        position: absolute;
+        top: 1rem;
+        right: 0;
+
+    }
+    header .row nav ul li{
+        display: block;
+        width: 100%;
+    }
+    header .row nav ul li a{
+        display: block;
+        width: 100%;
+    }
+    header .row .logo{
+        order: 0;
+    }
+    header .row nav  {
+        order: 2;
+    }
+    header .row .search {
+        order: 1;
+        position: absolute;
+        right: 20%;
+    }
 
 }
+
