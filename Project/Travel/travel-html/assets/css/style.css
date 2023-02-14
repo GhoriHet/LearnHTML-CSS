@@ -24,7 +24,7 @@ a {
     text-decoration: none;
 }
 
-header img {
+img {
     width: 100%;
     display: block;
 }
@@ -32,7 +32,7 @@ header img {
 .container {
     max-width: 141rem;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0.5rem;
 }
 
 .row {
@@ -107,7 +107,7 @@ header .row {
     /* background-color:gray; */
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 0.5rem 0;
 }
 
 header nav {
@@ -244,6 +244,41 @@ h1 {
 /* ****************************************** */
 
 
+/* /**************Explore****************** */
+#explore {
+    padding-top: 17.8rem;
+}
+.main-title h2 {
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 7rem;
+    text-align: center;
+    color: #020202;
+    margin-bottom: 3rem;
+}
+.main-title p {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    text-align: center;
+    color: #878787;
+}
+.explore-slider .swiper-slide {
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px 5px rgba(0 0 0 /0.25);
+}
+.explore-slider .swiper-slide .card-img img{
+    height: 31.6rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+.swiper-wrapper{
+    padding: 2rem 0;
+}
+/******************************************/
+
 @media screen and (max-width: 1250px) {
 
     header img {
@@ -323,6 +358,7 @@ h1 {
     .menu-slider {
         right: 0%;
     }
+
     .row .search {
         order: -1;
     }
