@@ -241,6 +241,9 @@ header .row nav ul>i {
     border-radius: 1rem;
     transition: all 1s;
 }
+.explore-slider .main-title{
+    margin: 4rem;
+}
 .explore-slider .swiper-wrapper {
     padding: 1rem 0 17.8rem 0;
     margin-top: 2rem;
@@ -326,6 +329,21 @@ header .row nav ul>i {
     border-radius: 1rem 1rem 0 0;
     height: 31.6rem;
 }
+/*************************************/
+
+/***********why selector*************/
+#why-select {
+    background: url(../images/why.jpg);
+    background-size: 100%;
+    background-position: center;
+    color: var(--secondary-color);
+}
+#why-select .main-title h2 {
+    padding-top: 2.6rem;
+    color: var(--secondary-color);
+}
+
+
 /*************************************/
 @media screen and (max-width:1250px) {
     header .row nav ul li a {
