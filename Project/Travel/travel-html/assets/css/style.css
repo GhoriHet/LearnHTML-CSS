@@ -82,7 +82,7 @@ header .row {
     justify-content: space-between;
     /* background-color: var(--bg-color); */
     align-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 header .row nav {
     margin-left: auto;
@@ -126,13 +126,11 @@ header .row nav ul li ul li {
     position: relative;
 
 }
-
 header .row nav ul li ul li a {
     display: inline-block;
     padding: 3.3rem;
     width: 100%;
 }
-
 header .row nav ul li:hover ul {
     display: inline-block
 }
@@ -210,7 +208,7 @@ header .row nav ul>i {
     background-color: #000;
     color: var(--secondary-color);
     border-radius: 38rem;
-    padding: 1,5rem 2rem;
+    padding: 1.5rem 2rem;
     font-weight: 500;
     font-size: 1.8rem;
 }
@@ -242,6 +240,9 @@ header .row nav ul>i {
     box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
     border-radius: 1rem;
     transition: all 1s;
+}
+.explore-slider .main-title{
+    margin: 4rem;
 }
 .explore-slider .swiper-wrapper {
     padding: 1rem 0 17.8rem 0;
@@ -275,19 +276,19 @@ header .row nav ul>i {
     font-weight: 400;
     font-size: 7.2rem;
     line-height: 11rem;
-    color: #000000;
+    color: var(--primary-color);
 }
 .explore-slider .card-data h4 {
     font-weight: 600;
     font-size: 2.4rem;
     line-height: 3.6rem;
-    color: #000000;
-}
+    color: var(--primary-color); 
+}   
 .explore-slider .card-data p {
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 2.1rem;
-    color: #555555;
+    color: #555555; 
 }
 #explore .container {
     position: relative;
@@ -302,7 +303,7 @@ header .row nav ul>i {
     box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.1);
     background: #FFFFFF;
     border: 1px solid #E8E8E8;
-    border-radius: 10px;
+    border-radius: 1rem;
     font-size: 3rem;
     text-align: center;
     line-height: 6.5rem;
@@ -314,21 +315,121 @@ header .row nav ul>i {
     right: 7rem;
 }
 .explore-slider .swiper-slide:hover {
-    transform: scaleY(1.1);
-    border-radius: 1rem;
+    transform: translateY(-1rem);
+    border-radius: 1rem; 
     z-index: 7;
 }
 .explore-slider .swiper-slide:hover .card-data {
     display: inline-block;
     border:1px solid black ;
-    border-top: none;
+    border: none;
     border-radius: 0 0 1rem 1rem;
-
 }
 .explore-slider .swiper-slide:hover .card-img img {
     border-radius: 1rem 1rem 0 0;
     height: 31.6rem;
 }
+/*************************************/
+
+/***********why selector*************/
+#why-select {
+    background: url(../images/why.jpg);
+    background-size: 100% 54.2rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#why-select  .main-title h2 {
+    color: var(--secondary-color);
+    margin-top: 2.6rem;
+}
+
+#why-select .main-title p {
+    color: var(--secondary-color);
+    padding-top: 0.6rem;
+}
+
+.why-slider .swiper-slide {
+    width: 33rem;
+    height: 43rem;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 60px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    padding: 4.5rem 2rem 7rem 2rem;
+    /* margin-top: 5rem; */
+}
+.why-slider .why-img{
+    width: 9.5rem;
+    height: 9.7rem;
+    background-color: #000;
+}
+.why-slider .why-img img{
+    object-position: center center;
+    object-fit: cover;
+
+}
+
+.why-slider .why-data {}
+
+.why-slider .why-data h4 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #000000;
+    margin-top: 3.3rem;
+}
+
+.why-slider .why-data p {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #858585;
+    margin-top: 1rem;
+}
+
+.why-slider .why-data  a {
+    margin-top: 3.8rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    
+}
+.why-slider .why-data  a i {
+    margin-top: 3.8rem;
+}
+#why-select  {
+    position: relative;
+}
+#why-select  .prev,
+#why-select  .next {
+    z-index: 8;
+    position: absolute;
+    top: 33rem;
+    width: 7rem;
+    height: 6.6rem;
+    box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 6.5rem;
+   
+}
+
+#why-select  .prev {
+    left: 7rem;
+    color: #737373;
+}
+
+#why-select  .next {
+    right: 7rem;
+    color: #737373;
+}
+
+
 /*************************************/
 @media screen and (max-width:1250px) {
     header .row nav ul li a {

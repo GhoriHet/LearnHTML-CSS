@@ -91,6 +91,7 @@
             </div>
         </section>
 
+
         <section id="explore">
             <div class="container">
                 <div class="main-title">
@@ -166,16 +167,125 @@
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
                         </div>
-       
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+
+
+
+        <section id="why-select">
+            <div class="container">
+                <div class="main-title">
+                    <h2>Why choose Us?</h2>
+                    <p>our services have been trusted by world travelers.</p>
+                </div>
+                <div class="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="swiper why-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="why-img">
+                                <img src="./assets/images/grp-1.png" alt="">
+                            </div>
+                            <div class="why-data">
+                                <h4>Best Service</h4>
+                                <p>our service is reliable and convenient, our service is quality.</p>
+                                <a href="#">Leaern more <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-img">
+                                <img src="./assets/images/grp-2.png" alt="">
+                            </div>
+                            <div class="why-data">
+                                <h4>Price Guarantee</h4>
+                                <p>our service is reliable and convenient, our service is quality. </p>
+                                <a href="#">Leaern more <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-img">
+                                <img src="./assets/images/grp-3.png" alt="">
+                            </div>
+                            <div class="why-data">
+                                <h4>Handpicked Hotels</h4>
+                                <p>our service is reliable and convenient, our service is quality. </p>
+                                <a href="#">Leaern more <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-img">
+                                <img src="./assets/images/grp-1.png" alt="">
+                            </div>
+                            <div class="why-data">
+                                <h4>Best Service</h4>
+                                <p>our service is reliable and convenient, our service is quality. </p>
+                                <a href="#">Leaern more <i class="fa-sharp fa-solid fa-arrow-right"></i></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-img">
+                                <img src="./assets/images/grp-2.png" alt="">
+                            </div>
+                            <div class="why-data">
+                                <h4>Price Guarantee</h4>
+                                <p>our service is reliable and convenient, our service is quality. </p>
+                                <a href="#">Leaern more <i class="fa-sharp fa-solid fa-arrow-right"></i></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-img">
+                                <img src="./assets/images/grp-3.png" alt="">
+                            </div>
+                            <div class="why-data">
+                                <h4>Handpicked Hotels</h4>
+                                <p>our service is reliable and convenient, our service is quality. </p>
+                                <a href="#">Leaern more <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
-
+                    <!-- <div class="swiper-slide">
+                        <div class="why-img">
+                            <img src="./assets/images/grp-1.png" alt="">
+                        </div>
+                        <div class="why-data">
+                            <h4>Best Service</h4>
+                            <p>our service is reliable and convenient, our service is quality. </p>
+                            <a href="#">Leaern more <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="why-img">
+                            <img src="./assets/images/grp-2.png" alt="">
+                        </div>
+                        <div class="why-data">
+                            <h4>Price Guarantee</h4>
+                            <p>our service is reliable and convenient, our service is quality. </p>
+                            <a href="#">Leaern more <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="swiper-slide">
+                        <div class="why-img">
+                            <img src="./assets/images/grp-3.png" alt="">
+                        </div>
+                        <div class="why-data">
+                            <h4>Handpicked Hotels</h4>
+                            <p>our service is reliable and convenient, our service is quality. </p>
+                            <a href="#">Leaern more <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div> -->
                 </div>
 
             </div>
+            </div>
         </section>
 
-        
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -189,7 +299,7 @@
                 document.getElementById("main-header").classList.add('dark-header') : document.getElementById("main-header").classList.remove('dark-header')
         }
         function toggleMenu() {
-            console.log("lllll");
+            // console.log("lllll");
             document.getElementById("menu").classList.toggle("showHide")
         }
     </script>
@@ -217,6 +327,35 @@
                 1024: {
                     slidesPerView: 3,
                     spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".why-slider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 60,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 90,
                 },
             },
         });
