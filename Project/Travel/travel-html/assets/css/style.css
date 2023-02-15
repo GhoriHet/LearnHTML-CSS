@@ -300,7 +300,7 @@ header .row nav ul>i {
     box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.1);
     background: #FFFFFF;
     border: 1px solid #E8E8E8;
-    border-radius: 10px;
+    border-radius: 1rem;
     font-size: 3rem;
     text-align: center;
     line-height: 6.5rem;
@@ -312,14 +312,14 @@ header .row nav ul>i {
     right: 7rem;
 }
 .explore-slider .swiper-slide:hover {
-    transform: scaleY(1.1);
+    transform: translateY(-1rem);
     border-radius: 1rem;
     z-index: 7;
 }
 .explore-slider .swiper-slide:hover .card-data {
     display: inline-block;
     border:1px solid black ;
-    border-top: none;
+    border: none;
     border-radius: 0 0 1rem 1rem;
 
 }
