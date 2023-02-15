@@ -126,13 +126,11 @@ header .row nav ul li ul li {
     position: relative;
 
 }
-
 header .row nav ul li ul li a {
     display: inline-block;
     padding: 3.3rem;
     width: 100%;
 }
-
 header .row nav ul li:hover ul {
     display: inline-block
 }
