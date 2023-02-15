@@ -313,7 +313,7 @@ header .row nav ul>i {
 }
 .explore-slider .swiper-slide:hover {
     transform: translateY(-1rem);
-    border-radius: 1rem;
+    border-radius: 1rem; 
     z-index: 7;
 }
 .explore-slider .swiper-slide:hover .card-data {
@@ -321,7 +321,6 @@ header .row nav ul>i {
     border:1px solid black ;
     border: none;
     border-radius: 0 0 1rem 1rem;
-
 }
 .explore-slider .swiper-slide:hover .card-img img {
     border-radius: 1rem 1rem 0 0;
