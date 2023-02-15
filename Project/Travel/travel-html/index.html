@@ -16,89 +16,79 @@
 
 <body>
     <header id="main-header">
+
         <div class="container">
             <div class="row">
-                <a href="#">
+                <a href="#" class="logo">
                     <img src="./assets/images/logo.png" alt="">
                 </a>
                 <nav>
-                    <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
                     <ul id="menu">
-                        <i class="fa-solid fa-xmark" onclick="togglemenu()"></i>
+                        <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li>
-                            <a href="#">Package
-                                <i class="fa-solid fa-chevron-down"></i></a>
+                            <a href="#">Package <i class="fa-sharp fa-solid fa-chevron-down"></i></a>
                             <ul>
-                                <li><a href="#">Primium</a></li>
-                                <li><a href="#">Vip</a></li>
-                                <li><a href="#">Genral</a></li>
-                                <li><a href="#">Local</a></li>
+                                <li>
+                                    <a href="#">Europe tour Packages <i
+                                            class="fa-sharp fa-solid fa-chevron-down"></i></a>
+                                    <ul>
+                                        <li><a href="#">Turkey</a></li>
+                                        <li><a href="#">France</a></li>
+                                        <li><a href="#">Spain</a></li>
+                                        <li><a href="#">Italy</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Asia tour Packages</a></li>
+                                <li><a href="#">Goa tour Packages</a></li>
+                                <li><a href="#">Australia tour Packages</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#">Destination
-                                <i class="fa-solid fa-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="#">New</a></li>
-                                <li><a href="#">Old</a></li>
-                                <li><a href="#">Runing</a></li>
-                                <li><a href="#">Local</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Blog
-                                <i class="fa-solid fa-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="#">One</a></li>
-                                <li><a href="#">Two</a></li>
-                                <li><a href="#">Three</a></li>
-                                <li><a href="#">Four</a></li>
-                            </ul>
-
-                        </li>
+                        <li><a href="#">Destination <i class="fa-sharp fa-solid fa-chevron-down"></i></a></li>
+                        <li><a href="#">Blog <i class="fa-sharp fa-solid fa-chevron-down"></i></a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <a href="#"><i class="fa-solid fa-magnifying-glass" class="search"></i></a>
+                <a href="#" class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
             </div>
         </div>
     </header>
+
     <main>
         <section id="hero">
             <div class="container">
                 <div class="hero-data">
-                    <h1>Make in <br>
-                        your journey.</h1>
+                    <h1>Make in <br> your journey.</h1>
                     <p>Explore the world with what you love beautiful <br> natural beauty.</p>
-                    <!-- <form action="" class="form-data">
-                        <select name="Location" class="hero-search">
+
+                    <form action="" class="search-form">
+                        <select name="Location">
                             <option value="0">Location</option>
                             <option value="surat">Surat</option>
-                            <option value="rajkot">Rajkot</option>
-                            <option value="bhavnagar">Bhavangar</option>
+                            <option value="vapi">Vapi</option>
+                            <option value="valsad">Valsad</option>
                         </select>
-                        <select name="Date">
+                        <select name="date">
                             <option value="0">Date</option>
-                            <option value="1">25</option>
-                            <option value="2">17</option>
-                            <option value="3">11</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
-                        <select name="People">
+                        <select name="people">
                             <option value="0">People</option>
-                            <option value="1">22</option>
-                            <option value="2">17</option>
-                            <option value="3">11</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
-                        <input type="submit" value="Explore now" class="explore">
+                        <input type="button" value="Explore Now" class="explore">
                     </form>
-                    <p><span>Popular Place :</span> Bali, Istanbul, Rome, Paris.</p>
-                </div> -->
+                    <p> <span>Popular Place :</span> Bali, Istanbul, Rome, Paris.</p>
+                </div>
             </div>
-        </section>
-
-        </div>
-        </div>
         </section>
 
         <section id="explore">
@@ -108,7 +98,12 @@
                         exotic natural scenery</h2>
                     <p>Explore the world with what you love beautiful natural beauty.</p>
                 </div>
-
+                <div class="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
                 <div class="swiper explore-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -117,7 +112,7 @@
                             </div>
                             <div class="card-data">
                                 <div class="explore-circle">
-                                    <span>“</span>
+                                    <span> “</span>
                                 </div>
                                 <h4>Bali, Indonesia.</h4>
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
@@ -129,7 +124,7 @@
                             </div>
                             <div class="card-data">
                                 <div class="explore-circle">
-                                    <span>“</span>
+                                    <span> “</span>
                                 </div>
                                 <h4>Bali, Indonesia.</h4>
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
@@ -141,7 +136,7 @@
                             </div>
                             <div class="card-data">
                                 <div class="explore-circle">
-                                    <span>“</span>
+                                    <span> “</span>
                                 </div>
                                 <h4>Bali, Indonesia.</h4>
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
@@ -171,13 +166,16 @@
                                 <p>Bali is a beautiful tourist spot and is visited by many travelers. </p>
                             </div>
                         </div>
-                      
-                   
+       
                         </div>
-                    
+                    </div>
+
                 </div>
+
             </div>
         </section>
+
+        
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -185,43 +183,44 @@
 
     <script>
         window.onscroll = function () {
+            console.log("scroll")
             this.scrollY > 20 ?
-                document.getElementById("main-header").classList.add("header-bg") :
-                document.getElementById("main-header").classList.remove("header-bg")
-        }
 
-        function togglemenu() {
-            console.log("jhbj");
-            document.getElementById("menu").classList.toggle("menu-slider")
+                document.getElementById("main-header").classList.add('dark-header') : document.getElementById("main-header").classList.remove('dark-header')
+        }
+        function toggleMenu() {
+            console.log("lllll");
+            document.getElementById("menu").classList.toggle("showHide")
         }
     </script>
-
-
-<script>
-    var swiper = new Swiper(".explore-slider", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-      },
-    });
-  </script>
-
+    <script>
+        var swiper = new Swiper(".explore-slider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 12,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
 
 </body>
 

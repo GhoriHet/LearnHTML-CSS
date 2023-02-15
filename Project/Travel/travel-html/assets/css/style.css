@@ -3,252 +3,226 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
-    --primary-color: #000000;
-    --secondary-color: #ffffff;
+    --primary-color: #020202;
+    --secondary-color: #FFFFFF;
+    --bg-color: #C4C4C4;
 }
-
+html {
+    /* 1 rem :16px;
+    1 rem :10px;
+    10px/16px = 0.625; * 100 = 62.5% */
+    font-size: 62.5%;
+}
 body {
     font-family: 'Poppins';
 }
-
-html {
-    /* 1rem =16px
-    1rem=10px
-    10px/16px=0.625*100=100=62.5 */
-    font-size: 62.5%;
-}
-
 a {
     text-decoration: none;
 }
-
 img {
-    width: 100%;
+    max-width: 100%;
     display: block;
 }
-
 .container {
     max-width: 141rem;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 0 2rem;
 }
-
 .row {
     display: flex;
     flex-wrap: wrap;
 }
-
 .col-1 {
     width: 8.33%;
 }
-
 .col-2 {
     width: 16.66%;
 }
-
 .col-3 {
     width: 25%;
 }
-
 .col-4 {
     width: 33.33%;
 }
-
 .col-5 {
     width: 41.66%;
 }
-
 .col-6 {
     width: 50%;
 }
-
 .col-7 {
     width: 58.33%;
 }
-
 .col-8 {
-    width: 66.33%;
+    width: 66.66%;
 }
-
 .col-9 {
     width: 75%;
 }
-
 .col-10 {
     width: 83.33%;
 }
-
 .col-11 {
-    width: 91.33%;
+    width: 91.66%;
 }
-
 .col-12 {
     width: 100%;
 }
-
-/* *************header************ */
-
+/*********header**********/
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    transition: all 0.5s;
     z-index: 9;
 }
-
-.header-bg {
-    background-color: rgb(45, 44, 44);
-    box-shadow: 0 10px 10px 0 rgb(0 0 0 /0.4);
-}
-
 header .row {
-    /* background-color:gray; */
     justify-content: space-between;
+    /* background-color: var(--bg-color); */
     align-items: center;
-    padding: 0.5rem 0;
+    padding: 2rem 0;
 }
-
-header nav {
+header .row nav {
     margin-left: auto;
 }
-
-header nav ul {
+header .row nav ul {
     list-style-type: none;
 }
-
-header nav ul li {
+header .row nav ul li {
     display: inline-block;
     position: relative;
-    padding: 1rem 0;
 }
-
-header nav ul li a {
+header .row nav ul li a {
     color: var(--secondary-color);
-    padding: 1rem 3.3rem;
+    font-size: 1.8rem;
     font-weight: 500;
-    font-size: 1.8rem;
+    padding: 3.3rem;
 }
-
-header nav ul li:hover {
-    background-color: rgb(111, 105, 105);
-    /* padding: 1rem 0; */
-    box-shadow: 0 2px 2px 2px rgba(0 0 0 /0.2);
-    display: inline-block;
-
-}
-
 header .row>a i {
-    color: var(--secondary-color);
     font-size: 1.8rem;
-    margin-left: 3.3rem;
+    color: var(--secondary-color);
+    padding-left: 3.3rem;
+}
+header .row nav ul li a:hover {
+    background-color: #9B9B9B;
+}
+.dark-header {
+    background-color: #020202;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+header .row nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 5.8rem;
+    left: 0;
+    width: 29rem;
+    background-color: rgba(0 0 0 / 0.4)
+}
+header .row nav ul li ul li {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+
 }
 
-header nav>i,
-header nav ul>i {
+header .row nav ul li ul li a {
+    display: inline-block;
+    padding: 3.3rem;
+    width: 100%;
+}
+
+header .row nav ul li:hover ul {
+    display: inline-block
+}
+header .row nav ul li ul li ul {
+    position: absolute;
+    top: 0;
+    left: 29rem;
     display: none !important;
 }
-
-header nav ul li ul {
-    position: absolute;
-    top: 4.4rem;
-    left: 0;
-    width: 16rem;
-    display: none;
-    padding: 1rem 0;
+header .row nav ul li ul li:hover ul {
+    display: inline-block !important;
 }
-
-header nav ul li:hover ul {
-    display: inline-block;
+header .row nav>i {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    display: none !important;
 }
+header .row nav ul>i {
+    display: none !important;
+}
+/***********************/
 
-/* ********************************** */
-
-/* ***************HERO****************** */
-
+/**********Hero Section************/
 #hero {
-    background-image: url(../images/banner.jpg);
-    background-size: cover;
-    background-position: center center;
+    background: url(../images/banner.jpg);
     width: 100%;
     height: 100vh;
+    background-position: center center;
+    background-size: cover;
     position: relative;
 }
-
-.hero-data {
+#hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#hero .hero-data {
     position: absolute;
     top: 27%;
 }
-
-#hero::before {
-    content: '';
-    background-color: rgba(0 0 0 /0.5);
-    position: absolute;
-    inset: 0;
-}
-
-h1 {
+.hero-data h1 {
     font-weight: 700;
     font-size: 9rem;
     line-height: 11rem;
     color: var(--secondary-color);
 }
-
 .hero-data p {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 3.6rem;
     color: #CFCFCF;
-    margin: 3.7rem 0 2.1rem 0;
+    margin: 3.7rem 0 1.1rem 0;
 }
-
-.form-data {
+.hero-data .search-form {
     width: 73.6rem;
     height: 7.8rem;
-    background-color: var(--secondary-color);
-    border-radius: 6.2rem;
+    background: #FFFFFF;
+    border: 1px solid #CBCACA;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3);
+    border-radius: 7.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2.3rem;
-    box-shadow: 0 2px 2px 2px rgba(0 0 0 /0.2);
-
+    padding: 0 0.9rem 0 2.3rem;
 }
-
-.form-data select {
+.search-form select {
     border: none;
+    color: #9B9B9B;
     font-weight: 500;
     font-size: 1.8rem;
-    color: #9B9B9B;
-    background-color: #fff;
-    font-weight: 600;
-
+    background-color: var(--secondary-color);
 }
-
-.form-data .explore {
-    border: none;
-    background-color: var(--primary-color);
+.search-form .explore {
+    background-color: #000;
     color: var(--secondary-color);
-    padding: 2rem 4rem;
-    border-radius: 5rem;
-    font-weight: 600;
+    border-radius: 38rem;
+    padding: 1,5rem 2rem;
+    font-weight: 500;
     font-size: 1.8rem;
 }
-
 .hero-data span {
-    color: var(--secondary-color);
+    color: #ECECEC;
+    margin-top: 3.6rem;
 }
+/****************************************/
 
-
-/* ****************************************** */
-
-
-/* /**************Explore****************** */
-#explore {
-    padding-top: 17.8rem;
-}
+/*************Explore Section**********/
 .main-title h2 {
+    padding-top: 17.8rem;
     font-weight: 600;
     font-size: 6rem;
     line-height: 7rem;
@@ -262,152 +236,167 @@ h1 {
     line-height: 3.6rem;
     text-align: center;
     color: #878787;
+    margin-bottom: 8.4rem;
 }
 .explore-slider .swiper-slide {
+    box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
     border-radius: 1rem;
-    box-shadow: 2px 2px 5px 5px rgba(0 0 0 /0.25);
+    transition: all 1s;
 }
-.explore-slider .swiper-slide .card-img img{
-    height: 31.6rem;
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
+.explore-slider .swiper-wrapper {
+    padding: 1rem 0 17.8rem 0;
+    margin-top: 2rem;
+}
+.explore-slider .swiper-slide .card-img img {
+    border-radius: 1rem;
+    width: 44.4rem;
+    height: 36rem;
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
 }
-.explore-slider .swiper-wrapper{
-    padding: 2rem 0;
-}
-.explore-slider .explore-text .card-data {
+.explore-slider .card-data {
+    padding: 3.4rem 0 2.6rem 1.4rem;
     position: relative;
+    display: none;
+    transition: all 1s;
 }
-.explore-slider .card-data .explore-circle {
-    background: white;
-    width: 8rem;
-    height: 7.6rem;
-    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.14);
-    border-radius: 50%;
-}
-
 .explore-slider .card-data .explore-circle {
     position: absolute;
-    left: 75.41%;
-    right: -30.37%;
-    top: 72.15%;
-    bottom: 68.75%; 
+    top: -2rem;
+    right: 3rem;
+    width: 8rem;
+    height: 7.6rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.14);
+    border-radius: 50%;
+    text-align: center;
 }
 .explore-slider .card-data .explore-circle span {
     font-weight: 400;
     font-size: 7.2rem;
-    line-height: 12.6rem;
+    line-height: 11rem;
     color: #000000;
-    padding: 1rem 2.4rem 3rem ;
 }
-
-.explore-slider .swiper-slide .card-data h4 {
+.explore-slider .card-data h4 {
     font-weight: 600;
     font-size: 2.4rem;
     line-height: 3.6rem;
-    color: var(--primary-color);
-    padding: 3.4rem 2rem 0.7rem;
+    color: #000000;
 }
-
-.explore-slider .swiper-slide .card-data p {
+.explore-slider .card-data p {
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 2.1rem;
     color: #555555;
 }
-/******************************************/
+#explore .container {
+    position: relative;
+}
+#explore .container .prev,
+#explore .container .next {
+    z-index: 8;
+    position: absolute;
+    top: 37rem;
+    width: 7rem;
+    height: 6.6rem;
+    box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 6.5rem;
+}
+#explore .container .prev {
+    left: 7rem;
+}
+#explore .container .next {
+    right: 7rem;
+}
+.explore-slider .swiper-slide:hover {
+    transform: scaleY(1.1);
+    border-radius: 1rem;
+    z-index: 7;
+}
+.explore-slider .swiper-slide:hover .card-data {
+    display: inline-block;
+    border:1px solid black ;
+    border-top: none;
+    border-radius: 0 0 1rem 1rem;
 
-@media screen and (max-width: 1250px) {
-
-    header img {
+}
+.explore-slider .swiper-slide:hover .card-img img {
+    border-radius: 1rem 1rem 0 0;
+    height: 31.6rem;
+}
+/*************************************/
+@media screen and (max-width:1250px) {
+    header .row nav ul li a {
+        padding: 1.3rem;
+    }
+    header .logo {
         width: 18rem;
     }
-
-    header nav ul li a {
-        padding: 0 1.2rem;
-        font-size: 1.8rem;
-    }
-
     header .row>a i {
-        font-size: 1.2rem;
-        margin-left: 1.2rem;
+        padding-left: 1.3rem;
     }
 }
-
-@media screen and (max-width: 912px) {
-    header img {
-        width: 15rem;
-    }
-
+@media screen and (max-width:992px) {
     header nav>ul {
-        position: fixed;
-        top: 0;
-        right: -50%;
-        width: 50%;
-        background-color: rgb(108, 118, 108);
-        height: 100vh;
-        transition: all 1s;
-        padding: 3.5rem 0;
-    }
-
-    header nav>i {
-        font-size: 2rem;
-        color: var(--secondary-color);
-        display: inline-block !important;
-        order: 2;
-    }
-
-    header nav ul>i {
-        font-size: 2rem;
-        color: var(--secondary-color);
-        /* float: right; */
-        padding: 1rem;
         position: absolute;
-        top: 0;
-        right: 0;
-        display: inline-block !important;
+        top: 1rem;
+        right: -35%;
+        width: 35%;
+        height: 100vh;
+        transition: all 0.5s;
+        background-color: grey;
     }
-
-    header nav ul li {
+    header .row nav ul li {
         display: block;
-        padding-top: 1rem;
-    }
-
-    header nav ul li a {
-        padding: 0 1rem;
-        font-size: 1.5rem;
-    }
-
-    header .row>a i {
-        font-size: 2rem;
-        margin-left: 1rem;
-    }
-
-    header nav ul li ul,
-    header nav ul li ul li {
-        position: relative;
-        left: 0;
-        top: 1.2rem;
         width: 100%;
-        background-color: gray;
-    }
 
-    .menu-slider {
-        right: 0%;
     }
-
-    header .row .main-logo {
+    header .row nav ul li a {
+        display: block;
+        width: 100%;
+    }
+    header .row nav ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    header nav ul li ul li a {
+        padding-left: 6rem;
+    }
+    header.row nav ul li ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    header .row .logo {
         order: 0;
     }
-
+    header .row nav {
+        order: 2;
+    }
     header .row .search {
         order: 1;
         position: absolute;
+        right: 40%;
     }
-
-    header .row nav {
-        order: 2;
+    header .row nav ul>i {
+        color: #ECECEC;
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        text-align: right;
+        display: inline-block !important;
+        width: 100%;
+        padding-right: 1.8rem;
+    }
+    header .row nav>i {
+        display: inline-block !important;
+    }
+    .showHide {
+        right: 0%;
     }
 }
