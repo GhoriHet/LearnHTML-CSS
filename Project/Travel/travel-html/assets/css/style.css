@@ -3,72 +3,93 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --primary-color: #020202;
     --secondary-color: #FFFFFF;
     --bg-color: #C4C4C4;
 }
+
 html {
     /* 1 rem :16px;
     1 rem :10px;
     10px/16px = 0.625; * 100 = 62.5% */
     font-size: 62.5%;
+
 }
+
 body {
     font-family: 'Poppins';
 }
+
 a {
     text-decoration: none;
 }
+
 img {
     max-width: 100%;
     display: block;
 }
+
 .container {
     max-width: 141rem;
     margin: 0 auto;
     padding: 0 2rem;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
 }
+
 .col-1 {
     width: 8.33%;
 }
+
 .col-2 {
     width: 16.66%;
 }
+
 .col-3 {
     width: 25%;
 }
+
 .col-4 {
     width: 33.33%;
 }
+
 .col-5 {
     width: 41.66%;
 }
+
 .col-6 {
     width: 50%;
 }
+
 .col-7 {
     width: 58.33%;
 }
+
 .col-8 {
     width: 66.66%;
 }
+
 .col-9 {
     width: 75%;
 }
+
 .col-10 {
     width: 83.33%;
 }
+
 .col-11 {
     width: 91.66%;
 }
+
 .col-12 {
     width: 100%;
 }
+
 /*********header**********/
 header {
     position: fixed;
@@ -78,40 +99,50 @@ header {
     transition: all 0.5s;
     z-index: 9;
 }
+
 header .row {
     justify-content: space-between;
     /* background-color: var(--bg-color); */
     align-items: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
+
 header .row nav {
     margin-left: auto;
 }
+
 header .row nav ul {
     list-style-type: none;
+
 }
+
 header .row nav ul li {
     display: inline-block;
     position: relative;
 }
+
 header .row nav ul li a {
     color: var(--secondary-color);
     font-size: 1.8rem;
     font-weight: 500;
     padding: 3.3rem;
 }
+
 header .row>a i {
     font-size: 1.8rem;
     color: var(--secondary-color);
     padding-left: 3.3rem;
 }
+
 header .row nav ul li a:hover {
     background-color: #9B9B9B;
 }
+
 .dark-header {
     background-color: #020202;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
 header .row nav ul li ul {
     display: none;
     position: absolute;
@@ -120,40 +151,50 @@ header .row nav ul li ul {
     width: 29rem;
     background-color: rgba(0 0 0 / 0.4)
 }
+
 header .row nav ul li ul li {
     display: inline-block;
     width: 100%;
     position: relative;
 
 }
+
 header .row nav ul li ul li a {
     display: inline-block;
     padding: 3.3rem;
     width: 100%;
 }
+
 header .row nav ul li:hover ul {
     display: inline-block
 }
+
 header .row nav ul li ul li ul {
     position: absolute;
     top: 0;
     left: 29rem;
     display: none !important;
 }
+
 header .row nav ul li ul li:hover ul {
     display: inline-block !important;
 }
+
 header .row nav>i {
     color: var(--secondary-color);
     font-size: 1.8rem;
     display: none !important;
 }
+
 header .row nav ul>i {
     display: none !important;
 }
+
+
 /***********************/
 
 /**********Hero Section************/
+
 #hero {
     background: url(../images/banner.jpg);
     width: 100%;
@@ -162,106 +203,125 @@ header .row nav ul>i {
     background-size: cover;
     position: relative;
 }
+
 #hero::before {
     content: '';
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 #hero .hero-data {
     position: absolute;
-    top: 27%;
+    top: 39%;
 }
+
 .hero-data h1 {
     font-weight: 700;
     font-size: 9rem;
     line-height: 11rem;
     color: var(--secondary-color);
 }
+
 .hero-data p {
     font-weight: 500;
-    font-size: 1.8rem;
-    line-height: 3.6rem;
+    font-size: 18px;
+    line-height: 36px;
     color: #CFCFCF;
     margin: 3.7rem 0 1.1rem 0;
 }
+
 .hero-data .search-form {
     width: 73.6rem;
     height: 7.8rem;
     background: #FFFFFF;
     border: 1px solid #CBCACA;
     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3);
-    border-radius: 7.2rem;
+    border-radius: 72px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 0.9rem 0 2.3rem;
 }
+
 .search-form select {
     border: none;
     color: #9B9B9B;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 18px;
     background-color: var(--secondary-color);
 }
+
 .search-form .explore {
     background-color: #000;
     color: var(--secondary-color);
     border-radius: 38rem;
-    padding: 1.5rem 2rem;
+    padding: 15px 20px;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 18px;
 }
+
 .hero-data span {
     color: #ECECEC;
     margin-top: 3.6rem;
 }
+
+
 /****************************************/
 
 /*************Explore Section**********/
+
 .main-title h2 {
     padding-top: 17.8rem;
     font-weight: 600;
-    font-size: 6rem;
-    line-height: 7rem;
+    font-size: 60px;
+    line-height: 70px;
     text-align: center;
     color: #020202;
     margin-bottom: 3rem;
 }
+
 .main-title p {
     font-weight: 500;
-    font-size: 1.8rem;
-    line-height: 3.6rem;
+    font-size: 18px;
+    line-height: 36px;
     text-align: center;
     color: #878787;
     margin-bottom: 8.4rem;
 }
+
 .explore-slider .swiper-slide {
-    box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
-    border-radius: 1rem;
-    transition: all 1s;
+    /* box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25); */
+    /* border-radius: 1rem; */
+    transition: all 0.5s;
 }
-.explore-slider .main-title{
-    margin: 4rem;
-}
+
+.explore-slider .swiper-slide .card-img {}
+
 .explore-slider .swiper-wrapper {
-    padding: 1rem 0 17.8rem 0;
+    padding: 1rem 0 0 0;
     margin-top: 2rem;
 }
+
+
 .explore-slider .swiper-slide .card-img img {
     border-radius: 1rem;
     width: 44.4rem;
     height: 36rem;
     object-fit: cover;
     object-position: center center;
+    box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
 }
+
 .explore-slider .card-data {
     padding: 3.4rem 0 2.6rem 1.4rem;
     position: relative;
-    display: none;
-    transition: all 1s;
+    /* display: none; */
+    transition: all 0.5s;
+    opacity: 0;
 }
-.explore-slider .card-data .explore-circle {
+
+.explore-slider .card-data .explore-cricle {
     position: absolute;
     top: -2rem;
     right: 3rem;
@@ -272,27 +332,34 @@ header .row nav ul>i {
     border-radius: 50%;
     text-align: center;
 }
-.explore-slider .card-data .explore-circle span {
+
+.explore-slider .card-data .explore-cricle span {
     font-weight: 400;
     font-size: 7.2rem;
     line-height: 11rem;
-    color: var(--primary-color);
+    color: #000000;
 }
+
 .explore-slider .card-data h4 {
     font-weight: 600;
     font-size: 2.4rem;
     line-height: 3.6rem;
-    color: var(--primary-color); 
-}   
+    color: #000000;
+}
+
 .explore-slider .card-data p {
     font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 2.1rem;
-    color: #555555; 
+    font-size: 14px;
+    line-height: 21px;
+    color: #555555;
+}
+#explore{
+    /* padding-bottom: 17rem; */
 }
 #explore .container {
     position: relative;
 }
+
 #explore .container .prev,
 #explore .container .next {
     z-index: 8;
@@ -303,35 +370,46 @@ header .row nav ul>i {
     box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.1);
     background: #FFFFFF;
     border: 1px solid #E8E8E8;
-    border-radius: 1rem;
+    border-radius: 10px;
     font-size: 3rem;
     text-align: center;
     line-height: 6.5rem;
 }
+
 #explore .container .prev {
     left: 7rem;
+    color: #737373;
 }
+
 #explore .container .next {
     right: 7rem;
+    color: #737373;
 }
+
 .explore-slider .swiper-slide:hover {
-    transform: translateY(-1rem);
-    border-radius: 1rem; 
-    z-index: 7;
+    border-radius: 1rem;
+    transform: translateY(-10px);
+    box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
+    border-radius: 1rem;
 }
+
 .explore-slider .swiper-slide:hover .card-data {
     display: inline-block;
-    border:1px solid black ;
-    border: none;
+    border: 1px solid black;
+    border-top: none;
     border-radius: 0 0 1rem 1rem;
+    opacity: 1;
 }
+
 .explore-slider .swiper-slide:hover .card-img img {
     border-radius: 1rem 1rem 0 0;
     height: 31.6rem;
 }
+
 /*************************************/
 
-/***********why selector*************/
+/************Why Select Section**********/
+
 #why-select {
     background: url(../images/why.jpg);
     background-size: 100% 54.2rem;
@@ -339,7 +417,7 @@ header .row nav ul>i {
     background-repeat: no-repeat;
 }
 
-#why-select  .main-title h2 {
+#why-select .container h2 {
     color: var(--secondary-color);
     margin-top: 2.6rem;
 }
@@ -356,7 +434,7 @@ header .row nav ul>i {
     box-shadow: 0px 8px 60px rgba(0, 0, 0, 0.15);
     border-radius: 1rem;
     padding: 4.5rem 2rem 7rem 2rem;
-    /* margin-top: 5rem; */
+    margin-top: 7.5rem;
 }
 .why-slider .why-img{
     width: 9.5rem;
@@ -396,9 +474,6 @@ header .row nav ul>i {
     color: #000000;
     
 }
-.why-slider .why-data  a i {
-    margin-top: 3.8rem;
-}
 #why-select  {
     position: relative;
 }
@@ -430,61 +505,93 @@ header .row nav ul>i {
 }
 
 
-/*************************************/
+/******************************************/
+
 @media screen and (max-width:1250px) {
     header .row nav ul li a {
         padding: 1.3rem;
     }
+
     header .logo {
         width: 18rem;
     }
+
     header .row>a i {
         padding-left: 1.3rem;
     }
 }
+
 @media screen and (max-width:992px) {
     header nav>ul {
         position: absolute;
-        top: 1rem;
+        top: 0;
         right: -35%;
         width: 35%;
         height: 100vh;
         transition: all 0.5s;
         background-color: grey;
     }
+
     header .row nav ul li {
         display: block;
         width: 100%;
-
     }
+
     header .row nav ul li a {
         display: block;
         width: 100%;
     }
+
     header .row nav ul li ul {
+        width: 100%;
         position: relative;
         top: 0;
         left: 0;
     }
+
     header nav ul li ul li a {
         padding-left: 6rem;
+        width: 100%;
+        padding: 1.3rem;
     }
-    header.row nav ul li ul li ul {
+
+    header nav ul li ul li ul {
         position: relative;
         top: 0;
         left: 0;
     }
+
+    header .row nav ul li ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    header .row nav ul li ul li ul li {
+        display: block;
+        width: 100%;
+    }
+
+    header .row nav ul li ul li ul li a {
+        display: block;
+        width: 100%;
+        padding-left: 6rem;
+    }
+
     header .row .logo {
         order: 0;
     }
+
     header .row nav {
         order: 2;
     }
+
     header .row .search {
         order: 1;
         position: absolute;
-        right: 40%;
+        right: 36%;
     }
+
     header .row nav ul>i {
         color: #ECECEC;
         margin-top: 2rem;
@@ -494,10 +601,13 @@ header .row nav ul>i {
         width: 100%;
         padding-right: 1.8rem;
     }
+
     header .row nav>i {
         display: inline-block !important;
     }
+
     .showHide {
         right: 0%;
     }
+
 }
