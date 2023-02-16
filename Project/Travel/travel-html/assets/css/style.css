@@ -15,7 +15,6 @@ html {
     1 rem :10px;
     10px/16px = 0.625; * 100 = 62.5% */
     font-size: 62.5%;
-
 }
 
 body {
@@ -113,7 +112,6 @@ header .row nav {
 
 header .row nav ul {
     list-style-type: none;
-
 }
 
 header .row nav ul li {
@@ -125,7 +123,7 @@ header .row nav ul li a {
     color: var(--secondary-color);
     font-size: 1.8rem;
     font-weight: 500;
-    padding: 3.3rem;
+    padding: 3rem;
 }
 
 header .row>a i {
@@ -146,9 +144,10 @@ header .row nav ul li a:hover {
 header .row nav ul li ul {
     display: none;
     position: absolute;
-    top: 5.8rem;
+    top: 4rem;
     left: 0;
-    width: 29rem;
+    width: 28.5rem;
+    height: 3rem;
     background-color: rgba(0 0 0 / 0.4)
 }
 
@@ -156,7 +155,6 @@ header .row nav ul li ul li {
     display: inline-block;
     width: 100%;
     position: relative;
-
 }
 
 header .row nav ul li ul li a {
@@ -190,7 +188,6 @@ header .row nav ul>i {
     display: none !important;
 }
 
-
 /***********************/
 
 /**********Hero Section************/
@@ -213,7 +210,7 @@ header .row nav ul>i {
 
 #hero .hero-data {
     position: absolute;
-    top: 39%;
+    top: 27%;
 }
 
 .hero-data h1 {
@@ -266,19 +263,19 @@ header .row nav ul>i {
     margin-top: 3.6rem;
 }
 
-
 /****************************************/
 
 /*************Explore Section**********/
 
 .main-title h2 {
-    padding-top: 17.8rem;
+    /* padding-top: 17.8rem; */
     font-weight: 600;
     font-size: 60px;
     line-height: 70px;
     text-align: center;
     color: #020202;
     margin-bottom: 3rem;
+    margin-top: 20.6rem;
 }
 
 .main-title p {
@@ -303,14 +300,13 @@ header .row nav ul>i {
     margin-top: 2rem;
 }
 
-
 .explore-slider .swiper-slide .card-img img {
     border-radius: 1rem;
     width: 44.4rem;
     height: 36rem;
     object-fit: cover;
     object-position: center center;
-    box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
+    /* box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25); */
 }
 
 .explore-slider .card-data {
@@ -321,7 +317,7 @@ header .row nav ul>i {
     opacity: 0;
 }
 
-.explore-slider .card-data .explore-cricle {
+.explore-slider .card-data .explore-circle {
     position: absolute;
     top: -2rem;
     right: 3rem;
@@ -333,7 +329,7 @@ header .row nav ul>i {
     text-align: center;
 }
 
-.explore-slider .card-data .explore-cricle span {
+.explore-slider .card-data .explore-circle span {
     font-weight: 400;
     font-size: 7.2rem;
     line-height: 11rem;
@@ -353,18 +349,20 @@ header .row nav ul>i {
     line-height: 21px;
     color: #555555;
 }
-#explore{
+
+#explore {
     /* padding-bottom: 17rem; */
 }
-#explore .container {
+
+#explore {
     position: relative;
 }
 
-#explore .container .prev,
-#explore .container .next {
+#explore .prev,
+#explore .next {
     z-index: 8;
     position: absolute;
-    top: 37rem;
+    top: 22rem;
     width: 7rem;
     height: 6.6rem;
     box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.1);
@@ -376,13 +374,13 @@ header .row nav ul>i {
     line-height: 6.5rem;
 }
 
-#explore .container .prev {
-    left: 7rem;
+#explore .prev {
+    left: 11.2rem;
     color: #737373;
 }
 
-#explore .container .next {
-    right: 7rem;
+#explore .next {
+    right: 15rem;
     color: #737373;
 }
 
@@ -396,7 +394,7 @@ header .row nav ul>i {
 .explore-slider .swiper-slide:hover .card-data {
     display: inline-block;
     border: 1px solid black;
-    border-top: none;
+    border: none;
     border-radius: 0 0 1rem 1rem;
     opacity: 1;
 }
@@ -415,11 +413,12 @@ header .row nav ul>i {
     background-size: 100% 54.2rem;
     background-position: center center;
     background-repeat: no-repeat;
+    padding-top: 10rem;
 }
 
-#why-select .container h2 {
+#why-select h2 {
     color: var(--secondary-color);
-    margin-top: 2.6rem;
+    /* padding-top: 26rem; */
 }
 
 #why-select .main-title p {
@@ -434,17 +433,17 @@ header .row nav ul>i {
     box-shadow: 0px 8px 60px rgba(0, 0, 0, 0.15);
     border-radius: 1rem;
     padding: 4.5rem 2rem 7rem 2rem;
-    margin-top: 7.5rem;
 }
-.why-slider .why-img{
+
+.why-slider .why-img {
     width: 9.5rem;
     height: 9.7rem;
     background-color: #000;
 }
-.why-slider .why-img img{
+
+.why-slider .why-img img {
     object-position: center center;
     object-fit: cover;
-
 }
 
 .why-slider .why-data {}
@@ -455,6 +454,7 @@ header .row nav ul>i {
     line-height: 3.6rem;
     color: #000000;
     margin-top: 3.3rem;
+    /* margin-top: 8.3rem; */
 }
 
 .why-slider .why-data p {
@@ -465,24 +465,25 @@ header .row nav ul>i {
     margin-top: 1rem;
 }
 
-.why-slider .why-data  a {
+.why-slider .why-data a {
     margin-top: 3.8rem;
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     color: #000000;
-    
 }
-#why-select  {
+
+#why-select {
     position: relative;
 }
-#why-select  .prev,
-#why-select  .next {
+
+#why-select .prev,
+#why-select .next {
     z-index: 8;
     position: absolute;
-    top: 33rem;
-    width: 7rem;
+    top: 40rem;
+    width: 5.5rem;
     height: 6.6rem;
     box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.1);
     background: #FFFFFF;
@@ -491,19 +492,21 @@ header .row nav ul>i {
     font-size: 3rem;
     text-align: center;
     line-height: 6.5rem;
-   
 }
 
-#why-select  .prev {
-    left: 7rem;
+#why-select .prev {
+    left: 6rem;
     color: #737373;
 }
 
-#why-select  .next {
-    right: 7rem;
+#why-select .next {
+    right: 6rem;
     color: #737373;
 }
 
+.why-slider .why-data a i {
+    margin-top: 3.8rem;
+}
 
 /******************************************/
 
