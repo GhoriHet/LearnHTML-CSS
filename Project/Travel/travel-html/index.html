@@ -47,7 +47,8 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="search">
+                <a href="#" class="search" id="seach-icon">
+
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
             </div>
@@ -224,10 +225,10 @@
                     <p>our services have been trusted by world travelers.</p>
                 </div>
                 <div class="why-select-arrow">
-                    <div class="prev">
+                    <div class="prev1">
                         <i class="fa-solid fa-chevron-left"></i>
                     </div>
-                    <div class="next">
+                    <div class="next1">
                         <i class="fa-solid fa-chevron-right"></i>
                     </div>
                 </div>
@@ -355,6 +356,12 @@
             </div>
         </section>
 
+      <section id="our-client">
+        <div class="container">
+            <h4></h4>
+        </div>
+      </section>
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -371,11 +378,18 @@
             console.log("lllll");
             document.getElementById("menu").classList.toggle("showHide")
         }
+
+        if (document.getElementById("menu").classList.contains("showHide")) {
+            document.getElementById("search-icon").style.marginLeft = '60px' ;
+        } else {
+            document.getElementById("search-icon").style.marginLeft = 'auto' ;
+        }
     </script>
     <script>
         var swiper = new Swiper(".explore-slider", {
             slidesPerView: 1,
             spaceBetween: 10,
+            slidesPerGroupAuto: true,
             navigation: {
                 nextEl: '.next',
                 prevEl: '.prev',
@@ -405,8 +419,8 @@
             slidesPerView: 1,
             spaceBetween: 10,
             navigation: {
-                nextEl: '.next',
-                prevEl: '.prev',
+                nextEl: '.next1',
+                prevEl: '.prev1',
             },
             pagination: {
                 el: ".swiper-pagination",
