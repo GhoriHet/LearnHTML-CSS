@@ -108,7 +108,7 @@ header .row {
 }
 
 header .row nav {
-    /* margin-left: auto; */
+    margin-left: auto;
 }
 
 header .row nav ul {
@@ -153,7 +153,7 @@ header .row nav ul li ul {
     top: 3.8rem;
     left: 0;
     width: 29rem;
-    /* background-color: rgba(0 0 0 / 0.4) */
+    background-color: rgba(0 0 0 / 0.4)
 }
 
 header .row nav ul li ul li {
@@ -228,7 +228,7 @@ header .row nav ul>i {
 
 #hero .hero-data {
     position: absolute;
-    top: 27%;
+    top: 30%;
 }
 
 .hero-data h1 {
@@ -266,6 +266,7 @@ header .row nav ul>i {
     font-size: 18px;
     background-color: var(--secondary-color);
     outline: none;
+    font-family: 'Poppins';
 }
 
 .search-form .explore {
@@ -273,8 +274,11 @@ header .row nav ul>i {
     color: var(--secondary-color);
     border-radius: 38rem;
     padding: 15px 20px;
-    font-weight: 500;
+    /* font-weight: bold; */
+    border: none;
     font-size: 18px;
+    font-family: 'Poppins';
+
 }
 
 .hero-data span {
@@ -335,7 +339,7 @@ header .row nav ul>i {
     opacity: 0;
 }
 
-.explore-slider .card-data .explore-circle {
+.explore-slider .card-data .explore-cricle {
     position: absolute;
     top: -2rem;
     right: 3rem;
@@ -347,7 +351,7 @@ header .row nav ul>i {
     text-align: center;
 }
 
-.explore-slider .card-data .explore-circle span {
+.explore-slider .card-data .explore-cricle span {
     font-weight: 400;
     font-size: 7.2rem;
     line-height: 11rem;
@@ -371,11 +375,6 @@ header .row nav ul>i {
 .explore-select-folder {
     position: relative;
 }
-
-.explore-arrow {
-    position: relative;
-}
-
 .explore-arrow .prev,
 .explore-arrow .next {
     z-index: 8;
@@ -390,6 +389,7 @@ header .row nav ul>i {
     font-size: 3rem;
     text-align: center;
     line-height: 6.5rem;
+    cursor: pointer;
 }
 
 .explore-arrow .prev {
@@ -417,6 +417,8 @@ header .row nav ul>i {
 .explore-slider .swiper-slide:hover .card-img img {
     border-radius: 1rem 1rem 0 0;
     height: 31.6rem;
+    cursor: pointer;
+    box-shadow: none;
 }
 
 /*************************************/
@@ -444,9 +446,9 @@ header .row nav ul>i {
     padding-top: 0.6rem;
 }
 
-.why-slider {
-    /* display: flex;
-    column-gap: 6rem;  */
+.why-slider .swiper-wrapper{
+    padding-bottom: 3rem;
+  
 }
 
 .why-slider .swiper-slide {
@@ -505,11 +507,6 @@ header .row nav ul>i {
     position: relative;
     margin: 0 4rem;
 }
-
-.why-select-arrow {
-    position: relative;
-}
-
 .why-select-arrow .prev1,
 .why-select-arrow .next1 {
     z-index: 8;
@@ -524,7 +521,7 @@ header .row nav ul>i {
     font-size: 3rem;
     text-align: center;
     line-height: 6.5rem;
-
+    cursor: pointer;
 }
 
 .why-select-arrow .prev1 {
@@ -539,12 +536,16 @@ header .row nav ul>i {
 
 
 /******************************************/
+
 /***********Our Tour partner Section*********/
+
 .tour-partner {
     display: flex;
     justify-content: space-evenly;
 }
-
+#our-tour {
+    margin-top: 15.8rem;
+}
 #our-tour .main-title p {
     margin-bottom: 0;
 }
@@ -557,7 +558,8 @@ header .row nav ul>i {
 
 /************our client section********/
 .client-container {
-    margin: 17rem 0 18rem 7.7rem;
+    margin: 17rem 0 18rem 0;
+    margin-left: calc((100% - 1370px) / 2);
 }
 
 .client-container .client-say p span {
@@ -585,32 +587,38 @@ header .row nav ul>i {
 
 #our-client .our-client-slider .swiper-slide {
     background: #FFFFFF;
-    box-shadow: 0px 20px 60px rgb(0 0 0 / 10%);
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    /* position: relative; */
     width: 399px;
     height: 432px;
     padding: 5rem 5.4rem 5.1rem 5.3rem;
-    margin-top: 7rem;
 }
-
+.our-client-slider .swiper-wrapper{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
 .our-client-slider .swiper-slide .client-img {
-    position: relative;
-
+   
 }
 
 .our-client-slider .swiper-slide .client-img img {
+    width: 11rem;
+    height: 11rem;
+    /* margin: -12rem 0 0 8.3rem;
+    display: inline; */
     position: absolute;
-    width: 10rem;
-    height: 10rem;
-    top: -10rem;
-    left: 10.5rem;
+    top: -17%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
 }
 
 .our-client-slider .swiper-slide .client-data {
     text-align: center;
 }
-
+.our-client-slider  .client-bio{
+    position: relative;
+}
 .our-client-slider .swiper-slide .client-data h4 {
     font-weight: 600;
     font-size: 24px;
@@ -628,17 +636,16 @@ header .row nav ul>i {
 
 .our-client-slider .swiper-slide .client-data a {
     padding-top: 5rem;
+    display: inline-block;
     display: flex;
     justify-content: flex-start;
-    color: yellow;
+    color:  #F4BC61;
     padding-bottom: 1.8rem;
-    /* justify-items: center; */
-    /* justify-content: space-around; */
-    column-gap: 1.5rem;
-    font-size: 1.6rem;
-    /* row-gap: 2rem; */
 }
-
+.our-client-slider .swiper-slide .client-data a  i{
+    margin-right: 0.7rem;
+    font-size: 1.5rem;
+}
 .our-client-slider .swiper-slide .client-data>p {
     font-weight: 500;
     font-size: 18px;
@@ -653,9 +660,7 @@ header .row nav ul>i {
     display: block;
 }
 
-.our-client-arrow {
-    position: relative;
-}
+
 
 .our-client-arrow .prev2,
 .our-client-arrow .next2 {
@@ -671,6 +676,7 @@ header .row nav ul>i {
     font-size: 3rem;
     text-align: center;
     line-height: 6.5rem;
+    cursor: pointer;
 }
 
 .our-client-arrow .prev2 {
@@ -682,13 +688,13 @@ header .row nav ul>i {
     right: 3rem;
     color: #737373;
 }
-/********Subcribe section************/
-#subcribe {
+/********subscribe section************/
+#subscribe {
     background-color: var(--bg-color);
-    padding: 7.1rem 0 15rem 0;
+    padding: 3.1rem 0 15rem 0;
 }
 
-#subcribe .main-title h2 {
+#subscribe .main-title h2 {
     color: var(--secondary-color);
     font-weight: 600;
     font-size: 60px;
@@ -696,7 +702,7 @@ header .row nav ul>i {
     text-align: center;
 }
 
-#subcribe .main-title p {
+#subscribe .main-title p {
     font-weight: 500;
     font-size: 18px;
     line-height: 34px;
@@ -704,7 +710,7 @@ header .row nav ul>i {
     color: #DFDFDF;
 }
 
-.Subcribe-form {
+.subscribe-form {
     width: 73.6rem;
     height: 7.2rem;
     background: #FFFFFF;
@@ -716,9 +722,10 @@ header .row nav ul>i {
     align-items: center;
     padding: 0 0.9rem 0 2.3rem;
     margin: 0 auto;
+    font-family: 'Poppins';
 }
 
-.Subcribe-form .email-form {
+.subscribe-form .email-form {
     border: none;
     font-weight: 500;
     font-size: 20px;
@@ -726,20 +733,22 @@ header .row nav ul>i {
     color: #9B9B9B;
 }
 
-.Subcribe-form .Subscribe {
+.subscribe-form .Subscribe {
     background-color: #000;
     color: var(--secondary-color);
     border-radius: 38rem;
     padding: 15px 20px;
     font-weight: 500;
     font-size: 18px;
+    border: none;
+    font-weight: bold;
 }
 
 /************************************/
 
 /***********Traveler Section*********/
 #traveller {
-    padding: 8.9rem 0 8rem 0;
+    padding: 8.9rem 0 0 0;
 }
 
 .travel {
@@ -755,8 +764,9 @@ header .row nav ul>i {
 }
 
 .travel .traveller .tra-img img {
-    height: 4.7rem;
+    /* height: 4.7rem; */
     margin-left: 1rem;
+    margin: auto 0;
 }
 
 .travel h4 {
@@ -767,9 +777,6 @@ header .row nav ul>i {
     align-items: center;
     color: #000000;
 }
-.travel h4:hover {
-    color: gray;
-}
 
 .travel p {
     font-weight: 500;
@@ -779,9 +786,6 @@ header .row nav ul>i {
     align-items: center;
     color: #6C6C6C;
     margin-bottom: 1rem;
-}
-.travel p:hover {
-    color: black;
 }
 .contact-info p a{
     display: inline-block;
@@ -798,9 +802,6 @@ header .row nav ul>i {
     height: 2.4rem;
     margin-right: 1rem;
 } 
-.follow-icon p a i:hover {
-    color: black;
-}
 .copyright {
     padding: 4rem 0 2rem 0;
     background-color: #000;
@@ -816,8 +817,6 @@ header .row nav ul>i {
 }
 
 /***********************************/
-
-
 /************************************/
 @media screen and (max-width:1250px) {
     header .row nav ul li a {
