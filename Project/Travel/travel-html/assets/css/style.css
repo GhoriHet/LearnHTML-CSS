@@ -116,9 +116,6 @@ header .row nav ul {
 
 }
 
-header .row>a {
-    /* margin-left: auto; */
-}
 
 header .row nav ul li {
     display: inline-block;
@@ -136,6 +133,7 @@ header .row>a i {
     font-size: 1.8rem;
     color: var(--secondary-color);
     padding: 1.3rem 3.3rem;
+    margin-left: -1rem;
 }
 
 header .row nav ul li a:hover {
@@ -213,7 +211,7 @@ header .row nav ul>i {
 #hero {
     background: url(../images/banner.jpg);
     width: 100%;
-    height: 100vh;
+    height: 92vh;
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -228,7 +226,7 @@ header .row nav ul>i {
 
 #hero .hero-data {
     position: absolute;
-    top: 27%;
+    top: 34%;
 }
 
 .hero-data h1 {
@@ -275,13 +273,14 @@ header .row nav ul>i {
     padding: 15px 20px;
     font-weight: 500;
     font-size: 18px;
+    border: none;
+    font-family: 'Poppins';
 }
 
 .hero-data span {
     color: #ECECEC;
     margin-top: 3.6rem;
 }
-
 
 /****************************************/
 
@@ -324,7 +323,7 @@ header .row nav ul>i {
     height: 36rem;
     object-fit: cover;
     object-position: center center;
-    box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
+    /* box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25); */
 }
 
 .explore-slider .card-data {
@@ -392,6 +391,11 @@ header .row nav ul>i {
     line-height: 6.5rem;
 }
 
+.explore-arrow .prev:hover,
+.explore-arrow .next:hover {
+    cursor: pointer;
+}
+
 .explore-arrow .prev {
     left: 0;
     color: #737373;
@@ -407,6 +411,7 @@ header .row nav ul>i {
     transform: translateY(-10px);
     box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .explore-slider .swiper-slide:hover .card-data {
@@ -459,6 +464,8 @@ header .row nav ul>i {
     margin-top: 7.6rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
+
+    padding-right: 5rem;
 }
 
 .why-slider .why-img {
@@ -471,6 +478,7 @@ header .row nav ul>i {
 .why-slider .why-img img {
     object-position: center center;
     object-fit: cover;
+    cursor: pointer;
 
 
 }
@@ -527,6 +535,11 @@ header .row nav ul>i {
 
 }
 
+.why-select-arrow .prev1:hover,
+.why-select-arrow .next1:hover {
+    cursor: pointer;
+}
+
 .why-select-arrow .prev1 {
     left: -13rem;
     color: #737373;
@@ -540,6 +553,10 @@ header .row nav ul>i {
 
 /******************************************/
 /***********Our Tour partner Section*********/
+#our-tour {
+    padding-top: -17.8rem;
+}
+
 .tour-partner {
     display: flex;
     justify-content: space-evenly;
@@ -550,43 +567,46 @@ header .row nav ul>i {
 }
 
 #our-tour .tour-partner {
-    padding-top: 6.9rem;
+    padding-top: 6rem;
+    cursor: pointer;
+
 }
 
 /**************************************/
 
 /************our client section********/
 .client-container {
-    margin: 17rem 0 18rem 7.7rem;
+    margin: 17rem 0 18rem 0;
+    margin-left: calc((100% - 1370px) / 2);
 }
 
 .client-container .client-say p span {
     font-weight: 500;
-    font-size: 30px;
-    line-height: 70px;
+    font-size: 3rem;
+    line-height: 7rem;
     letter-spacing: 0.14em;
     color: #626262;
 }
 
 .client-container .client-say h2 {
     font-weight: 600;
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 6rem;
+    line-height: 7rem;
     color: #020202;
 }
 
 .client-container .client-say p {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 40px;
-    color: #626262;
+    font-size: 1.8rem;
+    line-height: 4rem;
+    color: #858585;
     /* padding-bottom: 10rem; */
 }
 
 #our-client .our-client-slider .swiper-slide {
     background: #FFFFFF;
     box-shadow: 0px 20px 60px rgb(0 0 0 / 10%);
-    border-radius: 10px;
+    border-radius: 1rem;
     /* position: relative; */
     width: 399px;
     height: 432px;
@@ -596,7 +616,6 @@ header .row nav ul>i {
 
 .our-client-slider .swiper-slide .client-img {
     position: relative;
-
 }
 
 .our-client-slider .swiper-slide .client-img img {
@@ -604,7 +623,8 @@ header .row nav ul>i {
     width: 10rem;
     height: 10rem;
     top: -10rem;
-    left: 10.5rem;
+    left: 9rem;
+    cursor: pointer;
 }
 
 .our-client-slider .swiper-slide .client-data {
@@ -613,16 +633,16 @@ header .row nav ul>i {
 
 .our-client-slider .swiper-slide .client-data h4 {
     font-weight: 600;
-    font-size: 24px;
-    line-height: 70px;
+    font-size: 2.4rem;
+    line-height: 7rem;
     text-align: center;
     color: #000000;
 }
 
 .our-client-slider .swiper-slide .client-data p {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     color: #858585;
 }
 
@@ -630,19 +650,19 @@ header .row nav ul>i {
     padding-top: 5rem;
     display: flex;
     justify-content: flex-start;
-    color: yellow;
+    color: #F4BC61;
     padding-bottom: 1.8rem;
     /* justify-items: center; */
     /* justify-content: space-around; */
-    column-gap: 1.5rem;
+    column-gap: 0.8rem;
     font-size: 1.6rem;
     /* row-gap: 2rem; */
 }
 
 .our-client-slider .swiper-slide .client-data>p {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     color: #858585;
     text-align: left;
 }
@@ -673,6 +693,11 @@ header .row nav ul>i {
     line-height: 6.5rem;
 }
 
+.our-client-arrow .prev2:hover,
+.our-client-arrow .next2:hover {
+    cursor: pointer;
+}
+
 .our-client-arrow .prev2 {
     right: 16rem;
     color: #737373;
@@ -682,6 +707,7 @@ header .row nav ul>i {
     right: 3rem;
     color: #737373;
 }
+
 /********Subcribe section************/
 #subcribe {
     background-color: var(--bg-color);
@@ -690,16 +716,16 @@ header .row nav ul>i {
 
 #subcribe .main-title h2 {
     color: var(--secondary-color);
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 70px;
-    text-align: center;
+    /* font-weight: 600;
+    font-size: 6rem;
+    line-height: 7rem;
+    text-align: center; */
 }
 
 #subcribe .main-title p {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 34px;
+    font-size: 1.8rem;
+    line-height: 3.4rem;
     text-align: center;
     color: #DFDFDF;
 }
@@ -710,7 +736,7 @@ header .row nav ul>i {
     background: #FFFFFF;
     border: 1px solid #CBCACA;
     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3);
-    border-radius: 72px;
+    border-radius: 7.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -721,8 +747,8 @@ header .row nav ul>i {
 .Subcribe-form .email-form {
     border: none;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 34px;
+    font-size: 2rem;
+    line-height: 3.4rem;
     color: #9B9B9B;
 }
 
@@ -730,16 +756,17 @@ header .row nav ul>i {
     background-color: #000;
     color: var(--secondary-color);
     border-radius: 38rem;
-    padding: 15px 20px;
+    padding: 1.5rem 2rem;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.8rem;
+    border: none;
 }
 
 /************************************/
 
 /***********Traveler Section*********/
 #traveller {
-    padding: 8.9rem 0 8rem 0;
+    padding: 8.9rem 0 0 0;
 }
 
 .travel {
@@ -755,62 +782,65 @@ header .row nav ul>i {
 }
 
 .travel .traveller .tra-img img {
-    height: 4.7rem;
+    height: 4.5rem;
     margin-left: 1rem;
 }
 
 .travel h4 {
     font-weight: 600;
-    font-size: 24px;
-    line-height: 70px;
+    font-size: 2.4rem;
+    line-height: 7rem;
     display: flex;
     align-items: center;
     color: #000000;
 }
-.travel h4:hover {
-    color: gray;
-}
 
 .travel p {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
     display: flex;
     align-items: center;
     color: #6C6C6C;
     margin-bottom: 1rem;
 }
+
 .travel p:hover {
     color: black;
 }
-.contact-info p a{
+
+.contact-info p a {
     display: inline-block;
     padding: 1rem;
     color: #000;
 }
-.follow-us .follow-icon{
+
+.follow-us .follow-icon {
     display: flex;
 }
-.follow-us .follow-icon p a{
+
+.follow-us .follow-icon p a {
     display: inline-block;
     color: #3D3D3D;
     width: 2.4rem;
     height: 2.4rem;
     margin-right: 1rem;
-} 
-.follow-icon p a i:hover {
-    color: black;
 }
+
+.follow-icon p a i:hover {
+    color: #069ABA;
+}
+
 .copyright {
-    padding: 4rem 0 2rem 0;
+    padding: 3rem 0 0 0;
     background-color: #000;
 }
 
 .copyright p {
     text-align: center;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 34px;
+    font-size: 1.8rem;
+    line-height: 3.4rem;
     text-align: center;
     color: #DFDFDF;
 }
