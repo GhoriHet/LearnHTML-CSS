@@ -728,6 +728,7 @@ header .row nav ul>i {
     font-size: 20px;
     line-height: 34px;
     color: #9B9B9B;
+    font-family: 'Poppins';
 }
 
 .subscribe-form .Subscribe {
@@ -735,9 +736,10 @@ header .row nav ul>i {
     color: var(--secondary-color);
     border-radius: 38rem;
     padding: 15px 20px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     border: none;
+    font-family: 'Poppins';
 }
 
 /************************************/
