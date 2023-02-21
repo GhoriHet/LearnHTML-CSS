@@ -228,7 +228,7 @@ header .row nav ul>i {
 
 #hero .hero-data {
     position: absolute;
-    top: 30%;
+    top: 33%;
 }
 
 .hero-data h1 {
@@ -297,8 +297,8 @@ header .row nav ul>i {
 .main-title h2 {
     /* padding-top: 17.8rem; */
     font-weight: 600;
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 6rem;
+    line-height: 7rem;
     text-align: center;
     color: #020202;
     margin-bottom: 3rem;
@@ -306,8 +306,8 @@ header .row nav ul>i {
 
 .main-title p {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
     text-align: center;
     color: #878787;
     margin-bottom: 8.4rem;
@@ -762,6 +762,7 @@ header .row nav ul>i {
 .footer-data .box {
     padding: 0 0 0rem 7rem;
 }
+
 .footer-data .box img {
     width: 75%;
 }
@@ -791,7 +792,7 @@ header .row nav ul>i {
 .footer-data .Contact ul a {
     font-weight: 500;
     font-size: 1.8rem;
-    line-height: 4.5rem; 
+    line-height: 4.5rem;
     color: #6C6C6C;
 }
 
@@ -823,12 +824,12 @@ header .row nav ul>i {
 }
 
 .footer-data ul li a i:hover {
-    color: #000000;
+    color: #069ABA;
 }
 
 .black {
     background-color: #000000;
-    padding: 4.4rem 0 1.4rem 0;
+    padding: 2rem 0 1.4rem 0;
     text-align: center;
 }
 
@@ -841,7 +842,7 @@ header .row nav ul>i {
 
 /*****************************/
 /************************************/
-@media screen and (max-width:1250px) {
+/* @media screen and (max-width:1250px) {
     header .row nav ul li a {
         padding: 1.3rem;
     }
@@ -951,6 +952,102 @@ header .row nav ul>i {
 
     .showHide {
         right: 0%;
+    }
+
+} */
+
+@media screen and (max-width: 1365px) {
+    .container {
+        max-width: 95%;
+        padding: 0 3rem;
+    }
+
+    .hero-data h1 {
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+
+    #hero .hero-data {
+        top: 45%;
+    }
+
+    .hero-data .search-form {
+        width: 63.5rem;
+        height: 6.8rem;
+    }
+
+    header .row nav ul li a {
+        padding: 1.3rem 1.5rem;
+    }
+
+    #explore {
+        margin: 9.8rem 0 6rem;
+    }
+
+    .main-title h2 {
+        font-size: 4.5rem;
+        line-height: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    .main-title p {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        margin-bottom: 7.4rem;
+    }
+
+    .explore-arrow .prev,
+    .explore-arrow .next {
+        width: 5rem;
+        height: 5rem;
+        font-size: 2.2rem;
+        line-height: 5rem;
+    }
+
+    .explore-slider .card-data h4 {
+        font-size: 2rem;
+        line-height: 3.3rem;
+    }
+
+    .explore-slider .card-data p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    .explore-slider .card-data .explore-cricle {
+        width: 6rem;
+        height: 6rem;
+        text-align: center;
+    }
+
+    .explore-slider .card-data .explore-cricle span {
+        font-size: 5.3rem;
+        line-height: 8.5rem;
+    }
+    
+}
+@media screen and (max-width: 992px) {
+    .logo img {
+        max-width: 80%;
+    }
+    header .row nav ul li a {
+        padding: 1.3rem 0.7rem;
+        font-size: 1.6rem;
+    }
+    .hero-data h1 {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+    #hero .hero-data {
+        top: 37%;
+    }
+    .hero-data p {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+    .hero-data .search-form {
+        width: 59rem;
+        height: 6.5rem;
     }
 
 }
