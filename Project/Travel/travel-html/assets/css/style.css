@@ -696,10 +696,7 @@ header .row nav ul>i {
 
 #subscribe .main-title h2 {
     color: var(--secondary-color);
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 70px;
-    text-align: center;
+   
 }
 
 #subscribe .main-title p {
@@ -741,7 +738,6 @@ header .row nav ul>i {
     font-weight: 500;
     font-size: 18px;
     border: none;
-    font-weight: bold;
 }
 
 /************************************/
@@ -787,21 +783,56 @@ header .row nav ul>i {
     color: #6C6C6C;
     margin-bottom: 1rem;
 }
-.contact-info p a{
-    display: inline-block;
-    padding: 1rem;
+.contact-info ul li  {
+    display: block;
+    color: gray;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-left: 1rem;
+}
+.contact-info ul li a i {
+    padding: 0.3rem;
+    color: #000;
+}
+.contact-info a{
+    color: gray;
+
+}
+.contact-info ul li a:hover {
     color: #000;
 }
 .follow-us .follow-icon{
     display: flex;
 }
-.follow-us .follow-icon p a{
+.follow-us .follow-icon ul li{
     display: inline-block;
     color: #3D3D3D;
     width: 2.4rem;
     height: 2.4rem;
     margin-right: 1rem;
-} 
+    font-size: 1.8rem;
+}
+.follow-us .follow-icon ul li:hover{
+    color: #069ABA;
+}
+.q-link ul li  {
+    display: block;
+    color: gray;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-left: 1rem;
+}
+.q-link ul a{
+    color: gray;
+
+}
+.q-link ul li a:hover {
+    color: #000;
+}
 .copyright {
     padding: 4rem 0 2rem 0;
     background-color: #000;
