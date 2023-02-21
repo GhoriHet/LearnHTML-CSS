@@ -956,10 +956,16 @@ header .row nav ul>i {
 
 } */
 
-@media screen and (max-width: 1365px) {
+
+@media screen and (max-width:1440px) {
+    .container {
+        max-width: 137rem;
+    }
+}
+
+@media screen and (max-width:1365px) {
     .container {
         max-width: 95%;
-        padding: 0 3rem;
     }
 
     .hero-data h1 {
@@ -971,83 +977,100 @@ header .row nav ul>i {
         top: 45%;
     }
 
-    .hero-data .search-form {
-        width: 63.5rem;
-        height: 6.8rem;
-    }
-
     header .row nav ul li a {
-        padding: 1.3rem 1.5rem;
-    }
-
-    #explore {
-        margin: 9.8rem 0 6rem;
+        padding: 1.3rem 2rem;
     }
 
     .main-title h2 {
-        font-size: 4.5rem;
+        font-size: 5rem;
         line-height: 6rem;
         margin-bottom: 1rem;
     }
 
     .main-title p {
-        font-size: 1.5rem;
-        line-height: 1.6rem;
-        margin-bottom: 7.4rem;
+        font-size: 1.6rem;
+        line-height: 3.3rem;
+        margin-bottom: 7.7rem;
     }
 
     .explore-arrow .prev,
     .explore-arrow .next {
-        width: 5rem;
-        height: 5rem;
-        font-size: 2.2rem;
-        line-height: 5rem;
+        width: 6rem;
+        height: 5.6rem;
+        font-size: 2.3rem;
+        line-height: 5.5rem;
     }
 
-    .explore-slider .card-data h4 {
-        font-size: 2rem;
-        line-height: 3.3rem;
+    #explore {
+        margin: 12.8rem 0 6rem;
     }
 
     .explore-slider .card-data p {
-        font-size: 1.2rem;
-        line-height: 1.7rem;
+        font-size: 1.4rem;
+        line-height: 21px;
     }
 
     .explore-slider .card-data .explore-cricle {
-        width: 6rem;
-        height: 6rem;
-        text-align: center;
+        width: 7rem;
+        height: 6.6rem;
     }
 
     .explore-slider .card-data .explore-cricle span {
-        font-size: 5.3rem;
-        line-height: 8.5rem;
+        font-size: 6.2rem;
+        line-height: 10rem;
     }
-    
+
+    header .row>a i {
+        padding: 1.3rem 2rem;
+    }
+
 }
-@media screen and (max-width: 992px) {
+
+/* 992-1199 */
+@media screen and (max-width:1199px) {
     .logo img {
         max-width: 80%;
     }
+
     header .row nav ul li a {
-        padding: 1.3rem 0.7rem;
         font-size: 1.6rem;
+    }
+
+    header .row>a i {
+        font-size: 1.6rem;
+        padding: 1.3rem 1.3rem;
     }
     .hero-data h1 {
         font-size: 6rem;
         line-height: 7rem;
     }
-    #hero .hero-data {
-        top: 37%;
-    }
     .hero-data p {
         font-size: 1.6rem;
         line-height: 3rem;
+        margin: 3rem 0 1.1rem 0;
     }
     .hero-data .search-form {
-        width: 59rem;
-        height: 6.5rem;
+        width: 68.8rem;
+        height: 6.8rem;
     }
-
+    .search-form .explore {
+        padding: 1.5rem 2rem;
+        font-size: 1.6rem;
+    }
+    .search-form select {
+        font-size: 1.6rem;
+    }
+    .explore-arrow .prev, .explore-arrow .next {
+        width: 5rem;
+        height: 4.6rem;
+        font-size: 1.8rem;
+        line-height: 4.5rem;
+        top: -5.4rem;
+    }
+    .main-title p {
+        margin-bottom: 4.4rem;
+    }
+    #hero .hero-data {
+        top: 40%;
+    }
 }
