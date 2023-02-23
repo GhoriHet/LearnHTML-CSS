@@ -116,7 +116,7 @@ header .row nav ul {
 
 }
 
-header .row>a {
+header .row > a {
     /* margin-left: auto; */
 }
 
@@ -277,7 +277,6 @@ header .row nav ul>i {
     border: none;
     font-size: 1.8rem;
     font-family: 'Poppins';
-
 }
 
 .hero-data span {
@@ -474,8 +473,6 @@ header .row nav ul>i {
 .why-slider .why-img img {
     object-position: center center;
     object-fit: cover;
-
-
 }
 
 .why-slider .why-data h4 {
@@ -700,8 +697,19 @@ header .row nav ul>i {
 
 /********subscribe section************/
 #subscribe {
-    background-color: var(--bg-color);
     padding: 3.1rem 0 15rem 0;
+    background: url(../images/nature1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#subscribe::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+
 }
 
 #subscribe .main-title h2 {
@@ -758,7 +766,7 @@ header .row nav ul>i {
 
 /************************************/
 
-/***********Traveler Section*********/
+/***********Traveller Section*********/
 #travelers {
     padding: 8.9rem 0 0 0;
 }
@@ -787,7 +795,7 @@ header .row nav ul>i {
     color: #000000;
 }
 
-.travel ul li{
+.travel ul li {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -816,7 +824,9 @@ header .row nav ul>i {
     display: flex;
     color: #6C6C6C;
 }
-
+.contact-info ul li:hover {
+    color: black;
+}
 .contact-info ul li a i {
     color: #000;
 }
@@ -866,8 +876,7 @@ header .row nav ul>i {
 }
 
 .q-link ul li a:hover {
-    color: #069ABA;
-    border-bottom: 2px solid #069ABA;
+    color: black;
 }
 
 .follow-us ul {
@@ -892,123 +901,7 @@ header .row nav ul>i {
 }
 
 /***********************************/
-/************************************/
-/* @media screen and (max-width:1250px) {
-    header .row nav ul li a {
-        padding: 1.3rem;
-    }
 
-    header .logo {
-        width: 18rem;
-    }
-
-    header .row>a i {
-        padding-left: 1.3rem;
-    }
-} */
-
-/* @media screen and (max-width:992px) {
-    header nav>ul {
-        position: absolute;
-        top: 0;
-        right: -35%;
-        width: 35%;
-        height: 100vh;
-        transition: all 0.5s;
-        background-color: grey;
-    }
-
-    header .row nav ul li {
-        display: block;
-        width: 100%;
-    }
-
-    header .row nav ul li a {
-        display: block;
-        width: 100%;
-        padding: 1.3rem;
-    }
-
-    header .row nav ul li ul {
-        width: 100%;
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-
-    header nav ul li ul li a {
-        padding-left: 6rem;
-        width: 100%;
-        padding: 1.3rem;
-    }
-
-    header nav ul li ul li ul {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-
-    header .row nav ul li ul li ul {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-
-    header .row nav ul li ul li ul li {
-        display: block;
-        width: 100%;
-    }
-
-    header .row nav ul li ul li ul li a {
-        display: block;
-        width: 100%;
-        padding-left: 6rem;
-    }
-
-    header .row .logo {
-        order: 0;
-    }
-
-    header .row nav {
-        order: 2;
-
-    }
-
-    header .row .search {
-        order: 1;
-        margin-left: auto;
-    }
-
-    header .row .search i {
-        transition: all 0.5s;
-    }
-
-    header .row nav ul>i {
-        color: #ECECEC;
-        margin-top: 2.7rem;
-        font-size: 2.5rem;
-        text-align: right;
-        display: inline-block !important;
-        width: 100%;
-        padding-right: 1.8rem;
-    }
-
-    header .row nav ul li:hover a i {
-        transform: rotate(90deg);
-    }
-
-    header .row nav>i {
-        display: inline-block !important;
-    }
-
-    .showHide {
-        right: 0%;
-    }
-    header .row nav {
-        margin-left: 1rem;
-    }
-
-}  */
 /****1441-1650****/
 @media screen and (max-width:1650px) {
     .why-select-arrow .prev1 {
@@ -1168,36 +1061,44 @@ header .row nav ul>i {
         line-height: 2rem;
         padding-top: 4.2rem;
     }
+
     #subscribe .main-title h2 {
         font-size: 5rem;
         line-height: 6rem;
     }
+
     #subscribe .main-title p {
         font-size: 1.6rem;
         line-height: 3rem;
     }
+
     .subscribe-form .email-form {
         font-size: 1.8rem;
         line-height: 3rem;
     }
+
     .travel h4 {
         font-size: 2rem;
         line-height: 6rem;
     }
-    #travelers ul li  {
+
+    #travelers ul li {
         font-size: 1.6rem;
         line-height: 3rem;
     }
+
     #travelers ul li a {
         font-size: 1.6rem;
     }
-    .travel .travelers .tra-img  img {
-        max-width: 86%;     
+
+    .travel .travelers .tra-img img {
+        max-width: 86%;
     }
+
     .copyright p {
         font-size: 1.6rem;
     }
-    
+
 }
 
 /* 992-1199 */
@@ -1257,6 +1158,7 @@ header .row nav ul>i {
     #hero .hero-data {
         top: 40%;
     }
+
     .why-select-arrow .prev1,
     .why-select-arrow .next1 {
         width: 5rem;
@@ -1265,20 +1167,195 @@ header .row nav ul>i {
         line-height: 4.5rem;
         top: -1.4rem;
     }
-    .our-client-arrow .prev2 ,
+
+    .our-client-arrow .prev2,
     .our-client-arrow .next2 {
         width: 5rem;
         height: 4.6rem;
         font-size: 1.8rem;
         line-height: 4.5rem;
-        top: -5.4rem;
+        top: -10.4rem;
     }
+
     .our-client-arrow .prev2 {
         right: 10rem;
         color: #737373;
     }
+
+    #our-tour {
+        margin-top: -7rem;
+    }
+
+    .client-container {
+        margin: 12rem 0 18rem 0;
+        margin-left: calc((100% - 90%) / 2);
+    }
+
+    .client-container {
+        margin: 12rem 0 11rem 0;
+        margin-left: calc((100% - 90%) / 2);
+    }
+
     #why-select {
         background-size: 100% 47.2rem;
     }
+
+    .our-client-slider .swiper-slide .client-data>p {
+        font-size: 1.6rem;
+    }
+
+    .our-client-slider .swiper-slide .client-img img {
+        top: -15%;
+    }
+
+    .travel .travelers .tra-img img {
+        max-width: 70%;
+    }
+
+    #travelers ul li {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
 }
 
+/* ==================================== */
+/* 768-991 */
+@media screen and (max-width:767px) {
+
+    #hero {
+        height: auto;
+    }
+
+    #hero .hero-data {
+        position: relative;
+        padding-top: 210px;
+    }
+
+    #explore {
+        margin: 8rem 0 2rem;
+    }
+
+    .main-title h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+        margin-bottom: 0.5rem;
+    }
+
+}
+/************************************/
+/* @media screen and (max-width:1250px) {
+    header .row nav ul li a {
+        padding: 1.3rem;
+    }
+
+    header .logo {
+        width: 18rem;
+    }
+
+    header .row>a i {
+        padding-left: 1.3rem;
+    }
+} */
+
+/* @media screen and (max-width:992px) {
+    header nav>ul {
+        position: absolute;
+        top: 0;
+        right: -35%;
+        width: 35%;
+        height: 100vh;
+        transition: all 0.5s;
+        background-color: grey;
+    }
+
+    header .row nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    header .row nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 1.3rem;
+    }
+
+    header .row nav ul li ul {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    header nav ul li ul li a {
+        padding-left: 6rem;
+        width: 100%;
+        padding: 1.3rem;
+    }
+
+    header nav ul li ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    header .row nav ul li ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    header .row nav ul li ul li ul li {
+        display: block;
+        width: 100%;
+    }
+
+    header .row nav ul li ul li ul li a {
+        display: block;
+        width: 100%;
+        padding-left: 6rem;
+    }
+
+    header .row .logo {
+        order: 0;
+    }
+
+    header .row nav {
+        order: 2;
+
+    }
+
+    header .row .search {
+        order: 1;
+        margin-left: auto;
+    }
+
+    header .row .search i {
+        transition: all 0.5s;
+    }
+
+    header .row nav ul>i {
+        color: #ECECEC;
+        margin-top: 2.7rem;
+        font-size: 2.5rem;
+        text-align: right;
+        display: inline-block !important;
+        width: 100%;
+        padding-right: 1.8rem;
+    }
+
+    header .row nav ul li:hover a i {
+        transform: rotate(90deg);
+    }
+
+    header .row nav>i {
+        display: inline-block !important;
+    }
+
+    .showHide {
+        right: 0%;
+    }
+    header .row nav {
+        margin-left: 1rem;
+    }
+
+}  */
