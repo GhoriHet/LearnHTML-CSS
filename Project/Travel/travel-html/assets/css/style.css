@@ -544,7 +544,7 @@ header .row nav ul>i {
 }
 
 #our-tour {
-    margin-top: 15.8rem;
+    /* margin-top: 15.8rem; */
 }
 
 #our-tour .main-title p {
@@ -948,7 +948,7 @@ header .row nav ul>i {
         margin: 17rem 0 18rem 0;
         margin-left: calc((100% - 90%) / 2);
     }
-
+    
     .hero-data h1 {
         font-size: 7rem;
         line-height: 8rem;
@@ -1041,6 +1041,9 @@ header .row nav ul>i {
         font-size: 1.6rem;
         line-height: 2rem;
     }
+    #why-select {
+        margin-bottom: 11rem;
+    }
 
     .tour-img img {
         max-width: 90%;
@@ -1055,7 +1058,10 @@ header .row nav ul>i {
         font-size: 1.6rem;
         line-height: 3.5rem;
     }
-
+    .client-container {
+    margin: 13rem 0 18rem 0;
+    margin-left: calc((100% - 90%) / 2);
+}
     .our-client-slider .swiper-slide .client-data h4 {
         font-size: 2rem;
         line-height: 2rem;
@@ -1392,7 +1398,7 @@ header .row nav ul>i {
         line-height: 2rem;
     }
     #why-select {
-        margin-bottom: 7rem;
+        margin-bottom: 13rem;
     }
     #why-select .main-title p {
         margin-bottom: 1.4rem;
