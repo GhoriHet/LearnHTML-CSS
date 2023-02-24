@@ -116,7 +116,7 @@ header .row nav ul {
 
 }
 
-header .row > a {
+header .row>a {
     /* margin-left: auto; */
 }
 
@@ -274,9 +274,11 @@ header .row nav ul>i {
     color: var(--secondary-color);
     border-radius: 38rem;
     padding: 1.5rem 2rem;
+    font-weight: bold;
     border: none;
     font-size: 1.8rem;
     font-family: 'Poppins';
+
 }
 
 .hero-data span {
@@ -286,7 +288,6 @@ header .row nav ul>i {
 
 
 /****************************************/
-
 
 /*************Explore Section**********/
 #explore {
@@ -323,7 +324,7 @@ header .row nav ul>i {
 
 .explore-slider .swiper-slide .card-img img {
     border-radius: 1rem;
-    width: 44.4rem;
+    width: 100%;
     height: 36rem;
     object-fit: cover;
     object-position: center center;
@@ -451,7 +452,7 @@ header .row nav ul>i {
 
 }
 
-.why-slider .swiper-slide {
+.why-slider .swiper-sd {
     /* width: 30rem;
     height: 43rem; */
     background: #FFFFFF;
@@ -459,8 +460,9 @@ header .row nav ul>i {
     border-radius: 1rem;
     padding: 4.5rem 0 7rem 2rem;
     margin-top: 7.6rem;
-    margin-right: 2rem;
+    margin-right: 5rem;
     margin-bottom: 2rem;
+    margin-left: 6rem;
 }
 
 .why-slider .why-img {
@@ -473,6 +475,8 @@ header .row nav ul>i {
 .why-slider .why-img img {
     object-position: center center;
     object-fit: cover;
+
+
 }
 
 .why-slider .why-data h4 {
@@ -586,13 +590,14 @@ header .row nav ul>i {
     /* padding-bottom: 10rem; */
 }
 
-#our-client .our-client-slider .swiper-slide {
+#our-client .our-client-slider .swiper-clt {
     background: #FFFFFF;
     box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
     width: 39.9rem;
     height: 43.2rem;
     padding: 5rem 5.4rem 5.1rem 5.3rem;
+    margin: 0 3rem 0 3rem;
 }
 
 .our-client-slider .swiper-wrapper {
@@ -697,22 +702,27 @@ header .row nav ul>i {
 
 /********subscribe section************/
 #subscribe {
-    padding: 3.1rem 0 15rem 0;
     background: url(../images/nature1.jpg);
-    background-position: center;
+    padding: 3.1rem 0 15rem 0;
+    background-position: center center;
     background-size: cover;
     position: relative;
+    /* background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply; */
+
+    z-index: -2;
 }
+
 #subscribe::before {
+    z-index: -1;
     content: '';
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: -1;
-
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #subscribe .main-title h2 {
+    z-index: 1;
     color: var(--secondary-color);
     font-weight: 600;
     font-size: 6rem;
@@ -726,7 +736,6 @@ header .row nav ul>i {
     line-height: 3.4rem;
     text-align: center;
     color: #DFDFDF;
-    font-family: 'Poppins';
 }
 
 .subscribe-form {
@@ -743,17 +752,16 @@ header .row nav ul>i {
     margin: 0 auto;
     font-family: 'Poppins';
 }
-   
+
 .subscribe-form .email-form {
     border: none;
     font-weight: 500;
     font-size: 2rem;
     line-height: 3.4rem;
     color: #9B9B9B;
-    font-family: 'Poppins';
 }
 
-.subscribe-form .subscribe {
+.subscribe-form .Subscribe {
     background-color: #000;
     color: var(--secondary-color);
     border-radius: 38rem;
@@ -761,12 +769,12 @@ header .row nav ul>i {
     font-weight: 500;
     font-size: 18px;
     border: none;
-    font-family: 'Poppins';
+    font-weight: bold;
 }
 
 /************************************/
 
-/***********Traveller Section*********/
+/***********Traveler Section*********/
 #travelers {
     padding: 8.9rem 0 0 0;
 }
@@ -824,9 +832,7 @@ header .row nav ul>i {
     display: flex;
     color: #6C6C6C;
 }
-.contact-info ul li:hover {
-    color: black;
-}
+
 .contact-info ul li a i {
     color: #000;
 }
@@ -876,7 +882,8 @@ header .row nav ul>i {
 }
 
 .q-link ul li a:hover {
-    color: black;
+    color: #069ABA;
+    border-bottom: 2px solid #069ABA;
 }
 
 .follow-us ul {
@@ -901,7 +908,20 @@ header .row nav ul>i {
 }
 
 /***********************************/
+/************************************/
+/* @media screen and (max-width:1250px) {
+    header .row nav ul li a {
+        padding: 1.3rem;
+    }
 
+    header .logo {
+        width: 18rem;
+    }
+
+    header .row>a i {
+        padding-left: 1.3rem;
+    }
+} */
 /****1441-1650****/
 @media screen and (max-width:1650px) {
     .why-select-arrow .prev1 {
@@ -1018,9 +1038,9 @@ header .row nav ul>i {
         top: -4.4rem;
     }
 
-    .why-slider .swiper-slide {
+    .why-slider .swiper-sd {
         padding: 4.5rem 1rem 5rem 2rem;
-        margin-top: 7.6rem;
+        margin-top: 5.6rem;
         margin-right: 2rem;
         margin-bottom: 2rem;
     }
@@ -1174,7 +1194,7 @@ header .row nav ul>i {
         height: 4.6rem;
         font-size: 1.8rem;
         line-height: 4.5rem;
-        top: -10.4rem;
+        top: -5.4rem;
     }
 
     .our-client-arrow .prev2 {
@@ -1182,30 +1202,25 @@ header .row nav ul>i {
         color: #737373;
     }
 
-    #our-tour {
-        margin-top: -7rem;
-    }
-
-    .client-container {
-        margin: 12rem 0 18rem 0;
-        margin-left: calc((100% - 90%) / 2);
-    }
-
-    .client-container {
-        margin: 12rem 0 11rem 0;
-        margin-left: calc((100% - 90%) / 2);
-    }
-
     #why-select {
         background-size: 100% 47.2rem;
     }
 
-    .our-client-slider .swiper-slide .client-data>p {
-        font-size: 1.6rem;
+    #why-select {
+        margin-bottom: 15rem;
     }
 
-    .our-client-slider .swiper-slide .client-img img {
-        top: -15%;
+    .tour-img img {
+        max-width: 70%;
+    }
+
+    #our-tour .tour-partner {
+        padding-top: 3.9rem;
+    }
+
+    .client-container {
+        margin: 13rem 0 10rem 0;
+        margin-left: calc((100% - 90%) / 2);
     }
 
     .travel .travelers .tra-img img {
@@ -1213,9 +1228,10 @@ header .row nav ul>i {
     }
 
     #travelers ul li {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         line-height: 2.5rem;
     }
+
     .q-link ul li a {
         font-size: 1.6rem;
         line-height: 2.5rem;
@@ -1235,14 +1251,24 @@ header .row nav ul>i {
         line-height: 2.6rem;
     }
 
-    #our-client .our-client-slider .swiper-slide {
+    #our-client .our-client-slider .swiper-clt {
+        width: 26.9rem;
         height: 37.2rem;
         padding: 5rem 3.4rem 0.1rem 2.3rem;
+        margin: 0px 1rem 0 2rem;
     }
 }
 
 /*768-991*/
 @media screen and (max-width:991px) {
+    .container {
+        max-width: 100%;
+    }
+
+    header .row {
+        padding: 1rem 0;
+    }
+
     header nav>ul {
         position: absolute;
         top: 0;
@@ -1370,6 +1396,7 @@ header .row nav ul>i {
     .hero-data p {
         font-size: 1.4rem;
         line-height: 2.5rem;
+        padding-bottom: 3rem;
     }
 
     #explore {
@@ -1391,282 +1418,315 @@ header .row nav ul>i {
         font-size: 1.4rem;
         line-height: 2rem;
     }
+
     #why-select {
         margin-bottom: 7rem;
     }
+
     #why-select .main-title p {
         margin-bottom: 1.4rem;
     }
+
     .why-slider .why-data p {
         font-size: 1.4rem;
     }
+
     .why-slider .why-data a {
         margin-top: 2rem;
         font-size: 1.4rem;
         line-height: 0rem;
     }
-    .why-slider .swiper-slide {
+
+    .why-slider .swiper-sd {
         padding: 4.5rem 1rem 3rem 2rem;
         margin-bottom: 1rem;
     }
+
     .tour-img img {
         max-width: 60%;
     }
+
     .client-container {
         margin: 6rem 0 6rem 0;
         margin-left: calc((100% - 90%) / 2);
     }
+
     .client-container .client-say h2 {
         font-size: 4rem;
         line-height: 5rem;
     }
+
     .client-container .client-say p {
         font-size: 1.4rem;
         line-height: 2.5rem;
     }
+
     .client-container .client-say p span {
         font-size: 2.5rem;
         line-height: 5rem;
     }
+
     .our-client-slider .swiper-slide .client-data p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
+
     .our-client-slider .swiper-slide .client-data>p {
         line-height: 2rem;
     }
-    .our-client-arrow .prev2, 
+
+    .our-client-arrow .prev2,
     .our-client-arrow .next2 {
         top: -7.4rem;
     }
+
     .our-client-arrow .next2 {
-        right: 42%;
+        right: 40%;
     }
+
     .our-client-arrow .prev2 {
-        left: 42%;
+        left: 40%;
         color: #737373;
     }
+
     #subscribe .main-title h2 {
         font-size: 4rem;
         line-height: 5rem;
     }
+
     #subscribe .main-title p {
         font-size: 1.4rem;
         line-height: 2rem;
         margin-bottom: 4.4rem;
     }
+
     .subscribe-form {
         width: 54.6rem;
         height: 5.2rem;
     }
-    .subscribe-form .subscribe {
+
+    .subscribe-form .Subscribe {
         padding: 1rem 2rem;
         font-size: 1.4rem;
     }
+
     .subscribe-form .email-form {
         font-size: 1.4rem;
     }
+
     .travel h4 {
         font-size: 1.6rem;
         line-height: 3rem;
     }
+
     #travelers ul li a {
         font-size: 1.4rem;
         line-height: 1.5rem;
     }
+
     #travelers ul li {
         font-size: 1.4rem;
         line-height: 1.5rem;
     }
+
     .travelers {
         flex-basis: 22rem;
     }
+
     .travel .travelers .tra-img img {
         max-width: 60%;
     }
+
     .travel .travelers .tra-img {
         padding-bottom: 0.5rem;
         padding-top: 0.5rem;
     }
+
     #travelers ul li {
         font-size: 1.4rem;
         line-height: 2.5rem;
     }
+
     .copyright p {
         font-size: 1.4rem;
     }
+
     .copyright {
         padding: 2rem 0 1rem 0;
     }
-   
+
+
 }
 
 /* 575-767 */
-@media screen and (max-width:767px){
+@media screen and (max-width:767px) {
+
     header .row {
         padding: 1rem 0;
     }
+
     .hero-data .search-form {
         width: 43.6rem;
         height: 4.5rem;
     }
+
     .search-form .explore {
         padding: 0.8rem 2rem;
         font-size: 1.2rem;
     }
+
     .search-form select {
         font-size: 1.2rem;
     }
+
     .hero-data p {
         font-size: 1.2rem;
         line-height: 1.8rem;
     }
+
     .hero-data h1 {
         font-size: 4rem;
         line-height: 5rem;
     }
+
     #hero .hero-data {
         position: relative;
         padding-top: 15rem;
     }
+
+    #our-tour .main-title p {
+        line-height: 2.2rem;
+    }
+
     .main-title h2 {
         font-size: 3rem;
         line-height: 4rem;
     }
+
     .main-title p {
         font-size: 1.2rem;
         line-height: 1.2rem;
         margin-bottom: 4.4rem;
     }
+
     #explore {
         margin: 3.8rem 0 3rem;
     }
-    .explore-arrow .prev, .explore-arrow .next {
+
+    .explore-arrow .prev,
+    .explore-arrow .next {
         width: 4rem;
         height: 3.6rem;
         font-size: 1.2rem;
         line-height: 3.5rem;
         top: -4.4rem;
     }
+
     .explore-slider .card-data .explore-circle {
         width: 6rem;
         height: 6.6rem;
         right: 10rem;
     }
+
+    #why-select {
+        background-size: 100% 37.2rem;
+        margin-bottom: 6rem;
+    }
+
+    .why-slider .swiper-sd {
+        padding: 2.5rem 1rem 3rem 2rem;
+        width: 68%;
+        margin-left: 7rem;
+    }
+
+    .why-select-arrow .next1 {
+        right: -2rem;
+        color: #737373;
+    }
+
+    .why-select-arrow .prev1 {
+        left: -2rem;
+        color: #737373;
+    }
+
+    #our-tour {
+        margin-top: 5rem;
+    }
+
+    #our-tour .tour-partner {
+        padding-top: 3rem;
+    }
+
+    .client-container {
+        margin: 4rem 0 0rem 0;
+        margin-left: calc((100% - 95%) / 2);
+    }
+
+    .client-container .client-say p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .client-container .client-say h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .client-container .client-say p span {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .our-client-folder {
+        margin-top: 9rem;
+    }
+
+    #our-client .our-client-slider .swiper-clt {
+        width: 37.9rem;
+        height: 32.2rem;
+        margin: 0 auto;
+    }
+
+    #subscribe .main-title h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    #subscribe .main-title p {
+        font-size: 1.2rem;
+    }
+
+    .subscribe-form {
+        width: 51.6rem;
+        height: 5.2rem;
+    }
+
+    #subscribe {
+        padding: 3.1rem 0 10rem 0;
+    }
+
+    #travelers ul li {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    #travelers ul li a {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .travel {
+        flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 1rem 4rem;
+        justify-content: normal;
+        padding-bottom: 3rem;
+    }
+
+    .copyright p {
+        font-size: 1.2rem;
+    }
+
+    #travelers {
+        padding: 3.9rem 0 0 0;
+    }
 }
-/************************************/
-/* @media screen and (max-width:1250px) {
-    header .row nav ul li a {
-        padding: 1.3rem;
-    }
-
-    header .logo {
-        width: 18rem;
-    }
-
-    header .row>a i {
-        padding-left: 1.3rem;
-    }
-} */
-
-/* @media screen and (max-width:992px) {
-    header nav>ul {
-        position: absolute;
-        top: 0;
-        right: -35%;
-        width: 35%;
-        height: 100vh;
-        transition: all 0.5s;
-        background-color: grey;
-    }
-
-    header .row nav ul li {
-        display: block;
-        width: 100%;
-    }
-
-    header .row nav ul li a {
-        display: block;
-        width: 100%;
-        padding: 1.3rem;
-    }
-
-    header .row nav ul li ul {
-        width: 100%;
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-
-    header nav ul li ul li a {
-        padding-left: 6rem;
-        width: 100%;
-        padding: 1.3rem;
-    }
-
-    header nav ul li ul li ul {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-
-    header .row nav ul li ul li ul {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-
-    header .row nav ul li ul li ul li {
-        display: block;
-        width: 100%;
-    }
-
-    header .row nav ul li ul li ul li a {
-        display: block;
-        width: 100%;
-        padding-left: 6rem;
-    }
-
-    header .row .logo {
-        order: 0;
-    }
-
-    header .row nav {
-        order: 2;
-
-    }
-
-    header .row .search {
-        order: 1;
-        margin-left: auto;
-    }
-
-    header .row .search i {
-        transition: all 0.5s;
-    }
-
-    header .row nav ul>i {
-        color: #ECECEC;
-        margin-top: 2.7rem;
-        font-size: 2.5rem;
-        text-align: right;
-        display: inline-block !important;
-        width: 100%;
-        padding-right: 1.8rem;
-    }
-
-    header .row nav ul li:hover a i {
-        transform: rotate(90deg);
-    }
-
-    header .row nav>i {
-        display: inline-block !important;
-    }
-
-    .showHide {
-        right: 0%;
-    }
-    header .row nav {
-        margin-left: 1rem;
-    }
-
-}  */
