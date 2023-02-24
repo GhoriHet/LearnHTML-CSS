@@ -1498,7 +1498,60 @@ header .row nav ul>i {
         padding: 2rem 0 1rem 0;
     }
    
+}
 
+/* 575-767 */
+@media screen and (max-width:767px){
+    header .row {
+        padding: 1rem 0;
+    }
+    .hero-data .search-form {
+        width: 43.6rem;
+        height: 4.5rem;
+    }
+    .search-form .explore {
+        padding: 0.8rem 2rem;
+        font-size: 1.2rem;
+    }
+    .search-form select {
+        font-size: 1.2rem;
+    }
+    .hero-data p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    .hero-data h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    #hero .hero-data {
+        position: relative;
+        padding-top: 15rem;
+    }
+    .main-title h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .main-title p {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        margin-bottom: 4.4rem;
+    }
+    #explore {
+        margin: 3.8rem 0 3rem;
+    }
+    .explore-arrow .prev, .explore-arrow .next {
+        width: 4rem;
+        height: 3.6rem;
+        font-size: 1.2rem;
+        line-height: 3.5rem;
+        top: -4.4rem;
+    }
+    .explore-slider .card-data .explore-circle {
+        width: 6rem;
+        height: 6.6rem;
+        right: 10rem;
+    }
 }
 /************************************/
 /* @media screen and (max-width:1250px) {
