@@ -594,7 +594,7 @@ header .row nav ul>i {
     background: #FFFFFF;
     box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
-    width: 39.9rem;
+    width: 39rem;
     height: 43.2rem;
     padding: 5rem 5.4rem 5.1rem 5.3rem;
     margin: 0 3rem 0 3rem;
@@ -750,7 +750,7 @@ header .row nav ul>i {
     align-items: center;
     padding: 0 0.9rem 0 2.3rem;
     margin: 0 auto;
-    font-family: 'Poppins';
+    
 }
 
 .subscribe-form .email-form {
@@ -758,6 +758,7 @@ header .row nav ul>i {
     font-weight: 500;
     font-size: 2rem;
     line-height: 3.4rem;
+    font-family: 'Poppins';
     color: #9B9B9B;
 }
 
@@ -956,6 +957,9 @@ header .row nav ul>i {
         margin: 17rem 0 18rem 0;
         margin-left: calc((100% - 1300px) / 2);
     }
+    #our-client .our-client-slider .swiper-clt {
+        width: 34rem;
+    }
 }
 
 /***1200-1365****/
@@ -1001,6 +1005,11 @@ header .row nav ul>i {
         font-size: 2.3rem;
         line-height: 5.5rem;
     }
+
+    #our-client .our-client-slider .swiper-clt {
+        width: 32rem;
+    }
+
 
     #explore {
         margin: 12.8rem 0 6rem;
