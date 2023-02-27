@@ -1,0 +1,158 @@
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: left-to-right;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes left-to-right {
+    from {
+        background-color: aqua;
+        transform: translateX(0px) rotate(0deg) scale(0.5);
+    }
+
+    to {
+        background-color: gray;
+        transform: translateX(1000px) rotate(360deg) scale(1);
+    }
+}
+
+.container {
+    width: 600px;
+    height: 400px;
+    background-color: aquamarine;
+    margin: 50px auto;
+    position: relative;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 50px auto;
+    animation: up-down 1s linear infinite alternate;
+}
+.bar {
+    width: 600px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 350px;
+}
+
+@keyframes up-down {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(300px);
+    }
+}
+
+.tune {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    
+}
+span {
+    display: inline-block;
+    width: 5px;
+    height: 80px;
+    background-color: red;
+    animation: tuner 1s linear infinite alternate;
+    transform-origin: center bottom;
+}
+.tune :nth-child(2){
+    background-color: blue;
+    animation-delay: 0.2s;
+}
+.tune :nth-child(3){
+    background-color: rgb(112, 112, 160);
+    animation-delay: 0.4s;
+}
+.tune :nth-child(4){
+    background-color: rgb(65, 187, 136);
+    animation-delay: 0.6s;
+}
+.tune :nth-child(5){
+    background-color: rgb(190, 189, 123);
+    animation-delay: 0.8s;
+}
+.tune :nth-child(6){
+    background-color: rgb(125, 125, 241);
+    animation-delay: 1s;
+}
+.tune :nth-child(7){
+    background-color: rgb(228, 53, 120);
+    animation-delay: 1.2s;
+}
+.tune :nth-child(8){
+    background-color: rgb(66, 183, 204);
+    animation-delay: 1.4s;
+}
+.tune :last-child{
+    background-color: rgb(87, 221, 60);
+    animation-delay: 1.6s;
+}
+
+@keyframes tuner {
+    0% {
+        transform: scaleY(0);
+    }
+    50% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+
+}
+
+.box-1 {
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    margin: 50px auto;
+}
+.ball-1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: darkgoldenrod;
+    display: inline-block;
+    animation: ball-1 1s linear infinite alternate;
+}
+.ball-2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    float: right;
+    display: inline-block;
+    animation: ball-2 1s linear infinite alternate;
+}
+
+@keyframes ball-1 {
+    from {
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(127px);
+    }
+}
+
+@keyframes ball-2 {
+    from {
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-127px);
+    }
+}
