@@ -31,7 +31,7 @@ img {
     display: block;
 }
 
-.container {
+.containor {
     max-width: 141rem;
     margin: 0 auto;
     padding: 0 2rem;
@@ -313,7 +313,7 @@ header .row nav ul>i {
     margin-bottom: 8.4rem;
 }
 
-.explore-slider .swiper-slide {
+.explore-slider .img-slider {
     transition: all 0.5s;
 }
 
@@ -322,7 +322,7 @@ header .row nav ul>i {
     margin-top: 2rem;
 }
 
-.explore-slider .swiper-slide .card-img img {
+.explore-slider .img-slider .card-img img {
     border-radius: 1rem;
     width: 100%;
     height: 36rem;
@@ -331,7 +331,7 @@ header .row nav ul>i {
     box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
 }
 
-.explore-slider .card-data {
+.explore-slider .card-text {
     padding: 3.4rem 0 2.6rem 1.4rem;
     position: relative;
     /* display: none; */
@@ -339,7 +339,7 @@ header .row nav ul>i {
     opacity: 0;
 }
 
-.explore-slider .card-data .explore-circle {
+.explore-slider .card-text .explore-cricle {
     position: absolute;
     top: -2rem;
     right: 3rem;
@@ -351,21 +351,21 @@ header .row nav ul>i {
     text-align: center;
 }
 
-.explore-slider .card-data .explore-circle span {
+.explore-slider .card-text .explore-cricle span {
     font-weight: 400;
     font-size: 7.2rem;
     line-height: 11rem;
     color: #000000;
 }
 
-.explore-slider .card-data h4 {
+.explore-slider .card-text h4 {
     font-weight: 600;
     font-size: 2.4rem;
     line-height: 3.6rem;
     color: #000000;
 }
 
-.explore-slider .card-data p {
+.explore-slider .card-text p {
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 2.1rem;
@@ -403,19 +403,19 @@ header .row nav ul>i {
     color: #737373;
 }
 
-.explore-slider .swiper-slide:hover {
+.explore-slider .img-slider:hover {
     border-radius: 1rem;
     transform: translateY(-10px);
     box-shadow: 0 4px 4px 0 rgba(0 0 0 / 0.25);
     border-radius: 1rem;
 }
 
-.explore-slider .swiper-slide:hover .card-data {
+.explore-slider .img-slider:hover .card-text {
     border-radius: 0 0 1rem 1rem;
     opacity: 1;
 }
 
-.explore-slider .swiper-slide:hover .card-img img {
+.explore-slider .img-slider:hover .card-img img {
     border-radius: 1rem 1rem 0 0;
     height: 31.6rem;
     cursor: pointer;
@@ -479,7 +479,7 @@ header .row nav ul>i {
 
 }
 
-.why-slider .why-data h4 {
+.why-slider .why-text h4 {
     font-weight: 600;
     font-size: 2.4rem;
     line-height: 3.6rem;
@@ -487,7 +487,7 @@ header .row nav ul>i {
     margin-top: 3.3rem;
 }
 
-.why-slider .why-data p {
+.why-slider .why-text p {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 2.7rem;
@@ -495,7 +495,7 @@ header .row nav ul>i {
     margin-top: 1rem;
 }
 
-.why-slider .why-data a {
+.why-slider .why-text a {
     margin-top: 3.8rem;
     text-decoration: none;
     font-weight: 500;
@@ -562,12 +562,12 @@ header .row nav ul>i {
 /**************************************/
 
 /************our client section********/
-.client-container {
+.client-containor {
     margin: 17rem 0 18rem 0;
     margin-left: calc((100% - 1370px) / 2);
 }
 
-.client-container .client-say p span {
+.client-containor .client-say p span {
     font-weight: 500;
     font-size: 3rem;
     line-height: 7rem;
@@ -575,14 +575,14 @@ header .row nav ul>i {
     color: #626262;
 }
 
-.client-container .client-say h2 {
+.client-containor .client-say h2 {
     font-weight: 600;
     font-size: 6rem;
     line-height: 7rem;
     color: #020202;
 }
 
-.client-container .client-say p {
+.client-containor .client-say p {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 4rem;
@@ -700,8 +700,8 @@ header .row nav ul>i {
     color: #737373;
 }
 
-/********subscribe section************/
-#subscribe {
+/********Subcribe section************/
+#subcribe {
     background: url(../images/nature1.jpg);
     padding: 3.1rem 0 15rem 0;
     background-position: center center;
@@ -713,7 +713,7 @@ header .row nav ul>i {
     z-index: -2;
 }
 
-#subscribe::before {
+#subcribe::before {
     z-index: -1;
     content: '';
     position: absolute;
@@ -721,7 +721,7 @@ header .row nav ul>i {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#subscribe .main-title h2 {
+#subcribe .main-title h2 {
     z-index: 1;
     color: var(--secondary-color);
     font-weight: 600;
@@ -730,7 +730,7 @@ header .row nav ul>i {
     text-align: center;
 }
 
-#subscribe .main-title p {
+#subcribe .main-title p {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 3.4rem;
@@ -738,7 +738,7 @@ header .row nav ul>i {
     color: #DFDFDF;
 }
 
-.subscribe-form {
+.Subcribe-form {
     width: 73.6rem;
     height: 7.2rem;
     background: #FFFFFF;
@@ -753,15 +753,16 @@ header .row nav ul>i {
     font-family: 'Poppins';
 }
 
-.subscribe-form .email-form {
+.Subcribe-form .email-form {
     border: none;
     font-weight: 500;
     font-size: 2rem;
     line-height: 3.4rem;
     color: #9B9B9B;
+    font-family: 'Poppins';
 }
 
-.subscribe-form .Subscribe {
+.Subcribe-form .Subscribe {
     background-color: #000;
     color: var(--secondary-color);
     border-radius: 38rem;
@@ -938,7 +939,7 @@ header .row nav ul>i {
 
 /****1366-1440****/
 @media screen and (max-width:1440px) {
-    .container {
+    .containor {
         max-width: 137rem;
     }
 
@@ -952,7 +953,7 @@ header .row nav ul>i {
         color: #737373;
     }
 
-    .client-container {
+    .client-containor {
         margin: 17rem 0 18rem 0;
         margin-left: calc((100% - 1300px) / 2);
     }
@@ -960,11 +961,11 @@ header .row nav ul>i {
 
 /***1200-1365****/
 @media screen and (max-width:1365px) {
-    .container {
+    .containor {
         max-width: 95%;
     }
 
-    .client-container {
+    .client-containor {
         margin: 17rem 0 18rem 0;
         margin-left: calc((100% - 90%) / 2);
     }
@@ -1006,21 +1007,21 @@ header .row nav ul>i {
         margin: 12.8rem 0 6rem;
     }
 
-    .explore-slider .card-data h4 {
+    .explore-slider .card-text h4 {
         font-size: 2rem;
     }
 
-    .explore-slider .card-data p {
+    .explore-slider .card-text p {
         font-size: 1.6rem;
         line-height: 21px;
     }
 
-    .explore-slider .card-data .explore-circle {
+    .explore-slider .card-text .explore-cricle {
         width: 7rem;
         height: 6.6rem;
     }
 
-    .explore-slider .card-data .explore-circle span {
+    .explore-slider .card-text .explore-cricle span {
         font-size: 6.2rem;
         line-height: 10rem;
     }
@@ -1045,18 +1046,18 @@ header .row nav ul>i {
         margin-bottom: 2rem;
     }
 
-    .why-slider .why-data h4 {
+    .why-slider .why-text h4 {
         font-size: 2rem;
         line-height: 2.6rem;
         margin-top: 3rem;
     }
 
-    .why-slider .why-data p {
+    .why-slider .why-text p {
         font-size: 1.6rem;
         line-height: 2rem;
     }
 
-    .why-slider .why-data a {
+    .why-slider .why-text a {
         margin-top: 3rem;
         font-size: 1.6rem;
         line-height: 2rem;
@@ -1066,12 +1067,12 @@ header .row nav ul>i {
         max-width: 90%;
     }
 
-    .client-container .client-say h2 {
+    .client-containor .client-say h2 {
         font-size: 5rem;
         line-height: 6rem;
     }
 
-    .client-container .client-say p {
+    .client-containor .client-say p {
         font-size: 1.6rem;
         line-height: 3.5rem;
     }
@@ -1082,17 +1083,17 @@ header .row nav ul>i {
         padding-top: 4.2rem;
     }
 
-    #subscribe .main-title h2 {
+    #subcribe .main-title h2 {
         font-size: 5rem;
         line-height: 6rem;
     }
 
-    #subscribe .main-title p {
+    #subcribe .main-title p {
         font-size: 1.6rem;
         line-height: 3rem;
     }
 
-    .subscribe-form .email-form {
+    .Subcribe-form .email-form {
         font-size: 1.8rem;
         line-height: 3rem;
     }
@@ -1218,7 +1219,7 @@ header .row nav ul>i {
         padding-top: 3.9rem;
     }
 
-    .client-container {
+    .client-containor {
         margin: 13rem 0 10rem 0;
         margin-left: calc((100% - 90%) / 2);
     }
@@ -1261,7 +1262,7 @@ header .row nav ul>i {
 
 /*768-991*/
 @media screen and (max-width:991px) {
-    .container {
+    .containor {
         max-width: 100%;
     }
 
@@ -1414,7 +1415,7 @@ header .row nav ul>i {
         margin-bottom: 7.4rem;
     }
 
-    .explore-slider .card-data p {
+    .explore-slider .card-text p {
         font-size: 1.4rem;
         line-height: 2rem;
     }
@@ -1427,11 +1428,11 @@ header .row nav ul>i {
         margin-bottom: 1.4rem;
     }
 
-    .why-slider .why-data p {
+    .why-slider .why-text p {
         font-size: 1.4rem;
     }
 
-    .why-slider .why-data a {
+    .why-slider .why-text a {
         margin-top: 2rem;
         font-size: 1.4rem;
         line-height: 0rem;
@@ -1446,22 +1447,22 @@ header .row nav ul>i {
         max-width: 60%;
     }
 
-    .client-container {
+    .client-containor {
         margin: 6rem 0 6rem 0;
         margin-left: calc((100% - 90%) / 2);
     }
 
-    .client-container .client-say h2 {
+    .client-containor .client-say h2 {
         font-size: 4rem;
         line-height: 5rem;
     }
 
-    .client-container .client-say p {
+    .client-containor .client-say p {
         font-size: 1.4rem;
         line-height: 2.5rem;
     }
 
-    .client-container .client-say p span {
+    .client-containor .client-say p span {
         font-size: 2.5rem;
         line-height: 5rem;
     }
@@ -1488,28 +1489,28 @@ header .row nav ul>i {
         color: #737373;
     }
 
-    #subscribe .main-title h2 {
+    #subcribe .main-title h2 {
         font-size: 4rem;
         line-height: 5rem;
     }
 
-    #subscribe .main-title p {
+    #subcribe .main-title p {
         font-size: 1.4rem;
         line-height: 2rem;
         margin-bottom: 4.4rem;
     }
 
-    .subscribe-form {
+    .Subcribe-form {
         width: 54.6rem;
         height: 5.2rem;
     }
 
-    .subscribe-form .Subscribe {
+    .Subcribe-form .Subscribe {
         padding: 1rem 2rem;
         font-size: 1.4rem;
     }
 
-    .subscribe-form .email-form {
+    .Subcribe-form .email-form {
         font-size: 1.4rem;
     }
 
@@ -1621,7 +1622,7 @@ header .row nav ul>i {
         top: -4.4rem;
     }
 
-    .explore-slider .card-data .explore-circle {
+    .explore-slider .card-text .explore-cricle {
         width: 6rem;
         height: 6.6rem;
         right: 10rem;
@@ -1656,22 +1657,22 @@ header .row nav ul>i {
         padding-top: 3rem;
     }
 
-    .client-container {
+    .client-containor {
         margin: 4rem 0 0rem 0;
         margin-left: calc((100% - 95%) / 2);
     }
 
-    .client-container .client-say p {
+    .client-containor .client-say p {
         font-size: 1.2rem;
         line-height: 2rem;
     }
 
-    .client-container .client-say h2 {
+    .client-containor .client-say h2 {
         font-size: 3rem;
         line-height: 4rem;
     }
 
-    .client-container .client-say p span {
+    .client-containor .client-say p span {
         font-size: 2rem;
         line-height: 3rem;
     }
@@ -1686,21 +1687,21 @@ header .row nav ul>i {
         margin: 0 auto;
     }
 
-    #subscribe .main-title h2 {
+    #subcribe .main-title h2 {
         font-size: 3rem;
         line-height: 3rem;
     }
 
-    #subscribe .main-title p {
+    #subcribe .main-title p {
         font-size: 1.2rem;
     }
 
-    .subscribe-form {
+    .Subcribe-form {
         width: 51.6rem;
         height: 5.2rem;
     }
 
-    #subscribe {
+    #subcribe {
         padding: 3.1rem 0 10rem 0;
     }
 
@@ -1712,6 +1713,10 @@ header .row nav ul>i {
     #travelers ul li a {
         font-size: 1.2rem;
         line-height: 2rem;
+    }
+
+    .travelers {
+        flex-basis: 31rem;
     }
 
     .travel {
@@ -1729,4 +1734,410 @@ header .row nav ul>i {
     #travelers {
         padding: 3.9rem 0 0 0;
     }
+}
+
+/* 480-574 */
+@media screen and (max-width:574px) {
+    header .row nav ul li a {
+        font-size: 1.2rem;
+        padding: 1rem 1.3rem;
+    }
+
+    header .row nav ul>i {
+        font-size: 1.8rem;
+        padding-right: 2.4rem;
+        margin-top: 1.7rem;
+    }
+
+    header .row>a i {
+        font-size: 1.4rem;
+    }
+
+    #hero {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .hero-data .search-form {
+        position: relative;
+    }
+
+    .hero-data h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .hero-data h1+p {
+        padding-bottom: 0rem;
+        margin-top: 1rem;
+    }
+
+    .hero-data>p {
+        margin-top: 7rem;
+        padding-bottom: 0;
+    }
+
+    .main-title h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .main-title p {
+        font-size: 1.2rem;
+        line-height: 1rem;
+        margin-bottom: 3.4rem;
+    }
+
+    .search-form select {}
+
+    .search-form .explore {
+        position: absolute;
+        padding: 1.2rem 2rem;
+        font-size: 1.2rem;
+        top: 5.4rem;
+        left: 50%;
+        transform: translate(-50%);
+        margin-bottom: 1rem;
+    }
+
+    .explore-arrow .prev,
+    .explore-arrow .next {
+        top: -2.4rem;
+    }
+
+    .explore-slider .img-slider {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .explore-slider .card-text h4 {
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+    }
+
+    .explore-slider .card-text p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .explore-slider .card-text {
+        padding: 2rem 0 1.6rem 1.4rem;
+    }
+
+    .explore-slider .card-text .explore-cricle {
+        width: 5rem;
+        height: 5rem;
+        right: 3rem;
+    }
+
+    .explore-slider .card-text .explore-cricle span {
+        font-size: 5rem;
+        line-height: 7.5rem;
+    }
+
+    .explore-slider .img-slider .card-img img {
+        height: 28rem;
+    }
+
+    .explore-slider .img-slider:hover .card-img img {
+        height: 27.6rem;
+    }
+
+    #explore {
+        margin: 2rem 0 0rem;
+    }
+
+    .why-select-arrow .prev1,
+    .why-select-arrow .next1 {
+        width: 4rem;
+        height: 3.6rem;
+        font-size: 1.4rem;
+        line-height: 3.7rem;
+        top: -0.4rem;
+    }
+
+    .why-slider .why-text h4 {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        margin-top: 2rem;
+    }
+
+    .why-slider .why-text p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .why-slider .why-text a {
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .why-slider .why-img {
+        width: 7.5rem;
+        height: 6.7rem;
+    }
+
+    .why-slider .swiper-sd {
+        padding: 1.5rem 0rem 3rem 1rem;
+        width: 60%;
+        margin: 5rem auto;
+    }
+
+    #why-select {
+        background-size: 100% 27.2rem;
+        margin-bottom: 0rem;
+    }
+
+    #our-tour .main-title p {
+        line-height: 1.5rem;
+    }
+
+    .tour-img img {
+        max-width: 50%;
+    }
+
+    #our-tour .tour-partner {
+        padding-top: 1.5rem;
+    }
+
+    #our-tour {
+        margin-top: -2rem;
+    }
+
+    .client-containor .client-say p span {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .client-containor .client-say h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .our-client-arrow .prev2,
+    .our-client-arrow .next2 {
+        width: 4rem;
+        height: 3.6rem;
+        font-size: 1.4rem;
+        line-height: 3.5rem;
+        top: -5.4rem;
+    }
+
+    .our-client-slider .swiper-slide .client-img img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .our-client-slider .swiper-slide .client-data h4 {
+        font-size: 1.8rem;
+        line-height: 1rem;
+        padding-top: 3.2rem;
+    }
+
+    .our-client-slider .swiper-slide .client-data p {
+        font-size: 1.2rem;
+    }
+
+    .our-client-slider .swiper-slide .client-data a {
+        padding-top: 3rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .our-client-slider .swiper-wrapper {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    #our-client .our-client-slider .swiper-clt {
+        width: 30.9rem;
+        height: 27.2rem;
+    }
+
+    #subcribe .main-title h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    #subcribe .main-title p {
+        font-size: 1.2rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .travelers {
+        flex-basis: 23rem;
+    }
+
+    .Subcribe-form {
+        width: 40.6rem;
+        height: 3.8rem;
+        position: relative;
+    }
+
+    .Subcribe-form .Subscribe {
+        position: absolute;
+        top: 5rem;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+}
+
+/* 320-479 */
+@media screen and (max-width:479px) {
+    .logo img {
+        max-width: 60%;
+    }
+
+    header .row {
+        flex-wrap: nowrap;
+    }
+
+    header .row nav>i {
+        font-size: 1.4rem;
+    }
+
+    header .row>a i {
+        font-size: 1.2rem;
+    }
+
+    .hero-data .search-form {
+        flex-direction: column;
+        width: 60%;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0.8rem;
+        border-radius: 1.2rem;
+        align-items: revert;
+    }
+
+    .search-form .explore {
+        position: absolute;
+        top: 14.8rem;
+        left: 40%;
+    }
+
+    .search-form select {
+        padding: 1rem 1.5rem;
+    }
+
+    .Subcribe-form {
+        width: 28.6rem;
+        height: 3.8rem;
+        position: relative;
+    }
+
+    .Subcribe-form .email-form {
+        font-size: 1.2rem;
+    }
+
+    .hero-data h1 {
+        font-size: 2.8rem;
+        line-height: 3rem;
+    }
+
+    .main-title h2 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .main-title p {
+        line-height: 1.5rem;
+    }
+
+    .explore-slider .img-slider:hover .card-img img {
+        height: 20.6rem;
+    }
+
+    .explore-slider .img-slider .card-img img {
+        height: 23rem;
+    }
+
+    .explore-slider .card-text h4 {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+
+    .explore-slider .card-text p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .explore-slider .card-text .explore-cricle {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .explore-slider .card-text .explore-cricle span {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+
+    .why-slider .swiper-sd {
+        width: 90%;
+    }
+
+    .why-slider .why-img {
+        width: 6.5rem;
+        height: 5.7rem;
+    }
+
+    .client-containor .client-say h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .client-containor .client-say p span {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .our-client-slider .swiper-slide .client-img img {
+        width: 8rem;
+        height: 8rem;
+        top: -25%;
+    }
+
+    .our-client-slider .swiper-slide .client-data h4 {
+        font-size: 1.5rem;
+        padding-top: 1.2rem;
+    }
+
+    .our-client-slider .swiper-slide .client-data a i {
+        font-size: 1rem;
+    }
+
+    .our-client-slider .swiper-slide .client-data a {
+        padding-top: 1rem;
+    }
+
+    #our-client .our-client-slider .swiper-clt {
+        width: 25.9rem;
+    }
+
+    .our-client-arrow .prev2,
+    .our-client-arrow .next2 {
+        top: -4rem;
+    }
+
+    .our-client-arrow .next2 {
+        right: 36%;
+    }
+
+    .our-client-arrow .prev2 {
+        left: 36%;
+    }
+
+    .our-client-folder {
+        margin-top: 4rem;
+    }
+
+    #subcribe .main-title h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .copyright {
+        padding: 1rem 0 0.5rem 0;
+    }
+
 }
