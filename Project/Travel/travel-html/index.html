@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Home</title>
+    <title>Home Page</title>
 </head>
 
 <body>
@@ -60,7 +62,7 @@
         <section id="hero">
             <div class="containor">
                 <div class="hero-data">
-                    <h1>Make in <br> your journey.</h1>
+                    <h1 class="wow  animate__animated animate__flash animate__slow">Make in <br> your journey.</h1>
                     <p>Explore the world with what you love beautiful <br> natural beauty.</p>
 
                     <form action="" class="search-form">
@@ -92,9 +94,9 @@
         <section id="explore">
             <div class="containor">
                 <div class="main-title">
-                    <h2>Explore new worlds with <br>
+                    <h2 class="wow animate__animated animate__fadeInLeft animate__slow">Explore new worlds with <br>
                         exotic natural scenery</h2>
-                    <p>Explore the world with what you love beautiful natural beauty.</p>
+                    <p class="wow animate__animated animate__fadeInLeft animate__slow">Explore the world with what you love beautiful natural beauty.</p>
                 </div>
                 <div class="explore-select-folder">
                     <div class="explore-arrow">
@@ -107,7 +109,7 @@
                     </div>
                     <div class="swiper explore-slider">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow animate__animated animate__fadeInLeft animate__slow">
                                 <div class="img-slider">
                                     <div class="card-img">
                                         <img src="./assets/images/explore-1.jpg" alt="">
@@ -121,7 +123,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow animate__animated animate__fadeInUp animate__slow">
                                 <div class="img-slider">
                                     <div class="card-img">
                                         <img src="./assets/images/explore-2.jpg" alt="">
@@ -135,7 +137,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide wow animate__animated animate__fadeInRight animate__slow">
                                 <div class="img-slider">
                                     <div class="card-img">
                                         <img src="./assets/images/explore-3.jpg" alt="">
@@ -246,7 +248,7 @@
         <section id="why-select">
             <div class="containor">
                 <div class="main-title">
-                    <h2>Why choose Us?</h2>
+                    <h2 class="wow animate__animated animate__slideInDown animate__slow">Why choose Us?</h2>
                     <p>our services have been trusted by world travelers.</p>
                 </div>
                 <div class="why-select-folder">
@@ -260,7 +262,7 @@
                     </div>
                     <div class="swiper why-slider">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide ">
                                 <div class="swiper-sd">
                                     <div class="why-img">
                                         <img src="./assets/images/grp-1.png" alt="">
@@ -393,20 +395,20 @@
                         alteration </p>
                 </div>
                 <div class="tour-partner">
-                    <div class="tour-img">
-                        <img src="./assets/images/tourp1.png" alt="">
+                    <div class="tour-img wow animate__animated animate__rollOut animate__slow">
+                        <img src="./assets/images/tour-1.png" alt="">
                     </div>
-                    <div class="tour-img">
-                        <img src="./assets/images/tourp2.png" alt="">
+                    <div class="tour-img wow animate__animated animate__rollOut animate__slow">
+                        <img src="./assets/images/tour-2.png" alt="">
                     </div>
-                    <div class="tour-img">
-                        <img src="./assets/images/tourp3.png" alt="">
+                    <div class="tour-img wow animate__animated animate__rollOut animate__slow">
+                        <img src="./assets/images/tour-3.png" alt="">
                     </div>
-                    <div class="tour-img">
-                        <img src="./assets/images/tourp4.png" alt="">
+                    <div class="tour-img wow animate__animated animate__rollOut animate__slow">
+                        <img src="./assets/images/tour-4.png" alt="">
                     </div>
-                    <div class="tour-img">
-                        <img src="./assets/images/tourp5.png" alt="">
+                    <div class="tour-img wow animate__animated animate__rollOut animate__slow">
+                        <img src="./assets/images/tour-5.png" alt="">
                     </div>
                 </div>
 
@@ -739,7 +741,13 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script>
+        new WOW().init();
+    </script>
     <script>
         window.onscroll = function () {
             console.log("scroll")
@@ -815,7 +823,7 @@
                 },
             },
         }); 
-    </script> 
+    </script>
     <script>
         var swiper2 = new Swiper(".our-client-slider", {
             slidesPerView: 1,
