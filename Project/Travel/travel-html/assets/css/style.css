@@ -594,9 +594,7 @@ header .row nav ul>i {
     background: #FFFFFF;
     box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
-
     /* width: 39.9rem; */
-
     height: 43.2rem;
     padding: 5rem 5.4rem 5.1rem 5.3rem;
     margin: 0 4rem 0 5rem;
@@ -711,6 +709,7 @@ header .row nav ul>i {
     position: relative;
     /* background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: multiply; */
+
     z-index: -2;
 }
 
@@ -2061,4 +2060,5 @@ header .row nav ul>i {
     .copyright {
         padding: 1rem 0 0.5rem 0;
     }
+    
 }
