@@ -750,7 +750,7 @@ header .row nav ul>i {
     align-items: center;
     padding: 0 0.9rem 0 2.3rem;
     margin: 0 auto;
-    font-family: 'Poppins';
+   
 }
 
 .Subcribe-form .email-form {
@@ -759,6 +759,7 @@ header .row nav ul>i {
     font-size: 2rem;
     line-height: 3.4rem;
     color: #9B9B9B;
+    font-family: 'Poppins';
 }
 
 .Subcribe-form .Subscribe {
