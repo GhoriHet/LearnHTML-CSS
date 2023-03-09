@@ -10,7 +10,8 @@ html {
 
 body {
     font-family: 'Alegreya';
-    background-color: black;
+    /* background-color: black; */
+    color: #fff;
 }
 
 img {
@@ -25,10 +26,28 @@ ul {
 a {
     text-decoration: none;
 }
+/********UTILITY CLASS*******/
+.btn-theme {
+    background-color: #C8191C;
+    padding: 15px 70px;
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 700;
+}
+/***************************/
 
 /********Header***********/
-.main-header {
+header {
     padding-top: 4rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    z-index: 9;
+}
+
+.main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,23 +63,80 @@ a {
     font-size: 1.8rem;
     line-height: 2.4rem;
     color: #FFFFFF;
-}   
+}
+
 .main-header ul li:last-child a {
     margin-right: 0;
 }
+
 .main-header ul li a:hover {
     color: #C8191C;
 }
+
 /************************/
 
+/********HERO SECTION********/
+#hero {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-@media screen and (min-width:1500px){
+}
+
+#hero::after {
+    content: '';
+    background: url(../images/bgcwall.png) top center no-repeat;
+    position: absolute;
+    inset: 0;
+    opacity: 0.08;
+    background-size: 100% auto;
+}
+
+.hero-data {
+    padding: 40rem 0 35rem;
+    text-align: center;
+    z-index: 99;
+    position: relative;
+}
+
+.hero-data h1 {
+    font-weight: 700;
+    font-size: 13rem;
+    line-height: 16rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-data p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4r;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 5.5rem 0;
+}
+
+.hero-data span {
+    color: #C8191C;
+}
+
+
+/****************************/
+
+
+@media screen and (min-width:1500px) {
     .container {
         max-width: 150rem;
         padding: 0 1rem;
     }
 }
-@media screen and (min-width:1700px){
+
+@media screen and (min-width:1700px) {
     .container {
         max-width: 170rem;
         padding: 0 1rem;
