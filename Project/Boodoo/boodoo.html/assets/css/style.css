@@ -2,49 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
+   }
+   
+   html {
     font-size: 62.5%;
-}
-
-body {
+   }
+   
+   body {
     font-family: 'Alegreya';
-    /* background-color: black; */
-    color: #fff;
-}
-
-img {
+    /* background-color: brown; */
+   }
+   
+   ul {
+    list-style-type: none;
+   }
+   
+   a {
+    text-decoration: none;
+   }
+   
+   img {
     max-width: 100%;
     display: block;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-/********UTILITY CLASS*******/
-.btn-theme {
-    background-color: #C8191C;
-    padding: 15px 70px;
-    font-size: 2.4rem;
-    color: #fff;
-    font-weight: 700;
-}
-/***************************/
-
-/********Header***********/
-header {
+   }
+   
+   /*********header************/
+   header {
     padding-top: 4rem;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-
     z-index: 9;
+    background: black;
 }
 
 .main-header {
@@ -73,72 +63,165 @@ header {
     color: #C8191C;
 }
 
-/************************/
-
-/********HERO SECTION********/
-#hero {
-    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-    width: 100%;
-    height: 100vh;
+   
+   
+   
+   /**************************/
+   
+   /*********Hero Section**********/
+   #hero {
     position: relative;
     top: 0;
-    left: 0;
-
-}
-
-#hero::after {
+    width: 100%;
+    /* height: 100vh; */
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    display: flex;
+    background-position: center center;
+    background-size: cover;
+    /* z-index: -9; */
+   }
+   
+   #hero::before {
     content: '';
-    background: url(../images/bgcwall.png) top center no-repeat;
     position: absolute;
+    background-image: url(../images/bgcwall.png);
     inset: 0;
-    opacity: 0.08;
+    opacity: 0.5;
     background-size: 100% auto;
-}
-
-.hero-data {
-    padding: 40rem 0 35rem;
-    text-align: center;
-    z-index: 99;
+    background-position: top center;
+    background-repeat: no-repeat;
+   }
+   
+   .hero-data {
     position: relative;
-}
-
-.hero-data h1 {
+    z-index: 99;
+    text-align: center;
+    margin-bottom: 30rem;
+   }
+   
+   .hero-data h1 {
     font-weight: 700;
     font-size: 13rem;
     line-height: 16rem;
-    text-align: center;
     color: #FFFFFF;
-}
-
-.hero-data p {
+    margin-top: 30rem;
+   
+   }
+   
+   .hero-data h1 span {
+    color: #C8191C;
+   }
+   
+   .hero-data p {
+    padding: 5.5rem 0;
     font-weight: 400;
     font-size: 1.8rem;
-    line-height: 2.4r;
-    text-align: center;
+    line-height: 2.4rem;
     color: #FFFFFF;
     max-width: 90rem;
     margin: 0 auto;
-    padding: 5.5rem 0;
-}
-
-.hero-data span {
+   }
+   
+   .btn-theme {
+    padding: 15px 70px;
+    width: 300px;
+    height: 63px;
+    background: #C8191C;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    color: #FFFFFF;
+   
+   }
+   
+   /**************************/
+   
+   /******Descover*************/
+   #discover {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+    width: 100%;
+   
+   }
+   
+   .discover-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17.2rem;
+   }
+   
+   .discover-icons h3 {
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 7.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+   }
+   
+   .main-title h5 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
     color: #C8191C;
-}
-
-
-/****************************/
-
-
-@media screen and (min-width:1500px) {
+   }
+   
+   .main-title h2 {
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 114px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+   }
+   
+   .discover-with p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 12rem;
+   }
+   .discover-with h5{
+    margin-top: 2.8rem;
+   }
+   .with-img img{
+    width: 729px;
+    height: 506px;
+    object-position: center center;
+    object-fit: cover;
+   }
+   .with-data{
+    padding-left: 15rem;
+    position: relative;
+   }
+   .with-data::before{
+    content: '';
+    position: absolute;
+    width: 0rem;
+    height: 46rem;
+    border: 1px solid #FFF;
+    left: 3rem;
+    top: 3.8rem;
+   }
+   .with-data .btn-theme{
+    margin-top: 10rem;
+    display: inline-block;
+    
+   }
+   /**************************/
+   
+   @media screen and (min-width:1500px) {
     .container {
-        max-width: 150rem;
-        padding: 0 1rem;
+    max-width: 150rem;
+    padding: 0 1rem;
     }
-}
-
-@media screen and (min-width:1700px) {
+   }
+   
+   @media screen and (min-width:1700px) {
     .container {
-        max-width: 170rem;
-        padding: 0 1rem;
+    max-width: 170rem;
+    padding: 0 1rem;
     }
-}
+   }
