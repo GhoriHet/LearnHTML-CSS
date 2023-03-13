@@ -301,6 +301,38 @@ header {
 }
 /************************/
 
+/*********WHY_CHOOSE*********/
+#why_choose {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    padding: 20rem 0rem;
+}
+#why_choose .why_boodoo {
+    text-align: center;
+}
+#why_choose .sec_head {
+    text-align: center;
+}
+#why_choose h2 {
+    font-weight: 700;
+    font-size: 8.4rem;
+    line-height: 11.4rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 17.2rem;
+}
+#why_choose h3 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    color: #FFFFFF;
+    padding: 3rem 0rem;
+}
+.why_boodoo img {
+    max-width: 100%;
+    padding-left: 13rem;
+}
+/***************************/
+
 @media screen and (min-width:1500px) {
     .container {
         max-width: 150rem;
