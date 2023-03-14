@@ -5,95 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>Home</title>
+
+    <!-- Alegreya font -->
     <link rel="stylesheet" href="./assets/css/fonts.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Local CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="main-header">
+            <div class="main_header">
                 <a href="#">
-                    <img src="./assets/images/logo.png" alt="">
+                    <img src="./assets/images/logo.png" alt="Boodoo">
                 </a>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Service</a></li>
-                    <li><a href="">Page</a></li>
-                    <li><a href="">Contact US</a></li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
-
     <main>
-        <section id="hero">
+        <!-- Hero Section -->
+        <section class="hero_sec">
             <div class="container">
-                <div class="hero-data">
-                    <h1>YOUR PATH TO <br> UNDERSTANDING <span>ZODIAC</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
-                        consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae. odio ullamcorper non sed
-                        dignissim eu.</p>
-                    <a href="#" class="btn-theme">Get Started</a>
+                <h1>YOUR PATH TO UNDERSTANDING <span class="red_text">ZODIAC</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu consectetur
+                    elit at. Nulla erat nunc nisl dui sed cras semper vitae. odio ullamcorper non sed dignissim eu.</p>
+                <a class="red_btn" href="#">Get Started</a>
+            </div>
+        </section>
+
+        <!-- Discover Section -->
+        <section class="discover_sec pb_200">
+            <div class="container">
+                <div class="row pb_200 justify-content-between">
+                    <div class="col-auto text-center discover_item">
+                        <div class="img_box">
+                            <img src="./assets/images/LOOKPAD.png" alt="LOOPKAD">
+                        </div>
+                        <h4>LOOPKAD</h4>
+                    </div>
+                    <div class="col-auto text-center discover_item">
+                        <div class="img_box">
+                            <img src="../assets/images/SUNSHINE.png" alt="SUNSHINE">
+                        </div>
+                        <h4>SUNSHINE</h4>
+                    </div>
+                    <div class="col-auto text-center discover_item">
+                        <div class="img_box">
+                            <img src="../assets/images/URNAME.png" alt="URNAME">
+                        </div>
+                        <h4>URNAME</h4>
+                    </div>
+                    <div class="col-auto text-center discover_item">
+                        <div class="img_box">
+                            <img src="../assets/images/LOTUSIN.png" alt="LOTUSIN">
+                        </div>
+                        <h4>LOTUSIN</h4>
+                    </div>
+                    <div class="col-auto text-center discover_item">
+                        <div class="img_box">
+                            <img src="../assets/images/GEARING.png" alt="GEARING">
+                        </div>
+                        <h4>GEARING</h4>
+                    </div>
+                </div>
+                <div class="row about_part gx-0">
+                    <div class="col-6">
+                        <div class="img_box">
+                            <img src="./assets/images/Mask group.png" class="img-fluid"
+                                alt="Discover Everything Yourself WITH BOODOO">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
+                            consactetur elit at. Nulla erat nunc nisl dui sed cras semper vitae. Tempor odio ullamcorper
+                            non sed dignissim eu.</p>
+                    </div>
+                    <div class="col-6">
+                        <div class="content">
+                            <h6>About</h6>
+                            <h3>Discover Everything Yourself WITH BOODOO</h3>
+                            <a class="red_btn" href="#">Let's get started</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="discover">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="discover-icons col-md-2">
-                        <img src="./assets/images/LOOKPAD.png" alt="">
-                        <h3>LOOKPAD</h3>
-                    </div>
-                    <div class="discover-icons col-md-2">
-                        <img src="./assets/images/SUNSHINE.png" alt="">
-                        <h3>SUNSHINE</h3>
-                    </div>
-                    <div class="discover-icons col-md-2">
-                        <img src="./assets/images/URNAME.png" alt="">
-                        <h3>URNAME</h3>
-                    </div>
-                    <div class="discover-icons col-md-2">
-                        <img src="./assets/images/LOTUSIN.png" alt="">
-                        <h3>LOTUSIN</h3>
-                    </div>
-                    <div class="discover-icons col-md-2">
-                        <img src="./assets/images/GEARING.png" alt="">
-                        <h3>GEARING</h3>
-                    </div>
-                </div>
-
-                <div class="discover-with main-title row">
-                    <div class="col-md-6">
-                        <div class="with-img row">
-                            <div class="col-md-12">
-                                <img src="./assets/images/Mask group.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula
-                                    eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae. Tempor odio
-                                    ullamcorper non sed dignissim eu.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="with-data row">
-                            <div class="col-md-12">
-                                <h5>About</h5>
-                                <h2>Discover Everything Yourself <br> WITH BOODOO</h2>
-                                <a href="#" class="btn-theme">Let's get started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <!-- super section -->
         <section id="super">
             <div class="container">
                 <div class="row">
@@ -122,81 +130,217 @@
                 </div>
             </div>
         </section>
-
-        <section id="service">
+        <!-- Service Section -->
+        <section class="service_sec pt_200 pb_200">
             <div class="container">
-                <h5>SERVICES</h5>
-                <h2>GET LATEST DAILY ZODIAC FOREST <br> AND ANALYSIS FOR SUCCESS</h2>
-                <div class="service-imgs row">
-                    <div class="col-md-6">
-                        <div class="service-data">
-                            <img src="./assets/images/service1.png" alt="">
-                            <h3>ASTROLOGICAL FORECAST</h3>
+                <div class="text-center mb_100">
+                    <h6>SERVICES</h6>
+                    <h3>Get Latest Daily Zodiac Forecast and Analysis for Success</h3>
+                </div>
+                <div class="row g-0 justify-content-between service_part">
+                    <div class="service_block">
+                        <div class="inner">
+                            <img class="img-fluid" src="./assets/images/service1.png"
+                                alt="Astrological FORECAST">
+                            <h5>Astrological FORECAST</h5>
                             <p>Lorem ipsum dolor sit amet consec Pellentesque nascetur sed tellus ut vehicula eu
-                                consectetur
-                                elit at. </p>
+                                consectetur elit at. </p>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="service-data">
-                            <img src="./assets/images/service2.png" alt="">
-                            <h3>ASTROLOGICAL Reports</h3>
+                    <div class="service_block">
+                        <div class="inner">
+                            <img class="img-fluid"  src="./assets/images/service2.png"
+                                alt="Astrological Reports">
+                            <h5>Astrological Reports</h5>
                             <p>Lorem ipsum dolor sit amet consec Pellentesque nascetur sed tellus ut vehicula eu
-                                consectetur
-                                elit at. </p>
+                                consectetur elit at. </p>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="service-data">
-                            <img src="./assets/images/service3.png" alt="">
-                            <h3>HOROSCOPE READING</h3>
+                    <div class="service_block">
+                        <div class="inner">
+                            <img class="img-fluid" src="./assets/images/service3.png" alt="HOROSCOPE READING">
+                            <h5>HOROSCOPE READING</h5>
                             <p>Lorem ipsum dolor sit amet consec Pellentesque nascetur sed tellus ut vehicula eu
-                                consectetur
-                                elit at. </p>
+                                consectetur elit at. </p>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="service-data">
-                            <img src="./assets/images/service4.png" alt="">
-                            <h3>LOVE COMPATIBILTY</h3>
+                    <div class="service_block">
+                        <div class="inner">
+                            <img class="img-fluid" src="./assets/images/service4.png" alt="LOVE COMPATIBILTY">
+                            <h5>LOVE COMPATIBILTY</h5>
                             <p>Lorem ipsum dolor sit amet consec Pellentesque nascetur sed tellus ut vehicula eu
-                                consectetur
-                                elit at. </p>
+                                consectetur elit at. </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="why_choose">
+        <!-- Why Section -->
+        <section class="why_sec">
             <div class="container">
-                <h5 class="sec_head">WHY?</h5>
-                <h2>WHY CHOOSE BOODOO</h2>
-
-                <div class="row justify-content-between why_boodoo">
-                    <div class="col-md-3">
-                        <img src="./assets/images/great experience.png" alt="">
-                        <h3>GREAT EXPERIENCE</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu consec.</p>
+                <div class="text-center mb_100">
+                    <h6>WHY</h6>
+                    <h3>WHY CHOOSE BOODOO</h3>
+                </div>
+                <div class="row gx-0 justify-content-between">
+                    <div class="col-3 text-center">
+                        <img src="./assets/images/great experience.png" class="img-fluid" alt="Great Experience">
+                        <h4>Great Experience</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
+                            consec.</p>
                     </div>
-                    <div class="col-md-3">
-                        <img src="./assets/images/data privacy.png" alt="">
-                        <h3>DATA PRIVACY</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu consec.</p>
+                    <div class="col-3 text-center">
+                        <img src="./assets/images/data privacy.png" class="img-fluid" alt="Data Privacy">
+                        <h4>Data Privacy</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
+                            consec.</p>
                     </div>
-                    <div class="col-md-3">
-                        <img src="./assets/images/best customer support.png" alt="">
-                        <h3>BEST CUSTOMER SUPPORT</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu consec.</p>
+                    <div class="col-3 text-center">
+                        <img src="./assets/images/best customer support.png" class="img-fluid"
+                            alt="Best Customer Support">
+                        <h4>Best Customer Support</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
+                            consec.</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-        </sectionn>
+        <!-- Horoscope Section -->
+        <section class="horoscope_sec pt_200 pb_200">
+            <div class="container">
+                <div class="text-center mb_100">
+                    <h6>Horoscope</h6>
+                    <h3>understanding Science of Astrology</h3>
+                </div>
+                <div class="row gx-0 mb_100">
+                    <div class="col-auto d-flex align-items-center">
+                        <img src="../assets/images/aries.png" alt="ARIES">
+                        <div class="content">
+                            <h4>ARIES</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <img src="../assets/images/taurus.png" alt="TAURUS">
+                        <div class="content">
+                            <h4>TAURUS</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <img src="../assets/images/gemini.png" alt="GEMINI">
+                        <div class="content">
+                            <h4>GEMINI</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end gx-0 mb_100">
+                    <div class="col-auto d-flex align-items-center">
+                        <img src="../assets/images/cancer.png" alt="CANCER">
+                        <div class="content">
+                            <h4>CANCER</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <img src="../assets/images/leo.png" alt="LEO">
+                        <div class="content">
+                            <h4>LEO</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <img src="../assets/images/virgo.png" alt="VIRGO">
+                        <div class="content">
+                            <h4>VIRGO</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a class="red_btn" href="#">See more</a>
+                </div>
+                <div class="row pt_200 justify-content-between">
+                    <div class="col-auto text-center">
+                        <h6>Partner</h6>
+                        <h2>189+</h2>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h6>TEAMS</h6>
+                        <h2>322+</h2>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h6>HAPPY CLient</h6>
+                        <h2>98K+</h2>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h6>serviced</h6>
+                        <h2>112k+</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section class="appointment_sec pb_200">
+            <div class="container">
+                <div class="row gx-5 align-items-center justify-content-between">
+                    <div class="col-4 title_part">
+                        <h6>Appointment</h6>
+                        <h3>LET'S MEET WITH OUR TEAM</h3>
+                    </div>
+                    <div class="col-7">
+                        <form action="/">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="form-label">FIRST NAME*</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your First Name">
+                                    <label class="form-label">YOUR PHONE*</label>
+                                    <input type="tel" class="form-control" placeholder="+44 3737 838xxx">
+                                    <label class="form-label">SERVICES*</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Choose services</option>
+                                        <option>Astrological FORECAST</option>
+                                        <option>Astrological Reports</option>
+                                        <option>HOROSCOPE READING</option>
+                                        <option>LOVE COMPATIBILTY</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label">LAST NAME*</label>
+                                    <input type="text" class="form-control" placeholder="Enter Your Last Name">
+                                    <label class="form-label">YOUR EMAIL*</label>
+                                    <input type="email" class="form-control" placeholder="youremail@domain.com">
+                                    <label class="form-label">DATE*</label>
+                                    <input type="date" class="form-control" placeholder="Choose Date">
+                                </div>
+                                <div class="col-12">
+                                    <button class="red_btn" type="submit">BookNow</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Started Section -->
+        <Section class="get_started_sec">
+            <div class="container"></div>
+                <div class="text-center">
+                    <h3>LET'S BECOME MEMBERSHIP</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae. Tempor odio ullamcorper non sed dignissim eu.</p>
+                    <a class="red_btn" href="#">Get started</a>
+                </div>
+        </Section>
     </main>
+    <footer></footer>
 
-
-    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <!-- Bootstrap Script -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

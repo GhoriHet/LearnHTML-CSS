@@ -1,229 +1,182 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
+:root {
+    --white: #ffffff;
+    --red: #C8191C;
+}
 html {
     font-size: 62.5%;
 }
-
 body {
     font-family: 'Alegreya';
+    color: var(--white);
 }
-
 ul {
     list-style-type: none;
 }
-
+li {
+    display: inline-block;
+}
 a {
     text-decoration: none;
+    display: inline-block;
+    color: var(--white);
 }
-
-img {
-    max-width: 100%;
-    display: block;
+a:hover {
+    color: var(--red);
 }
-
 p {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 0;
 }
-
-/*********header************/
+img {
+    display: inline-block;
+    object-fit: cover;
+    object-position: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 13rem;
+    line-height: 16rem;
+    margin-bottom: 5.5rem;
+}
+h2 {
+    font-size: 13rem;
+    line-height: 19rem;
+}
+h3 {
+    font-size: 8.4rem;
+    line-height: 11.4rem;
+}
+h4 {
+    font-size: 5.4rem;
+    line-height: 7.3rem;
+}
+h5 {
+    font-size: 4.4rem;
+    line-height: 6rem;
+}
+h6 {
+    color: var(--red);
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+}
+.pt_200 {
+    padding-top: 20rem;
+}
+.pb_200 {
+    padding-bottom: 20rem;
+}
+.mb_100 {
+    margin-bottom: 10rem;
+}
+.red_text {
+    color: var(--red);
+}
+.red_btn {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 1.5rem 1rem;
+    width: 30rem;
+    height: 6.3rem;
+    line-height: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    cursor: pointer;
+    border: 2px solid var(--red);
+    transition: all 0.3s;
+}
+.red_btn:hover {
+    background-color: transparent;
+    color: var(--red);
+}
+/* ========== Header ========== */
 header {
-    padding-top: 4rem;
     position: fixed;
-    left: 0;
-    top: 0;
     width: 100%;
     z-index: 999;
     background-color: black;
+    padding: 4rem 0;
 }
-
-.main-header {
+.main_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.main-header ul {
-    display: flex;
-}
-
-.main-header ul li a {
-    margin-right: 5rem;
+.main_header nav a {
     font-weight: 700;
     font-size: 1.8rem;
     line-height: 2.4rem;
-    color: #FFFFFF;
+    margin-left: 5rem;
 }
 
-.main-header ul li:last-child a {
-    margin-right: 0;
-}
-
-.main-header ul li a:hover {
-    color: #C8191C;
-}
-
-/**************************/
-
-/*********Hero Section**********/
-#hero {
-    position: relative;
-    top: 0;
-    width: 100%;
+/* ========== Hero section CSS ========== */
+.hero_sec {
     background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-    display: flex;
-    background-position: center center;
-    background-size: cover;
+    position: relative;
+    text-align: center;
+    padding: 37rem 0 32rem;
 }
-
-#hero::before {
+.hero_sec::before {
     content: '';
-    position: absolute;
-    background-image: url(../images/bgcwall.png);
-    inset: 0;
-    opacity: 0.5;
-    background-size: 100% auto;
-    background-position: top center;
+    background-image: url('../images/bgcwall.png');
     background-repeat: no-repeat;
-}
-
-.hero-data {
-    position: relative;
-    z-index: 99;
-    text-align: center;
-    margin-bottom: 30rem;
-}
-
-.hero-data h1 {
-    font-weight: 700;
-    font-size: 13rem;
-    line-height: 16rem;
-    color: #FFFFFF;
-    margin-top: 30rem;
-}
-
-.hero-data h1 span {
-    color: #C8191C;
-}
-
-.hero-data p {
-    padding: 5.5rem 0;
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    color: #FFFFFF;
-    max-width: 90rem;
-    margin: 0 auto;
-}
-
-.btn-theme {
-    padding: 15px 70px;
-    width: 300px;
-    height: 63px;
-    background: #C8191C;
-    font-weight: 600;
-    font-size: 2.4rem;
-    line-height: 3.3rem;
-    color: #FFFFFF;
-}
-
-/**************************/
-
-/******DISCOVER*************/
-#discover {
-    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
-    width: 100%;
-}
-
-.discover-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 17.2rem;
-}
-
-.discover-icons h3 {
-    font-weight: 700;
-    font-size: 5.4rem;
-    line-height: 7.3rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.main-title h5 {
-    font-weight: 700;
-    font-size: 2.4rem;
-    line-height: 3.3rem;
-    text-transform: uppercase;
-    color: #C8191C;
-}
-
-.main-title h2 {
-    font-weight: 700;
-    font-size: 8.4rem;
-    line-height: 11.4rem;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.discover-with p {
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    color: #FFFFFF;
-    margin-top: 12rem;
-}
-
-.discover-with h5 {
-    margin-top: 2.8rem;
-}
-
-.with-img img {
-    width: 72.9rem;
-    height: 50.6rem;
-    object-position: center center;
-    object-fit: cover;
-}
-
-.with-data {
-    padding-left: 15rem;
-    position: relative;
-}
-
-.with-data::before {
-    content: '';
+    background-position: top center;
     position: absolute;
-    width: 0rem;
-    height: 46rem;
-    border: 1px solid #FFF;
-    left: 3rem;
-    top: 3.8rem;
+    inset: 0;
+    opacity: 0.1;
+}
+.hero_sec .container {
+    z-index: 1;
+    position: relative;
+}
+.hero_sec h1 + p {
+    max-width: 900px;
+    margin: 0 auto 5.5rem;
 }
 
-.with-data .btn-theme {
-    margin-top: 10rem;
-    display: inline-block;
+/* ========== Discover Section ========== */
+.discover_sec {
+    background: linear-gradient(0, #000000 16.49%, #C8191C 274.79%);
+}
+.discover_sec .img_box {
+    margin-bottom: 2rem;   
+}
+.discover_sec .about_part .img_box {
+    padding-right: 9rem;
+    border-right: 0.2px solid var(--white);
+    margin-bottom: 10rem;
+    height: 50rem;
+}
+.discover_sec .about_part .img_box + p {
+    max-width: 54rem;
+}
+.discover_sec .about_part .content {
+    padding-left: 8rem;
+}
+.discover_sec .about_part .content h3 {
+    margin: 1.8rem 0 10rem;
 }
 
-/**************************/
-
-/*********SUPER***********/
+/* ========== Super Section CSS =========== */
 #super {
-    padding: 20rem 0;
+    /* padding: 20rem 0; */
+    padding: 5rem 0;
     background: linear-gradient(180deg, #000000 37.37%, #C8191C 231.27%);
 }
 
 #super h2 {
     font-weight: 700;
-    font-size: 140px;
+    font-size: 130px;
     line-height: 191px;
     color: #FFFFFF;
 }
@@ -238,111 +191,134 @@ header {
     padding-left: 8.8rem;
 }
 
-/************************/
+/* ============ Service Section CSS ============ */
 
-/*********SERVICE***********/
-#service {
-    background: linear-gradient(0deg, #000000 37.37%, #C8191C 237.79%);
-    padding: 20rem 0;
+.service_sec {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+}
+.service_sec .service_block {
+    max-width: 68rem;
+}
+.service_sec .service_part {
+    gap: 15rem;
+}
+.service_sec .service_block .inner {
+    border: 2px solid var(--white);
+    padding:  5rem;
+}
+.service_sec .service_block img {
+    height: 32.4rem;
+    width: 100%;
+}
+.service_sec h5 {
+    margin: 5rem 0 2rem;
 }
 
-#service h5 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #C8191C;
-}
+/* ============= Why section ============= */
 
-#service h2 {
-    padding-bottom: 10rem;
-    font-weight: 700;
-    font-size: 84px;
-    line-height: 114px;
-    text-align: center;
-    color: #FFFFFF;
-
-}
-
-.service-data h3 {
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 60px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.service-data {
-    padding: 5rem 6rem;
-    padding-top: 3rem;
-    border: 1px solid white;
-
-}
-
-.service-imgs p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FFFFFF;
-    max-width: 53.1rem;
-}
-.service-imgs >*:nth-of-type(odd) {
-    padding-left: 4.2rem;
-    padding-right: 7.5rem;
-    padding-bottom: 15rem;
-
-}
-.service-imgs >*:nth-of-type(even) {
-   padding-right: 4.2rem;
-   padding-left: 7.5rem;
-}
-/************************/
-
-/*********WHY_CHOOSE*********/
-#why_choose {
+.why_sec {
     background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-    padding: 20rem 0rem;
 }
-#why_choose .why_boodoo {
-    text-align: center;
+.why_sec h4 {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    margin:  3rem 0;
 }
-#why_choose .sec_head {
-    text-align: center;
+
+/* ============== Horoscope Section ============= */
+.horoscope_sec {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+
 }
-#why_choose h2 {
-    font-weight: 700;
-    font-size: 8.4rem;
-    line-height: 11.4rem;
-    color: #FFFFFF;
-    text-align: center;
-    margin-bottom: 17.2rem;
+.horoscope_sec img {
+    margin-right: 6rem;
 }
-#why_choose h3 {
+.horoscope_sec .content {
+    max-width: 18rem;
+}
+.horoscope_sec .content h4 {
+    margin-bottom: 1rem;
+}
+.horoscope_sec .row:not(:last-child) > div:not(:last-child) {
+    margin-right: 8rem;
+}
+.horoscope_sec h2 {
+    font-size: 10rem;
+    line-height: 13.6rem;
+}
+
+/* =========== Appointment Section  =========== */
+
+.appointment_sec {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+}
+.gap_80 {
+    gap: 8rem;
+}
+form > div.row {
+    margin-left: calc(var(--bs-gutter-x) * -3);
+    margin-right: calc(var(--bs-gutter-x) * -3);
+}
+form > div.row > div {
+    padding-left: calc(var(--bs-gutter-x) * 3);
+    padding-right: calc(var(--bs-gutter-x) * 3);
+}
+form label.form-label {
     font-weight: 700;
     font-size: 3.2rem;
     line-height: 4.4rem;
-    color: #FFFFFF;
-    padding: 3rem 0rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
 }
-.why_boodoo img {
-    max-width: 100%;
-    padding-left: 13rem;
+form input.form-control {
+    margin-bottom: 8rem;
 }
-/***************************/
+form input.form-control,
+form select.form-select {
+    border: 0.2rem solid var(--white);
+    padding: 1rem 3rem;
+    background-color: transparent;
+    outline: none;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    color: var(--white);
+    height: 10rem;
+}
+form select.form-select option {
+    color: #000000;
+    text-transform: lowercase;
+}
+form input.form-control:focus,
+form select.form-select:focus {
+    color: var(--white);
+    background-color: transparent;
+    border-color: var(--white);
+    outline: 0;
+    box-shadow: none;
+}
+form input::placeholder {
+    opacity: 0;
+    color: var(--white) !important;
+}
 
-@media screen and (min-width:1500px) {
+/* ======== Get Started Section ============ */
+.get_started_sec {
+    background: linear-gradient(180deg, #514242 -74.63%, #2E0A0A 38.7%, #000000 151.34%);
+    /* background-image: url(../images/bgcwall.png); */
+    background-blend-mode: multiply;
+}
+
+@media screen and (min-width: 1650px) {
     .container {
         max-width: 150rem;
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
 }
 
-@media screen and (min-width:1700px) {
+@media screen and (min-width: 1920px) {
     .container {
-        max-width: 170rem;
-        padding: 0 1rem;
+        max-width: 161rem;
+        padding: 0 2rem;
     }
 }
