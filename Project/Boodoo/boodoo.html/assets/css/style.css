@@ -431,6 +431,106 @@ form input::placeholder {
     background-color: white;
     color: red;
 }
+/* ==========HAPPY CLIENT=========== */
+#say-about {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    /* height: 100vh; */
+    padding: 20rem 0;
+}
+
+#say-about .main-title h2 {
+    max-width: 140rem;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 191px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.arrow-img img {
+    margin: 0 auto;
+    text-align: center;
+}
+.swiper-wrapper{
+    margin: 2rem 5rem;
+}
+.swiper-wrapper .client-say {
+    padding-left: 3rem;
+    width: 48rem;
+    height: 76rem;
+    
+}
+.client-say .client-img {
+    Width: 476px;
+    Height: 512px;
+    margin-bottom: 10rem;
+}
+
+.client-say .client-img img {
+    Width: 100%;
+    Height: 100%;
+   
+}
+.client-say .client-data{
+    position: relative;
+}
+.client-say .client-data span {
+    position: absolute;
+    width: 98px;
+    height: 85px;
+    color:  rgba(255, 255, 255, 0.2);
+    font-size: 30rem;
+    top: -17rem;
+    left: -3rem;
+}
+.client-say .client-data p {
+    max-width: 465px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.client-say .client-data h4 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+
+}
+.mySwiper{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.mySwiper .swiper-button-next{
+    position: absolute;
+    top: 28rem;
+    color: #FFF;
+}
+.mySwiper .swiper-button-prev{
+    position: absolute;
+    top: 28rem;
+    color: #FFF;
+    left: 0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 1650px) {
     .container {
         max-width: 150rem;
