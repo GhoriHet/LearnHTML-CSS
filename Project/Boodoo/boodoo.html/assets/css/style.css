@@ -395,8 +395,8 @@ form input::placeholder {
 .box {
     padding: 60px 80px;
     border: 2px solid white;
-    width: 466px;
-    height: 650px;
+    width: 46.6rem;
+    height: 65rem;
 }
 
 .box h4 {
@@ -405,8 +405,8 @@ form input::placeholder {
 
 .box h5 {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -418,9 +418,9 @@ form input::placeholder {
 }
 
 .box p i {
-    width: 35px;
-    height: 35px;
-    font-size: 30px;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 3rem;
 }
 .box:hover{
     background-color: red;
@@ -439,11 +439,11 @@ form input::placeholder {
     padding: 20rem 0;
 }
 
-#say-about .main-title h2 {
+#say-about .main-title h3 {
     max-width: 140rem;
     font-weight: 700;
-    font-size: 140px;
-    line-height: 191px;
+    font-size: 10rem;
+    line-height: 11.4rem;
     text-align: center;
     color: #FFFFFF;
     margin: 0 auto;
@@ -452,6 +452,7 @@ form input::placeholder {
 .arrow-img img {
     margin: 0 auto;
     text-align: center;
+    padding-top: 8rem;
 }
 .swiper-wrapper{
     margin: 2rem 5rem;
@@ -463,9 +464,10 @@ form input::placeholder {
     
 }
 .client-say .client-img {
-    Width: 476px;
-    Height: 512px;
+    Width: 47.6rem;
+    Height: 51.2rem;
     margin-bottom: 10rem;
+    padding-top: 10rem;
 }
 
 .client-say .client-img img {
@@ -478,27 +480,27 @@ form input::placeholder {
 }
 .client-say .client-data span {
     position: absolute;
-    width: 98px;
-    height: 85px;
+    width: 9.8rem;
+    height: 8.5rem;
     color:  rgba(255, 255, 255, 0.2);
     font-size: 30rem;
-    top: -17rem;
-    left: -3rem;
+    top: -26rem;
+    left: -1rem;
 }
 .client-say .client-data p {
-    max-width: 465px;
+    max-width: 46.5rem;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
     color: #FFFFFF;
 }
 
 .client-say .client-data h4 {
     font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
     color: #FFFFFF;
-
+    padding-top: 1.5rem;
 }
 .mySwiper{
     position: relative;
@@ -507,29 +509,104 @@ form input::placeholder {
 }
 .mySwiper .swiper-button-next{
     position: absolute;
-    top: 28rem;
+    top: 33rem;
     color: #FFF;
 }
 .mySwiper .swiper-button-prev{
     position: absolute;
-    top: 28rem;
+    top: 33rem;
     color: #FFF;
     left: 0rem;
 }
 
+/* =========BLOG=========== */
+#blog {
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    padding: 5rem 0;
+}
 
+#blog .main-title {
+    text-align: center;
+}
 
+.blog-data img {
+    width: 36.1rem;
+    height: 45rem;
+    object-fit: cover;
+    object-position: center;
+    padding-top: 5rem;
+}
 
+.blog-data h3 {
+    margin-top: 6rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 30rem;
+}
 
+.blog-data p {
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    max-width: 36rem;
+}
+.blog-data p:hover span a {
+    color: #0085FF;
+}
 
+/****************Feedback Section*************/
+#feedback {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    padding: 15rem 0;
+}
 
+#feedback hr {
+    border: 2px solid #ffffff;
+}
 
+.fb-data {
+    margin: 8rem 0;
+    display: flex;
+    justify-content: space-between;
+}
 
+.fb-data .maps img {
+    width: 32.1rem;
+    height: 18.5rem;
+}
 
-
-
-
-
+.fb-data h3 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.fb-data p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    padding-top: 2rem;
+}
+.fb-data .logo-blog p{
+    width: 273.75px;
+    padding-top: 2rem;
+}
+.fb-data p:hover {
+    color: #0085FF;
+}
+.copyright {
+    padding-bottom: 4.5rem;
+}
 
 @media screen and (min-width: 1650px) {
     .container {
