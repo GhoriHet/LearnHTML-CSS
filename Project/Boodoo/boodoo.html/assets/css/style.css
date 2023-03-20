@@ -133,7 +133,7 @@ header {
     width: 100%;
     z-index: 999;
     background-color: black;
-    padding: 4rem 0;
+    /* padding: 4rem 0; */
 }
 
 .main_header {
@@ -149,6 +149,24 @@ header {
     margin-left: 5rem;
 }
 
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #C8191C;
+}
+
+nav ul li a {
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #C8191C;
+}
+header .bg-dark {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+}
 /* ========== Hero section CSS ========== */
 .hero_sec {
     background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
@@ -300,6 +318,7 @@ header {
 .appointment_sec {
     background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
 }
+
 .gap_80 {
     gap: 8rem;
 }
@@ -420,18 +439,22 @@ form input::placeholder {
     height: 3.5rem;
     font-size: 3rem;
 }
-.box:hover{
+
+.box:hover {
     background-color: red;
     color: #fff;
     border: none;
 }
+
 .box:hover .red_btn {
     background-color: white;
     color: red;
 }
+
 /* ==========HAPPY CLIENT=========== */
 #say-about {
-    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);;
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    ;
     width: 100%;
     /* height: 100vh; */
     padding: 20rem 0;
@@ -452,15 +475,18 @@ form input::placeholder {
     text-align: center;
     padding-top: 8rem;
 }
-.swiper-wrapper{
+
+.swiper-wrapper {
     margin: 2rem 5rem;
 }
+
 .swiper-wrapper .client-say {
     padding-left: 3rem;
     width: 48rem;
     height: 76rem;
-    
+
 }
+
 .client-say .client-img {
     Width: 47.6rem;
     Height: 51.2rem;
@@ -471,20 +497,23 @@ form input::placeholder {
 .client-say .client-img img {
     Width: 100%;
     Height: 100%;
-   
+
 }
-.client-say .client-data{
+
+.client-say .client-data {
     position: relative;
 }
+
 .client-say .client-data span {
     position: absolute;
     width: 9.8rem;
     height: 8.5rem;
-    color:  rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.2);
     font-size: 30rem;
     top: -26rem;
     left: -1rem;
 }
+
 .client-say .client-data p {
     max-width: 46.5rem;
     font-weight: 400;
@@ -500,17 +529,20 @@ form input::placeholder {
     color: #FFFFFF;
     padding-top: 1.5rem;
 }
-.mySwiper{
+
+.mySwiper {
     position: relative;
     width: 80%;
     margin: 0 auto;
 }
-.mySwiper .swiper-button-next{
+
+.mySwiper .swiper-button-next {
     position: absolute;
     top: 33rem;
     color: #FFF;
 }
-.mySwiper .swiper-button-prev{
+
+.mySwiper .swiper-button-prev {
     position: absolute;
     top: 33rem;
     color: #FFF;
@@ -554,38 +586,58 @@ form input::placeholder {
     color: #FFFFFF;
     max-width: 36rem;
 }
+
 .blog-data p:hover span a {
     color: #0085FF;
 }
-/* =========== Footer CSS =========== */
 
+/* =========== Footer CSS =========== */
 footer {
     background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
     padding-bottom: 15rem;
 }
+
 footer ul {
     max-width: 32rem;
 }
+
 footer ul li {
     display: block;
 }
+
 footer ul li:not(:first-child) {
     margin-top: 2rem;
 }
-footer > div > div:first-of-type {
+
+footer>div>div:first-of-type {
     padding: 8rem 0;
     border-top: 0.2rem solid var(--white);
 }
-footer > div > div:last-of-type {
+
+footer>div>div:last-of-type {
     border-bottom: 0.2rem solid var(--white);
     padding-bottom: 4.5rem;
 }
 
+@media screen and (max-width: 768px) {
 
-@media screen and (min-width: 1650px) {
+    h1 {
+        font-size: 5rem;
+        line-height: 6.5rem;
+        margin-bottom: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 1650px) {
     .container {
         max-width: 150rem;
         padding: 0 2rem;
+    }
+    h1 {
+        font-size: 10rem;
+        line-height: 11rem;
+        margin-bottom: 4rem;
     }
 }
 
