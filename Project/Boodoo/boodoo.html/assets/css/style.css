@@ -1,11 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-:root {
-    --white: #ffffff;
-    --red: #C8191C;
+    box-sizing: border-box;
 }
 
 html {
@@ -14,394 +10,596 @@ html {
 
 body {
     font-family: 'Alegreya';
-    color: var(--white);
+    /* background-color: brown; */
 }
 
 ul {
     list-style-type: none;
 }
 
-li {
-    display: inline-block;
-}
-
 a {
     text-decoration: none;
-    display: inline-block;
-    color: var(--white);
-}
-
-a:hover {
-    color: var(--red);
-}
-
-p {
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    margin-bottom: 0;
 }
 
 img {
-    display: inline-block;
-    object-fit: cover;
-    object-position: center;
+    max-width: 100%;
+    display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 0;
-}
+/*********header************/
+header {}
 
-h1 {
-    font-size: 13rem;
-    line-height: 16rem;
-    margin-bottom: 5.5rem;
-}
-
-h2 {
-    font-size: 13rem;
-    line-height: 19rem;
-}
-
-h3 {
-    font-size: 8.4rem;
-    line-height: 11.4rem;
-}
-
-h4 {
-    font-size: 5.4rem;
-    line-height: 7.3rem;
-}
-
-h5 {
-    font-size: 4.4rem;
-    line-height: 6rem;
-}
-
-h6 {
-    color: var(--red);
-    font-size: 2.4rem;
-    line-height: 3.3rem;
-}
-
-.pt_200 {
-    padding-top: 20rem;
-}
-
-.pb_200 {
-    padding-bottom: 20rem;
-}
-
-.mb_100 {
-    margin-bottom: 10rem;
-}
-
-.red_text {
-    color: var(--red);
-}
-
-.red_btn {
-    background-color: var(--red);
-    color: var(--white);
-    padding: 1.5rem 1rem;
-    width: 30rem;
-    height: 6.3rem;
-    line-height: 100%;
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.4rem;
-    cursor: pointer;
-    border: 2px solid var(--red);
-    transition: all 0.3s;
-}
-
-.red_btn:hover {
-    background-color: transparent;
-    color: var(--red);
-}
-
-/* ========== Header ========== */
-header {
+.main-header {
+    padding: 4rem 2rem 2rem 2rem;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
     width: 100%;
-    z-index: 999;
-    background-color: black;
-    padding: 4rem 0;
-}
-
-.main_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #000000;
 }
 
-.main_header nav a {
+.main-header nav ul {
+    display: flex;
+}
+
+.main-header nav ul li a {
     font-weight: 700;
     font-size: 1.8rem;
     line-height: 2.4rem;
-    margin-left: 5rem;
+    color: #FFFFFF;
+    margin-right: 5rem;
+
 }
 
-/* ========== Hero section CSS ========== */
-.hero_sec {
+.main-header nav ul li a:hover {
+    color: #C8191C;
+}
+
+.main-header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+header .bg-dark {
     background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-    position: relative;
-    text-align: center;
-    padding: 37rem 0 32rem;
 }
 
-.hero_sec::before {
+header .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+header .navbar-dark .navbar-toggler {
+
+    margin-right: 2rem;
+}
+
+.navbar>.container-fluid {
+    padding: 1rem 2rem;
+}
+
+/**************************/
+
+/*********Hero Section**********/
+#hero {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    display: flex;
+    background-position: center center;
+    background-size: cover;
+}
+
+#hero::before {
     content: '';
-    background-image: url('../images/bgcwall.png');
-    background-repeat: no-repeat;
-    background-position: top center;
     position: absolute;
+    background-image: url(../images/bgcwall.png);
     inset: 0;
-    opacity: 0.1;
+    opacity: 0.2;
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
-.hero_sec .container {
-    z-index: 1;
+.hero-data {
     position: relative;
+    z-index: 999;
+    text-align: center;
+    margin-bottom: 30rem;
 }
 
-.hero_sec h1+p {
-    max-width: 900px;
-    margin: 0 auto 5.5rem;
-}
-
-/* ========== Discover Section ========== */
-.discover_sec {
-    background: linear-gradient(0, #000000 16.49%, #C8191C 274.79%);
-}
-
-.discover_sec .img_box {
-    margin-bottom: 2rem;
-}
-
-.discover_sec .about_part .img_box {
-    padding-right: 9rem;
-    border-right: 0.2px solid var(--white);
-    margin-bottom: 10rem;
-    height: 50rem;
-}
-
-.discover_sec .about_part .img_box+p {
-    max-width: 54rem;
-}
-
-.discover_sec .about_part .content {
-    padding-left: 8rem;
-}
-
-.discover_sec .about_part .content h3 {
-    margin: 1.8rem 0 10rem;
-}
-
-/* ========== Super Section CSS =========== */
-#super {
-    /* padding: 20rem 0; */
-    padding: 5rem 0;
-    background: linear-gradient(180deg, #000000 37.37%, #C8191C 231.27%);
-}
-
-#super h2 {
+.hero-data h1 {
     font-weight: 700;
-    font-size: 130px;
-    line-height: 191px;
+    font-size: 12rem;
+    line-height: 16rem;
+    color: #FFFFFF;
+    margin-top: 30rem;
+
+}
+
+.hero-data h1 span {
+    color: #C8191C;
+}
+
+.hero-data p {
+    padding: 5.5rem 0;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.btn-theme {
+    padding: 1.5rem 7rem;
+    width: 30rem;
+    height: 6.3rem;
+    background: #C8191C;
+    font-weight: 600;
+    font-size: 2.4rem;
+    /* line-height: 3.3rem; */
     color: #FFFFFF;
 }
 
-#super p {
-    max-width: 48.5rem;
-    padding-top: 11.5rem;
-}
+/**************************/
 
-.team-imgs {
-    padding-bottom: 10.4rem;
-    padding-left: 8.8rem;
-}
-
-/* ============ Service Section CSS ============ */
-
-.service_sec {
+/******Descover*************/
+#descover {
     background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
-}
-
-.service_sec .service_block {
-    max-width: 68rem;
-}
-
-.service_sec .service_part {
-    gap: 15rem;
-}
-
-.service_sec .service_block .inner {
-    border: 2px solid var(--white);
-    padding: 5rem;
-}
-
-.service_sec .service_block img {
-    height: 32.4rem;
     width: 100%;
+    padding: 10rem 0;
+    margin-top: -0.5rem;
 }
 
-.service_sec h5 {
-    margin: 5rem 0 2rem;
+.discover-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17.2rem;
 }
 
-/* ============= Why section ============= */
-
-.why_sec {
-    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-}
-
-.why_sec h4 {
-    font-size: 3.2rem;
-    line-height: 4.4rem;
-    margin: 3rem 0;
-}
-
-/* ============== Horoscope Section ============= */
-.horoscope_sec {
-    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
-}
-
-.horoscope_sec img {
-    margin-right: 6rem;
-}
-
-.horoscope_sec .content {
-    max-width: 18rem;
-}
-
-.horoscope_sec .content h4 {
-    margin-bottom: 1rem;
-}
-
-.horoscope_sec .row:not(:last-child)>div:not(:last-child) {
-    margin-right: 8rem;
-}
-
-.horoscope_sec h2 {
-    font-size: 10rem;
-    line-height: 13.6rem;
-}
-
-/* =========== Appointment Section  =========== */
-
-.appointment_sec {
-    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-}
-.gap_80 {
-    gap: 8rem;
-}
-
-form>div.row {
-    margin-left: calc(var(--bs-gutter-x) * -3);
-    margin-right: calc(var(--bs-gutter-x) * -3);
-}
-
-form>div.row>div {
-    padding-left: calc(var(--bs-gutter-x) * 3);
-    padding-right: calc(var(--bs-gutter-x) * 3);
-}
-
-form label.form-label {
+.discover-icons h3 {
     font-weight: 700;
-    font-size: 3.2rem;
-    line-height: 4.4rem;
+    font-size: 5.4rem;
+    line-height: 7.3rem;
+    text-align: center;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    color: #FFFFFF;
 }
 
-form input.form-control {
+.main-title h5 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-transform: uppercase;
+    color: #C8191C;
+}
+
+.main-title h2 {
+    font-weight: 700;
+    font-size: 8.4rem;
+    line-height: 11.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
     margin-bottom: 8rem;
 }
 
-form input.form-control,
-form select.form-select {
-    border: 0.2rem solid var(--white);
-    padding: 1rem 3rem;
-    background-color: transparent;
-    outline: none;
+.discover-with p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-top: 12rem;
+}
+
+.discover-with h5 {
+    margin-top: 2.8rem;
+}
+
+.with-img .dis-img {
+    width: 72.9rem;
+    height: 50.6rem;
+    object-position: left center;
+    object-fit: cover;
+}
+
+.with-img .dis-img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.with-data {
+    padding-left: 15rem;
+    position: relative;
+}
+
+.with-data::before {
+    content: '';
+    position: absolute;
+    width: 0rem;
+    height: 46rem;
+    border: 1px solid #FFF;
+    left: 3rem;
+    top: 3.8rem;
+}
+
+.with-data .btn-theme {
+    margin-top: 3rem;
+    display: inline-block;
+
+}
+
+/**************************/
+
+
+/************Imageine Section********/
+#imageine {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    padding: 10rem 0;
+    margin-top: -0.5rem;
+}
+
+.super-imagine h2 {
+    font-weight: 700;
+    font-size: 11rem;
+    line-height: 19.1rem;
+    color: #FFFFFF;
+}
+
+.super-imagine p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-top: 11.5rem;
+    max-width: 46rem;
+}
+
+.super-imagine .image-img {
+    width: 90rem;
+    height: 33rem;
+    object-position: center bottom;
+    object-fit: cover;
+    margin-bottom: 10rem;
+    margin-left: 4rem;
+}
+
+.super-imagine .image-img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/**************************************/
+
+/***************Service Section***************/
+#SERVICES {
+    margin-top: -0.5rem;
+    padding: 10rem 0;
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
+}
+
+#SERVICES h2,
+#SERVICES h5 {
+    text-align: center;
+}
+
+#SERVICES h2 {
+    max-width: 165rem;
+    text-align: center;
+    margin-bottom: 10rem;
+    margin: 0 auto 5rem auto;
+}
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    gap: 7rem 0;
+}
+
+.forecast .forecast-data {
+    padding: 6rem;
+}
+
+.forecast .forecast-data img {
+    width: 53rem;
+    height: 32rem;
+    object-position: center center;
+    object-fit: cover;
+}
+
+.forecast .forecast-data h4 {
+    font-size: 4.4rem;
+    line-height: 6.0rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 5rem;
+}
+
+.forecast .forecast-data p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+/**************************************/
+
+/*************Why Section*************/
+#why {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    margin-top: -0.5rem;
+    padding: 10rem 0;
+}
+
+#why .main-title {
+    text-align: center;
+}
+
+#why .main-title h2 {
+    margin-bottom: 17.2rem;
+}
+
+.why-choose {
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-choose img {
+    margin: 0 auto;
+    width: 15rem;
+    height: 15rem;
+}
+
+.why-choose h3 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.why-choose p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 1.5rem;
+}
+
+/**************************************/
+/**************Horoscope Section************/
+#Horoscope {
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    margin-top: -0.5rem;
+    padding: 10rem 0;
+}
+
+#Horoscope .main-title {
+    text-align: center;
+}
+
+#Horoscope .main-title h2 {
+    max-width: 115rem;
+    margin: 0 auto 10rem auto;
+}
+
+.hs-box {
+    display: flex;
+    gap: 0 6rem;
+    margin-bottom: 10rem;
+}
+
+.hs-row {
+    display: flex;
+    gap: 0 8.6rem;
+}
+
+.hs-box .hs-img img {
+    width: 18rem;
+    height: 18rem;
+}
+
+.hs-box .hs-data h3 {
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 7.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.hs-box .hs-data p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+}
+
+#Horoscope a {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.client {
+    margin-top: 20rem;
+    justify-content: space-between;
+}
+
+.client h5 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #C8191C;
+    text-align: left;
+}
+
+.client h2 {
+    font-weight: 700;
+    font-size: 10rem;
+    line-height: 13.6rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* text-align: center; */
+}
+
+/**************************************/
+/***********Our-team Section**************/
+#Our-team {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    margin-top: -0.5rem;
+    padding: 10rem 0;
+
+}
+
+.team-data .main-title {
+    margin: 22.4rem 0;
+}
+
+.team-data .form-label {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.form-data {
+    padding-right: 8rem;
+}
+
+.team-data .form-select,
+.team-data .form-control {
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 3.3rem;
-    color: var(--white);
-    height: 10rem;
-}
-
-form select.form-select option {
-    color: #000000;
-    text-transform: lowercase;
-}
-
-form input.form-control:focus,
-form select.form-select:focus {
-    color: var(--white);
+    color: #FFFFFF;
     background-color: transparent;
-    border-color: var(--white);
-    outline: 0;
-    box-shadow: none;
-}
-
-form input::placeholder {
-    opacity: 0;
-    color: var(--white) !important;
-}
-
-/* ======== Get Started Section ============ */
-.get_started_sec {
-    background: linear-gradient(180deg, #514242 -74.63%, #2E0A0A 38.7%, #000000 151.34%);
+    margin-bottom: 8rem;
+    margin-top: 3rem;
+    margin-right: 8rem;
+    /* padding: 3.3rem 18.6rem 3.3rem 3rem; */
     width: 100%;
-    /* height: 50.5rem; */
-    /* background-blend-mode: multiply; */
-    position: relative;
-    padding: 9rem 0;
+    padding: 3.3rem;
 }
 
-.get_started_sec::before {
+/* .team-data .form-select {
+    padding: 3.3rem 30.6rem 3.3rem 3rem;
+} */
+.form-data {}
+
+.team-data input::placeholder {
+    color: #FFF;
+}
+
+/* .team-data .date{
+    padding: 3.3rem 18.6rem 3.3rem 3rem;
+
+} */
+/**************************************/
+
+/***********Membership Section**************/
+#membership {
+    position: relative;
+    background: linear-gradient(180deg, #514242 -74.63%, #2E0A0A 38.7%, #000000 151.34%);
+    background-size: cover;
+    padding: 6rem 0 11rem 0;
+    text-align: center;
+    margin-top: -0.5rem;
+}
+
+#membership::before {
     content: '';
-    background-image: url('../images/get\ started\ Sec.png');
-    background-repeat: no-repeat;
-    background-position: top center;
+    background: url(../images/get\ started\ Sec.png);
     position: absolute;
     inset: 0;
-    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% auto;
+    opacity: 0.07;
 }
 
-.button {
+.mem-ship {
     position: relative;
-    z-index: 999;
-    padding-top: 4rem;
+    z-index: 9;
 }
 
-/* ===========member-ship=========== */
-#member-ship {
-    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
-    padding: 20rem 0;
+#membership h2 {
+    font-weight: 700;
+    font-size: 8.4rem;
+    line-height: 11.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
-.box {
-    padding: 60px 80px;
-    border: 2px solid white;
-    width: 46.6rem;
-    height: 65rem;
+#membership p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 5rem;
+    max-width: 90rem;
+    margin: 0 auto 5rem auto;
 }
 
-.box h4 {
-    color: white;
+#membership .btn-theme {}
+
+/**************************************/
+/**************Membership Price**************/
+#mem-price {
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    margin-top: -0.5rem;
+    padding: 10rem 0;
 }
 
-.box h5 {
+#mem-price .main-title {
+    text-align: center;
+}
+
+.mp-data h3 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mp-data h2 {
+    font-weight: 700;
+    font-size: 7.2rem;
+    line-height: 9.8rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 3rem;
+}
+
+.mp-data h2 span {
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 3.3rem;
@@ -410,83 +608,110 @@ form input::placeholder {
     color: #FFFFFF;
 }
 
-.box span {
-    color: #fff;
-    font-size: 2.4rem;
+.mp-data p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
 }
 
-.box p i {
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 3rem;
-}
-.box:hover{
-    background-color: red;
+.mp-data p i {
+    display: inline-block;
+    font-size: 4.4rem;
+    width: 4rem;
+    height: 4rem;
     color: #fff;
-    border: none;
+    margin-right: 2rem;
 }
-.box:hover .red_btn {
-    background-color: white;
-    color: red;
+
+.mp-data .btn-theme {
+    margin-top: 8rem;
+    display: block;
 }
-/* ==========HAPPY CLIENT=========== */
+
+.mp-data-box {
+    padding: 6rem 7.7rem;
+}
+
+.mp-data-box:hover {
+    background-color: #C8191C;
+}
+
+.mp-data-box:hover .btn-theme {
+    background-color: #FFF;
+    color: #C8191C;
+}
+
+/*********************************************/
+/*************Say about section*************/
 #say-about {
-    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);;
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
     width: 100%;
-    /* height: 100vh; */
-    padding: 20rem 0;
+    margin-top: -0.5rem;
+    padding: 10rem 0;
 }
 
-#say-about .main-title h3 {
-    max-width: 140rem;
+#say-about .main-title h2 {
+    max-width: 145rem;
     font-weight: 700;
-    font-size: 10rem;
-    line-height: 11.4rem;
+    font-size: 12rem;
+    line-height: 16.1rem;
     text-align: center;
     color: #FFFFFF;
     margin: 0 auto;
 }
 
+/* .arrow-img {
+    width: ;
+} */
 .arrow-img img {
-    margin: 0 auto;
+    margin: 0 auto 14rem auto;
     text-align: center;
-    padding-top: 8rem;
 }
-.swiper-wrapper{
+
+.swiper-wrapper {
     margin: 2rem 5rem;
 }
+
 .swiper-wrapper .client-say {
     padding-left: 3rem;
-    width: 48rem;
-    height: 76rem;
-    
+    /* width: 48rem;
+    height: 76rem; */
+    margin: 0 2.1rem;
 }
+
 .client-say .client-img {
     Width: 47.6rem;
     Height: 51.2rem;
     margin-bottom: 10rem;
-    padding-top: 10rem;
+
 }
 
 .client-say .client-img img {
     Width: 100%;
     Height: 100%;
-   
+
 }
-.client-say .client-data{
+
+.client-say .client-data {
     position: relative;
 }
-.client-say .client-data span {
+
+.client-say .client-data img {
     position: absolute;
     width: 9.8rem;
     height: 8.5rem;
-    color:  rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.2);
     font-size: 30rem;
-    top: -26rem;
-    left: -1rem;
+    top: -5rem;
+    left: -3rem;
 }
+
 .client-say .client-data p {
-    max-width: 46.5rem;
+    max-width: 465px;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.4rem;
@@ -498,30 +723,37 @@ form input::placeholder {
     font-size: 2.4rem;
     line-height: 3.3rem;
     color: #FFFFFF;
-    padding-top: 1.5rem;
-}
-.mySwiper{
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-}
-.mySwiper .swiper-button-next{
-    position: absolute;
-    top: 33rem;
-    color: #FFF;
-}
-.mySwiper .swiper-button-prev{
-    position: absolute;
-    top: 33rem;
-    color: #FFF;
-    left: 0rem;
+
 }
 
-/* =========BLOG=========== */
+.mySwiper {
+    position: relative;
+    margin: 0 16rem;
+    /* padding: 0 16rem; */
+}
+
+.mySwiper .swiper-button-next {
+    position: absolute;
+    top: 28rem;
+    color: #FFF;
+    right: 1rem;
+}
+
+.mySwiper .swiper-button-prev {
+    position: absolute;
+    top: 28rem;
+    color: #FFF;
+    left: 1rem;
+}
+
+/*********************************************/
+
+/*****************Blog Section*************/
 #blog {
-    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
     width: 100%;
-    padding: 5rem 0;
+    padding: 10rem 0;
+    margin-top: -0.5rem;
 }
 
 #blog .main-title {
@@ -533,7 +765,6 @@ form input::placeholder {
     height: 45rem;
     object-fit: cover;
     object-position: center;
-    padding-top: 5rem;
 }
 
 .blog-data h3 {
@@ -554,44 +785,550 @@ form input::placeholder {
     color: #FFFFFF;
     max-width: 36rem;
 }
-.blog-data p:hover span a {
-    color: #0085FF;
-}
-/* =========== Footer CSS =========== */
 
-footer {
-    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-    padding-bottom: 15rem;
+.contact p a {
+    margin-right: 2.1rem;
+    color: #FFFFFF;
 }
-footer ul {
-    max-width: 32rem;
+
+.contact p a:hover {
+    color: blue;
+
 }
-footer ul li {
-    display: block;
-}
-footer ul li:not(:first-child) {
+
+.fb-data p {
     margin-top: 2rem;
 }
-footer > div > div:first-of-type {
-    padding: 8rem 0;
-    border-top: 0.2rem solid var(--white);
-}
-footer > div > div:last-of-type {
-    border-bottom: 0.2rem solid var(--white);
-    padding-bottom: 4.5rem;
-}
 
 
-@media screen and (min-width: 1650px) {
+/*********************************************/
+/****************Feedback Section*************/
+#feedback {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    padding: 10rem 0;
+    margin-top: -0.5rem;
+}
+
+#feedback hr {
+    border: none;
+    /* width: 159.4rem; */
+    height: 3px;
+    background-color: #FFF;
+    margin: 0 auto;
+}
+
+.fb-data {
+    margin: 8rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fb-data .maps img {
+    width: 32.1rem;
+    height: 18.5rem;
+}
+
+.fb-data h3 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.fb-data p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+}
+
+.fb-data .logo-blog p {
+    width: 27.3rem;
+}
+
+#feedback p span {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto 4.5rem auto;
+}
+
+.fb-data a {
+    display: block;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+
+.fb-data a i {
+    margin-right: 2rem;
+
+}
+
+.form-data {
+    padding: 0 3rem;
+}
+
+/*********************************************/
+
+@media screen and (min-width:1500px) {
     .container {
         max-width: 150rem;
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width:1700px) {
     .container {
-        max-width: 161rem;
-        padding: 0 2rem;
+        max-width: 170rem;
+        padding: 0 1rem;
+    }
+
+}
+
+@media screen and (max-width:1700px) {
+    .hero-data h1 {
+        font-size: 12rem;
+    }
+
+    .super-imagine h2 {
+        font-size: 12.5rem;
+    }
+
+    .super-imagine .image-img {
+        width: 81rem;
+    }
+
+    .with-data::before {
+        left: 7rem;
+    }
+
+    .forecast {
+        gap: 6rem 0;
+    }
+}
+
+@media screen and (max-width:1650px) {
+    /* .container {
+        max-width: 160rem;
+        padding: 0 1rem;
+    } */
+
+    .main-header {
+        padding: 3rem 2rem 1rem 2rem;
+        z-index: 999;
+    }
+
+    .hero-data h1 {
+        font-size: 10rem;
+        line-height: 14rem;
+        margin-top: 33rem;
+    }
+
+    .hero-data p {
+        padding: 2.5rem 0 5.5rem 0;
+    }
+
+    #descover {
+        padding: 3rem 0;
+    }
+
+    .main-title h2 {
+        font-size: 7.4rem;
+        line-height: 10rem;
+    }
+
+    .with-data::before {
+        height: 41rem;
+    }
+
+    .with-img .dis-img {
+        height: 43.6rem;
+    }
+
+    .super-imagine h2 {
+        font-size: 12rem;
+    }
+
+    .super-imagine .image-img {
+        width: 77rem;
+        margin-bottom: 5rem;
+    }
+
+    .super-imagine p {
+        margin-top: 6.5rem;
+    }
+
+    #Our-team {
+        padding: 7rem 0;
+    }
+
+    /* .team-data .form-label {
+        font-size: 2.5rem;
+        line-height: 0.4rem;
+    }
+    .team-data .form-control {
+        font-size: 2.4rem;
+        padding: 2rem 12.6rem 2rem 3rem;
+    } */
+    /* .team-data .form-select {
+        font-size: 2.4rem;
+        padding: 2rem 12.6rem 2rem 3rem;
+    } */
+    /* .team-data .form-select {
+        padding: 2rem 25.6rem 2rem 3rem;
+    }
+    .team-data .date{
+        padding: 2rem 22.6rem 2rem 3rem;
+    
+    } */
+    #membership {
+        padding: 3rem 0 10rem 0;
+    }
+
+    .mp-data-box {
+        padding: 4rem 4.7rem;
+    }
+
+    .mp-data p {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .mp-data p i {
+        font-size: 4rem;
+    }
+
+    .mp-data .btn-theme {
+        margin-top: 6rem;
+    }
+
+    #say-about .main-title h2 {
+        font-size: 10rem;
+        line-height: 14.1rem;
+    }
+
+    .client-say .client-img {
+        Width: 41.6rem;
+        Height: 45.2rem;
+    }
+
+    .swiper-wrapper .client-say {
+        padding-left: 0rem;
+        margin: 0px -1.9rem;
+    }
+
+    .arrow-img img {
+        margin: 0 auto 9rem auto;
+        text-align: center;
+
+    }
+
+    .mySwiper {
+        position: relative;
+        margin: 0px 6rem;
+    }
+
+    .mySwiper .swiper-button-prev {
+        position: absolute;
+        top: 28rem;
+        color: #FFF;
+        left: 2rem;
+    }
+
+    .mySwiper .swiper-button-next {
+        position: absolute;
+        top: 28rem;
+        color: #FFF;
+        right: 2rem;
+    }
+
+    .swiper-wrapper {
+        margin: 2rem 10rem;
+    }
+
+    #say-about {
+        padding: 7rem 0;
+    }
+
+    #imageine {
+        padding: 7rem 0;
+    }
+
+    #SERVICES {
+        padding: 7rem 0;
+    }
+
+    #why {
+        padding: 7rem 0;
+    }
+
+    #Horoscope {
+        padding: 7rem 0;
+    }
+
+    #mem-price {
+        padding: 7rem 0;
+    }
+
+    #blog {
+        padding: 7rem 0;
+    }
+
+    #feedback {
+        padding: 7rem 0;
+    }
+
+}
+
+@media screen and (max-width:1400px) {
+    .main-header {
+        padding: 3rem 2rem 0rem 2rem;
+    }
+
+    .discover-icons h3 {
+        font-size: 4.4rem;
+    }
+
+    .discover-icons img {
+        width: 68%;
+    }
+
+    .discover-icons {
+        margin-bottom: 5.2rem;
+    }
+
+    .with-img .dis-img {
+        height: 32.6rem;
+        width: 50.9rem;
+    }
+
+    .main-title h2 {
+        font-size: 5.6rem;
+        line-height: 8rem;
+        margin-bottom: 3rem;
+    }
+
+    .with-data::before {
+        height: 37rem;
+        left: 3rem;
+    }
+
+    .discover-with p {
+        margin-top: 4rem;
+    }
+
+    .super-imagine .image-img {
+        width: 60rem;
+        margin-bottom: 4rem;
+    }
+
+    .super-imagine h2 {
+        font-size: 9.5rem;
+        line-height: 13.1rem;
+        margin-top: 2rem;
+
+    }
+
+    .super-imagine p {
+        margin-top: 4.5rem;
+        max-width: 43rem;
+    }
+
+    .navbar-brand img {
+        max-width: 80%;
+    }
+
+    .navbar>.container-fluid {
+        padding: 1rem 1rem;
+    }
+
+    .hero-data h1 {
+        font-size: 8rem;
+        line-height: 9rem;
+        margin-top: 22rem;
+    }
+
+    header .navbar-dark .navbar-nav .nav-link {
+        font-size: 1.8rem;
+    }
+
+    #hero {
+        height: 77vh;
+    }
+
+    .discover-icons img {
+        width: 47%;
+    }
+
+    .discover-icons h3 {
+        font-size: 3.4rem;
+    }
+
+    .main-title h5 {
+        font-size: 2rem;
+        line-height: 1.3rem;
+    }
+
+    .with-data::before {
+        height: 31rem;
+        left: 4rem;
+        top: 2.4rem;
+    }
+
+    .btn-theme {
+        padding: 1.5rem 6rem;
+        font-size: 2rem;
+    }
+
+    .with-data .btn-theme {
+        margin-top: 1rem;
+    }
+
+    .super-imagine .sp-img-1 h2 {
+        margin-top: 9rem;
+    }
+
+    .forecast .forecast-data img {
+        width: 40rem;
+        height: 25rem;
+    }
+
+    .forecast .forecast-data h4 {
+        font-size: 3.4rem;
+        line-height: 4rem;
+        margin-top: 2rem;
+    }
+
+    .forecast .forecast-data p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        margin-top: 1rem;
+    }
+
+    .forecast .forecast-data {
+        padding: 3rem;
+    }
+
+    .forecast {
+        gap: 5rem 0;
+    }
+
+    #why .main-title h2 {
+        margin-bottom: 5.2rem;
+    }
+
+    .why-choose img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .why-choose h3 {
+        font-size: 2.2rem;
+    }
+
+    .why-choose p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .hs-box {
+        gap: 0 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .hs-box .hs-img img {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .hs-box .hs-data h3 {
+        font-size: 4.4rem;
+        line-height: 6.3rem;
+    }
+
+    .hs-box .hs-data p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    #Horoscope .btn-theme {
+        width: 25rem;
+    }
+
+    .client {
+        margin-top: 6rem;
+    }
+
+    .client h5 {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+
+    .client h2 {
+        font-size: 8rem;
+        line-height: 9.6rem;
+    }
+
+    .team-data .form-label {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+
+    .team-data .form-control ,.team-data .form-select{
+        font-size: 2rem;
+        line-height: 2.3rem;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+        margin-right: 8rem;
+        padding: 2rem;
+    }
+    .team-data .main-title {
+        margin: 11.4rem 0;
+    }
+    #membership h2 {
+        font-size: 6.4rem;
+        line-height: 8.4rem;
+    }
+    #membership p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin: 0 auto 4rem auto;
+    }
+    .mp-data-box {
+        padding: 3rem 2.7rem;
+    }
+    .mp-data h3 {
+        font-size: 2rem;
+        line-height: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    .mp-data h2 {
+        font-size: 5.5rem;
+        line-height: 7.8rem;
+        margin-bottom: 2rem;
+    }
+    .mp-data p {
+        font-size: 1.4rem;
+    }
+    .mp-data p i {
+        font-size: 3.4rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .mp-data .btn-theme {
+        margin-top: 5rem;
+        padding: 1rem 6rem;
+        width: 25rem;
+        height: 5.5rem;
     }
 }

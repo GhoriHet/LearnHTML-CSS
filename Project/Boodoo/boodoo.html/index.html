@@ -5,31 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-    <!-- CDN FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-    <!-- Alegreya font -->
-    <link rel="stylesheet" href="./assets/css/fonts.css">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <!-- Local CSS -->
+    <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Home</title>
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="container">
-            <div class="main_header">
-                <a href="#">
-                    <img src="./assets/images/logo.png" alt="Boodoo">
+            <div class="main-header">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.png" alt="">
                 </a>
+
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -41,171 +35,182 @@
                 </nav>
             </div>
         </div>
+    </header> -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="./assets/images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Contact Us</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
     </header>
+
+
     <main>
-        <!-- Hero Section -->
-        <section class="hero_sec">
+        <section id="hero">
             <div class="container">
-                <h1>YOUR PATH TO UNDERSTANDING <span class="red_text">ZODIAC</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu consectetur
-                    elit at. Nulla erat nunc nisl dui sed cras semper vitae. odio ullamcorper non sed dignissim eu.</p>
-                <a class="red_btn" href="#">Get Started</a>
+                <div class="hero-data">
+                    <h1>YOUR PATH TO <br> UNDERSTANDING <span>ZODIAC</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
+                        consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae. odio ullamcorper non sed
+                        dignissim eu.</p>
+                    <a href="#" class="btn-theme">Get Started</a>
+                </div>
             </div>
         </section>
-
-        <!-- Discover Section -->
-        <section class="discover_sec pb_200">
+        <section id="descover">
             <div class="container">
-                <div class="row pb_200 justify-content-between">
-                    <div class="col-auto text-center discover_item">
-                        <div class="img_box">
-                            <img src="./assets/images/LOOKPAD.png" alt="LOOPKAD">
-                        </div>
-                        <h4>LOOPKAD</h4>
+                <div class=" row  justify-content-between">
+                    <div class="discover-icons col-md-2">
+                        <img src="./assets/images/LOOKPAD.png" alt="">
+                        <h3>LOOPKAD</h3>
                     </div>
-                    <div class="col-auto text-center discover_item">
-                        <div class="img_box">
-                            <img src="./assets/images/SUNSHINE.png" alt="SUNSHINE">
-                        </div>
-                        <h4>SUNSHINE</h4>
+                    <div class="discover-icons col-md-2">
+                        <img src="./assets/images/SUNSHINE.png" alt="">
+                        <h3>SUNSHINE</h3>
                     </div>
-                    <div class="col-auto text-center discover_item">
-                        <div class="img_box">
-                            <img src="./assets/images/URNAME.png" alt="URNAME">
-                        </div>
-                        <h4>URNAME</h4>
+                    <div class="discover-icons col-md-2">
+                        <img src="./assets/images/URNAME.png" alt="">
+                        <h3>URNAME</h3>
                     </div>
-                    <div class="col-auto text-center discover_item">
-                        <div class="img_box">
-                            <img src="./assets/images/LOTUSIN.png" alt="LOTUSIN">
-                        </div>
-                        <h4>LOTUSIN</h4>
+                    <div class="discover-icons col-md-2">
+                        <img src="./assets/images/LOTUSIN.png" alt="">
+                        <h3>LOTUSIN</h3>
                     </div>
-                    <div class="col-auto text-center discover_item">
-                        <div class="img_box">
-                            <img src="./assets/images/GEARING.png" alt="GEARING">
-                        </div>
-                        <h4>GEARING</h4>
+                    <div class="discover-icons col-md-2">
+                        <img src="./assets/images/GEARING.png" alt="">
+                        <h3>GEARING</h3>
                     </div>
                 </div>
-                <div class="row about_part gx-0">
-                    <div class="col-6">
-                        <div class="img_box">
-                            <img src="./assets/images/Mask group.png" class="img-fluid"
-                                alt="Discover Everything Yourself WITH BOODOO">
+
+                <div class="discover-with main-title row">
+                    <div class="col-md-6">
+                        <div class="with-img row">
+                            <div class="dis-img col-md-12">
+                                <img src="./assets/images/Mask group.png" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula
+                                    eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae. Tempor odio
+                                    ullamcorper non sed dignissim eu.</p>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
-                            consactetur elit at. Nulla erat nunc nisl dui sed cras semper vitae. Tempor odio ullamcorper
-                            non sed dignissim eu.</p>
                     </div>
-                    <div class="col-6">
-                        <div class="content">
-                            <h6>About</h6>
-                            <h3>Discover Everything Yourself WITH BOODOO</h3>
-                            <a class="red_btn" href="#">Let's get started</a>
+                    <div class="col-md-6">
+                        <div class="with-data row">
+                            <div class="col-md-12">
+                                <h5>About</h5>
+                                <h2>Discover Everything Yourself WITH BOODOO</h2>
+                                <a href="#" class="btn-theme">Lets get started</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- super section -->
-        <section id="super">
+        <section id="imageine">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-5">
+                <div class="super-imagine row">
+                    <div class="sp-img-1 col-md-5">
                         <h2>SUPER IMAGINE</h2>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
                             consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae tempor odio.</p>
                     </div>
-                    <div class="col-md-7">
-                        <div class="team-imgs row">
-                            <div class="col-md-3 gx-0">
-                                <img src="./assets/images/team1.png" alt="">
-                            </div>
-                            <div class="col-md-3 gx-0">
-                                <img src="./assets/images/team2.png" alt="">
-                            </div>
-                            <div class="col-md-3 gx-0">
-                                <img src="./assets/images/team3.png" alt="">
-                            </div>
-                            <div class="col-md-3 gx-0">
-                                <img src="./assets/images/team4.png" alt="">
-                            </div>
+                    <div class="sp-img-2 col-md-7">
+                        <div class="image-img">
+                            <img src="./assets/images/boodooteam.png" alt="">
                         </div>
                         <h2>BOODOO TEAM </h2>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Service Section -->
-        <section class="service_sec pt_200 pb_200">
+
+        <section id="SERVICES">
             <div class="container">
-                <div class="text-center mb_100">
-                    <h6>SERVICES</h6>
-                    <h3>Get Latest Daily Zodiac Forecast and Analysis for Success</h3>
+                <div class="main-title">
+                    <h5>SERVICES</h5>
+                    <h2>Get Latest Daily Zodiac Forecast and Analysis for Success</h2>
                 </div>
-                <div class="row g-0 justify-content-between service_part">
-                    <div class="service_block">
-                        <div class="inner">
-                            <img class="img-fluid" src="./assets/images/service1.png" alt="Astrological FORECAST">
-                            <h5>Astrological FORECAST</h5>
-                            <p>Lorem ipsum dolor sit amet consec Pellentesque nascetur sed tellus ut vehicula eu
-                                consectetur elit at. </p>
-                        </div>
+                <div class="forecast row">
+                    <div class="forecast-data col-md-5 col-sm-3 border">
+                        <img src="./assets/images/service1.png" alt="">
+                        <h4>Astrological FORECAST</h4>
+                        <p>Lorem ipsum dolor sit amet consec Pellentesque nascetur sed tellus ut vehicula eu consectetur
+                            elit at. </p>
                     </div>
-                    <div class="service_block">
-                        <div class="inner">
-                            <img class="img-fluid" src="./assets/images/service2.png" alt="Astrological Reports">
-                            <h5>Astrological Reports</h5>
-                            <p>Lorem ipsum dolor sit amet consec Pellentesque nascetur sed tellus ut vehicula eu
-                                consectetur elit at. </p>
-                        </div>
+                    <div class="forecast-data col-md-5 col-sm-3 border">
+                        <img src="./assets/images/service2.png" alt="">
+                        <h4>Astrological Reports</h4>
+                        <p>Lorem ipsum dolor sit amet consec Pellentesque nascetur sed tellus ut vehicula eu consectetur
+                            elit at. </p>
                     </div>
-                    <div class="service_block">
-                        <div class="inner">
-                            <img class="img-fluid" src="./assets/images/service3.png" alt="HOROSCOPE READING">
-                            <h5>HOROSCOPE READING</h5>
-                            <p>Lorem ipsum dolor sit amet consec Pellentesque nascetur sed tellus ut vehicula eu
-                                consectetur elit at. </p>
-                        </div>
+
+                    <!-- Force next columns to break to new line -->
+                    <div class="w-100"></div>
+
+                    <div class="forecast-data col-md-5 col-sm-3 border">
+                        <img src="./assets/images/service3.png" alt="">
+                        <h4>HOROSCOPE READING</h4>
+                        <p>Lorem ipsum dolor sit amet consec Pellentesque nascetur sed tellus ut vehicula eu consectetur
+                            elit at. </p>
                     </div>
-                    <div class="service_block">
-                        <div class="inner">
-                            <img class="img-fluid" src="./assets/images/service4.png" alt="LOVE COMPATIBILTY">
-                            <h5>LOVE COMPATIBILTY</h5>
-                            <p>Lorem ipsum dolor sit amet consec Pellentesque nascetur sed tellus ut vehicula eu
-                                consectetur elit at. </p>
-                        </div>
+                    <div class="forecast-data col-md-5 col-sm-3 border">
+                        <img src="./assets/images/service4.png" alt="">
+                        <h4>LOVE COMPATIBILTY</h4>
+                        <p>Lorem ipsum dolor sit amet consec Pellentesque nascetur sed tellus ut vehicula eu consectetur
+                            elit at. </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Why Section -->
-        <section class="why_sec">
+        <section id="why">
             <div class="container">
-                <div class="text-center mb_100">
-                    <h6>WHY</h6>
-                    <h3>WHY CHOOSE BOODOO</h3>
+                <div class="main-title">
+                    <h5>WHY?</h5>
+                    <h2>WHY CHOOSE BOODOO</h2>
                 </div>
-                <div class="row gx-0 justify-content-between">
-                    <div class="col-3 text-center">
-                        <img src="./assets/images/great experience.png" class="img-fluid" alt="Great Experience">
-                        <h4>Great Experience</h4>
+                <div class="why-choose row">
+                    <div class="col-sm-3 ">
+                        <img src="./assets/images/great experience.png" alt="">
+                        <h3>Great Experience</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
                             consec.</p>
                     </div>
-                    <div class="col-3 text-center">
-                        <img src="./assets/images/data privacy.png" class="img-fluid" alt="Data Privacy">
-                        <h4>Data Privacy</h4>
+                    <div class="col-sm-3 align-self-center">
+                        <img src="./assets/images/data privacy.png" alt="">
+                        <h3>Data Privacy </h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
                             consec.</p>
                     </div>
-                    <div class="col-3 text-center">
-                        <img src="./assets/images/best customer support.png" class="img-fluid"
-                            alt="Best Customer Support">
-                        <h4>Best Customer Support</h4>
+                    <div class="col-sm-3 ">
+                        <img src="./assets/images/best customer support.png" alt="">
+                        <h3>Best Customer Support</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
                             consec.</p>
                     </div>
@@ -213,190 +218,205 @@
             </div>
         </section>
 
-        <!-- Horoscope Section -->
-        <section class="horoscope_sec pt_200 pb_200">
+        <section id="Horoscope">
             <div class="container">
-                <div class="text-center mb_100">
-                    <h6>Horoscope</h6>
-                    <h3>understanding Science of Astrology</h3>
+                <div class="main-title">
+                    <h5>Horoscope</h5>
+                    <h2>understanding Science of Astrology</h2>
                 </div>
-                <div class="row gx-0 mb_100">
-                    <div class="col-auto d-flex align-items-center">
-                        <img src="./assets/images/ARIES.png" alt="ARIES">
-                        <div class="content">
-                            <h4>ARIES</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="hs-row row justify-content-start">
+                            <div class="hs-box col-3">
+                                <div class="hs-img">
+                                    <img src="./assets/images/ARIES.png" alt="">
+                                </div>
+                                <div class="hs-data">
+                                    <h3>ARIES</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="hs-box col-3">
+                                <div class="hs-img">
+                                    <img src="./assets/images/TAURUS.png" alt="">
+                                </div>
+                                <div class="hs-data">
+                                    <h3>TAURUS</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="hs-box col-3">
+                                <div class="hs-img">
+                                    <img src="./assets/images/gemini.png" alt="">
+                                </div>
+                                <div class="hs-data">
+                                    <h3>GEMINI</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-auto d-flex align-items-center">
-                        <img src="./assets/images/TAURUS.png" alt="TAURUS">
-                        <div class="content">
-                            <h4>TAURUS</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="col-auto d-flex align-items-center">
-                        <img src="./assets/images/gemini.png" alt="GEMINI">
-                        <div class="content">
-                            <h4>GEMINI</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <!-- Force next columns to break to new line -->
+                    <div class="w-100"></div>
+                    <div class="col-12">
+                        <div class="hs-row row justify-content-end">
+                            <div class="hs-box col-3 ">
+                                <div class="hs-img">
+                                    <img src="./assets/images/cancer.png" alt="">
+                                </div>
+                                <div class="hs-data">
+                                    <h3>CANCER</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="hs-box col-3">
+                                <div class="hs-img">
+                                    <img src="./assets/images/leo.png" alt="">
+                                </div>
+                                <div class="hs-data">
+                                    <h3>LEO</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="hs-box col-3">
+                                <div class="hs-img">
+                                    <img src="./assets/images/virgo.png" alt="">
+                                </div>
+                                <div class="hs-data">
+                                    <h3>VIRGO</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-end gx-0 mb_100">
-                    <div class="col-auto d-flex align-items-center">
-                        <img src="./assets/images/cancer.png" alt="CANCER">
-                        <div class="content">
-                            <h4>CANCER</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="col-auto d-flex align-items-center">
-                        <img src="./assets/images/leo.png" alt="LEO">
-                        <div class="content">
-                            <h4>LEO</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="col-auto d-flex align-items-center">
-                        <img src="./assets/images/virgo.png" alt="VIRGO">
-                        <div class="content">
-                            <h4>VIRGO</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <a class="red_btn" href="#">See more</a>
-                </div>
-                <div class="row pt_200 justify-content-between">
-                    <div class="col-auto text-center">
-                        <h6>Partner</h6>
+                <a href="#" class="btn-theme">See more</a>
+                <div class="client row ">
+                    <div class="col-md-auto">
+                        <h5>Partner</h5>
                         <h2>189+</h2>
                     </div>
-                    <div class="col-auto text-center">
-                        <h6>TEAMS</h6>
+                    <div class="col-md-auto">
+                        <h5>TEAMS</h5>
                         <h2>322+</h2>
                     </div>
-                    <div class="col-auto text-center">
-                        <h6>HAPPY CLient</h6>
+                    <div class="col-md-auto">
+                        <h5>HAPPY CLient</h5>
                         <h2>98K+</h2>
                     </div>
-                    <div class="col-auto text-center">
-                        <h6>serviced</h6>
+                    <div class="col-md-auto">
+                        <h5>serviced</h5>
                         <h2>112k+</h2>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Appointment Section -->
-        <section class="appointment_sec pb_200">
+        <section id="Our-team">
             <div class="container">
-                <div class="row gx-5 align-items-center justify-content-between">
-                    <div class="col-4 title_part">
-                        <h6>Appointment</h6>
-                        <h3>LET'S MEET WITH OUR TEAM</h3>
-                    </div>
-                    <div class="col-7">
-                        <form action="/">
-                            <div class="row">
-                                <div class="col-6">
-                                    <label class="form-label">FIRST NAME*</label>
-                                    <input type="text" class="form-control" placeholder="Enter Your First Name">
-                                    <label class="form-label">YOUR PHONE*</label>
-                                    <input type="tel" class="form-control" placeholder="+44 3737 838xxx">
-                                    <label class="form-label">SERVICES*</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Choose services</option>
-                                        <option>Astrological FORECAST</option>
-                                        <option>Astrological Reports</option>
-                                        <option>HOROSCOPE READING</option>
-                                        <option>LOVE COMPATIBILTY</option>
-                                    </select>
-                                </div>
-                                <div class="col-6">
-                                    <label class="form-label">LAST NAME*</label>
-                                    <input type="text" class="form-control" placeholder="Enter Your Last Name">
-                                    <label class="form-label">YOUR EMAIL*</label>
-                                    <input type="email" class="form-control" placeholder="youremail@domain.com">
-                                    <label class="form-label">DATE*</label>
-                                    <input type="date" class="form-control" placeholder="Choose Date">
-                                </div>
-                                <div class="col-12">
-                                    <button class="red_btn" type="submit">Book Now</button>
-                                </div>
+                <div class="team-data row">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="main-title col-12">
+                                <h5>Appointment</h5>
+                                <h2>LET’S MEET WITH OUR TEAM</h2>
                             </div>
-                        </form>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="form-data col-md-6">
+                                <label for="formGroupExampleInput" class="form-label">FIRST NAME*</label>
+                                <input type="text" class="form-control" id="First name"
+                                    placeholder="Enter Your First Name" aria-label="First name">
+                            </div>
+                            <div class="form-data col-md-6">
+                                <label for="formGroupExampleInput" class="form-label">LAST NAME*</label>
+                                <input type="text" class="form-control" id="Last name"
+                                    placeholder="Enter Your Last Name" aria-label="Last name">
+                            </div>
+                            <div class="form-data col-md-6">
+                                <label for="formGroupExampleInput" class="form-label">YOUR PHONE*</label>
+                                <input type="number" class="form-control" id="Mobile phone"
+                                    placeholder="+44 3737 838xxx" aria-label="Your Phone">
+                            </div>
+                            <div class="form-data col-md-6">
+                                <label for="formGroupExampleInput" class="form-label">YOUR EMAIL*</label>
+                                <input type="Email" class="form-control" id="Email" placeholder="youremail@domain.com"
+                                    aria-label="Email">
+                            </div>
+                            <div class="form-data col-md-6">
+                                <label for="formGroupExampleInput" class="form-label">SERVICES*</label>
+                                <select class="form-select " aria-label="Default select example">
+                                    <option selected>Choose services</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="form-data col-md-6">
+                                <label for="formGroupExampleInput" class="form-label">DATE*</label>
+                                <input type="date" class="form-control" id="date" placeholder="Choose Date"
+                                    aria-label="date">
+                            </div>
+                            <div class="form-data col-md-6">
+                                <a href="#" class="btn-theme">BookNow</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
 
-        <!-- Get Started Section -->
-        <section class="get_started_sec">
-            <div class="container"></div>
-            <div class="text-center">
-                <h3>LET'S BECOME MEMBERSHIP</h3>
-                <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu consectetur
-                    elit at. Nulla erat nunc <br> nisl dui sed cras semper vitae. Tempor odio ullamcorper non sed
-                    dignissim eu.</p>
-                <div class="button"><a class="red_btn" href="#">Get started</a></div>
-
-            </div>
-        </section>
-
-        <section id="member-ship">
+        <section id="membership">
             <div class="container">
-                <div class="content text-center">
-                    <h6>MEMBERSHIP</h6>
-                    <h3 class="mb-5">MEMBERSHIP PRICE</h3>
+                <div class="mem-ship">
+                    <h2>LET’S BECOME MEMBERSHIP</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut vehicula eu
+                        consectetur
+                        elit at. Nulla erat nunc nisl dui sed cras semper vitae. Tempor odio ullamcorper non sed
+                        dignissim
+                        eu.</p>
+                    <a href="#" class="btn-theme">Get started</a>
                 </div>
-                <div class="row mt-5 justify-content-between">
-                    <div class="col-md-auto">
-                        <div class="box">
-                            <h5>STARTER PRICE</h5>
-                            <h3 class="my-3">$44/<span>MONTH</span></h3>
-                            <p class="py-4 d-flex align-items-center"><i class="fa-solid fa-square-check"></i> Lorem
-                                ipsum dolor sit amet con</p>
-                            <p class="py-4 d-flex align-items-center"><i class="fa-solid fa-square-check"></i>Lorem
-                                ipsum dolor sit amet con</p>
-                            <p class="py-4 d-flex align-items-center"><i class="fa-solid fa-square-check"></i>Lorem
-                                ipsum dolor sit amet con</p>
-                            <p class="py-4 d-flex align-items-center"><i class="fa-solid fa-square-check"></i>Lorem
-                                ipsum dolor sit amet con</p>
-                            <a href="#" class="red_btn mt-5">Choose Now</a>
-                        </div>
+            </div>
+        </section>
+
+        <section id="mem-price">
+            <div class="container">
+                <div class="main-title">
+                    <h5>Membership</h5>
+                    <h2>Membership Price</h2>
+                </div>
+
+                <div class="mp-data row justify-content-between">
+                    <div class="mp-data-box col-auto border">
+                        <h3>STARTER PRICE</h3>
+                        <h2>$44/<span>Month</span></h2>
+                        <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
+                        <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
+                        <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
+                        <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
+                        <a href="#" class="btn-theme">Choose Now</a>
                     </div>
-                    <div class="col-md-auto">
-                        <div class="box">
-                            <h5>BEST VALUE</h5>
-                            <h3 class="my-3">$72/<span>MONTH</span></h3>
-                            <p class="py-4 d-flex align-items-center"><i class="fa-solid fa-square-check"></i> Lorem
-                                ipsum dolor sit amet con</p>
-                            <p class="py-4 d-flex align-items-center"><i class="fa-solid fa-square-check"></i>Lorem
-                                ipsum dolor sit amet con</p>
-                            <p class="py-4 d-flex align-items-center"><i class="fa-solid fa-square-check"></i>Lorem
-                                ipsum dolor sit amet con</p>
-                            <p class="py-4 d-flex align-items-center"><i class="fa-solid fa-square-check"></i>Lorem
-                                ipsum dolor sit amet con</p>
-                            <a href="#" class="red_btn mt-5">Choose Now</a>
-                        </div>
+                    <div class="mp-data-box col-auto border">
+                        <h3>BEST VALUE</h3>
+                        <h2>$72/<span>Month</span></h2>
+                        <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
+                        <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
+                        <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
+                        <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
+                        <a href="#" class="btn-theme">Choose Now</a>
                     </div>
-                    <div class="col-md-auto">
-                        <div class="box">
-                            <h5>PREMIUM PRICE</h5>
-                            <h3 class="my-3">$112/<span>MONTH</span></h3>
-                            <p class="py-4 d-flex align-items-center"><i class="fa-solid fa-square-check"></i> Lorem
-                                ipsum dolor sit amet con</p>
-                            <p class="py-4 d-flex align-items-center"><i class="fa-solid fa-square-check"></i>Lorem
-                                ipsum dolor sit amet con</p>
-                            <p class="py-4 d-flex align-items-center"><i class="fa-solid fa-square-check"></i>Lorem
-                                ipsum dolor sit amet con</p>
-                            <p class="py-4 d-flex align-items-center"><i class="fa-solid fa-square-check"></i>Lorem
-                                ipsum dolor sit amet con</p>
-                            <a href="#" class="red_btn mt-5">Choose Now</a>
-                        </div>
+                    <div class="mp-data-box col-auto border">
+                        <h3>PREMIUM PRICE</h3>
+                        <h2>$112/ <span>Month</span> </h2>
+                        <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
+                        <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
+                        <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
+                        <p><i class="fa-solid fa-square-check"></i> Lorem ipsum dolor sit amet con</p>
+                        <a href="#" class="btn-theme">Choose Now</a>
                     </div>
                 </div>
             </div>
@@ -405,62 +425,21 @@
         <section id="say-about">
             <div class="container">
                 <div class="main-title">
-                    <h3>OUR HAPPY CLIENT <br> SAY ABOUT BOODOO</h3>
+                    <h2>OUR HAPPY CLIENT SAY ABOUT BOODOO</h2>
                 </div>
-                <div class="arrow-img text-center">
+                <div class="arrow-img">
                     <img src="./assets/images/happy arrow.png" alt="">
                 </div>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="client-say">
-                                <div class="client-img">
-                                    <img src="./assets/images/happy12.png" alt="">
-                                </div>
-                                <div class="client-data">
-                                    <span><img src="./assets/images/column.png" alt=""></span>
-                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
-                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
-                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
-                                    <h4>Antonio H - Client</h4>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="swiper-slide">
                             <div class="client-say">
                                 <div class="client-img">
                                     <img src="./assets/images/happy11.png" alt="">
                                 </div>
                                 <div class="client-data">
-                                    <span><img src="./assets/images/column.png" alt=""></span>
-                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
-                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
-                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
-                                    <h4>Jessica D - Client</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-say">
-                                <div class="client-img">
-                                    <img src="./assets/images/happy12.png" alt="">
-                                </div>
-                                <div class="client-data">
-                                    <span><img src="./assets/images/column.png" alt=""></span>
-                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
-                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
-                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
-                                    <h4>Jessica D - Client</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-say">
-                                <div class="client-img">
-                                    <img src="./assets/images/happy11.png" alt="">
-                                </div>
-                                <div class="client-data">
-                                    <span><img src="./assets/images/column.png" alt=""></span>
+                                    <img src="./assets/images/column.png" alt="">
                                     <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
                                         vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
                                         Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
@@ -474,7 +453,7 @@
                                     <img src="./assets/images/happy12.png" alt="">
                                 </div>
                                 <div class="client-data">
-                                    <span><img src="./assets/images/column.png" alt=""></span>
+                                    <img src="./assets/images/column.png" alt="">
                                     <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
                                         vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
                                         Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
@@ -488,21 +467,7 @@
                                     <img src="./assets/images/happy11.png" alt="">
                                 </div>
                                 <div class="client-data">
-                                    <span><img src="./assets/images/column.png" alt=""></span>
-                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
-                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
-                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
-                                    <h4>Antonio H - Client</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="client-say">
-                                <div class="client-img">
-                                    <img src="./assets/images/happy12.png" alt="">
-                                </div>
-                                <div class="client-data">
-                                    <span><img src="./assets/images/column.png" alt=""></span>
+                                    <img src="./assets/images/column.png" alt="">
                                     <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
                                         vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
                                         Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
@@ -513,10 +478,10 @@
                         <div class="swiper-slide">
                             <div class="client-say">
                                 <div class="client-img">
-                                    <img src="./assets/images/happy11.png" alt="">
+                                    <img src="./assets/images/happy12.png" alt="">
                                 </div>
                                 <div class="client-data">
-                                    <span><img src="./assets/images/column.png" alt=""></span>
+                                    <img src="./assets/images/column.png" alt="">
                                     <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
                                         vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
                                         Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
@@ -527,10 +492,66 @@
                         <div class="swiper-slide">
                             <div class="client-say">
                                 <div class="client-img">
+                                    <img src="./assets/images/happy11.png" alt="">
+                                </div>
+                                <div class="client-data">
+                                    <img src="./assets/images/column.png" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h4>Jessica D - Client</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-say">
+                                <div class="client-img">
                                     <img src="./assets/images/happy12.png" alt="">
                                 </div>
                                 <div class="client-data">
-                                    <span><img src="./assets/images/column.png" alt=""></span>
+                                    <img src="./assets/images/column.png" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h4>Antonio H - Client</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-say">
+                                <div class="client-img">
+                                    <img src="./assets/images/happy11.png" alt="">
+                                </div>
+                                <div class="client-data">
+                                    <img src="./assets/images/column.png" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h4>Jessica D - Client</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-say">
+                                <div class="client-img">
+                                    <img src="./assets/images/happy12.png" alt="">
+                                </div>
+                                <div class="client-data">
+                                    <img src="./assets/images/column.png" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
+                                        vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
+                                        Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
+                                    <h4>Antonio H - Client</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-say">
+                                <div class="client-img">
+                                    <img src="./assets/images/happy11.png" alt="">
+                                </div>
+                                <div class="client-data">
+                                    <img src="./assets/images/column.png" alt="">
                                     <p>Lorem ipsum dolor sit amet consectetur. Pellentesque nascetur sed tellus ut
                                         vehicula eu consectetur elit at. Nulla erat nunc nisl dui sed cras semper vitae.
                                         Tempor odio ullamcorper non sed dignissim eu egestas fusce arcu.</p>
@@ -539,6 +560,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
@@ -548,125 +570,77 @@
         <section id="blog">
             <div class="container">
                 <div class="main-title">
-                    <h6>BLOG</h6>
-                    <h3>Our blog for you</h3>
+                    <h5>BLOG</h5>
+                    <h2>Our blog for you</h2>
                 </div>
                 <div class="blog-data row">
-                    <div class="col-3">
+                    <div class="col col-sm-6 col-md-3 ">
                         <img src="./assets/images/ourblog-1.png" alt="">
                         <h3>The Art of Astrology Decoding the...</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <span><a
-                                    href="#">see more</a></span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
+                                href="#">see more</a></p>
                     </div>
-                    <div class="col-3">
+                    <div class="col col-sm-6 col-md-3 ">
                         <img src="./assets/images/ourblog-2.png" alt="">
                         <h3>The Art of Astrology Decoding the...</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <span><a
-                                    href="#">see more</a></span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
+                                href="#">see more</a></p>
                     </div>
-                    <div class="col-3">
+                    <div class="col col-sm-6 col-md-3 ">
                         <img src="./assets/images/ourblog-3.png" alt="">
                         <h3>The Art of Astrology Decoding the...</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <span><a
-                                    href="#">see more</a></span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
+                                href="#">see more</a></p>
                     </div>
-                    <div class="col-3">
+                    <div class="col col-sm-6 col-md-3 ">
                         <img src="./assets/images/ourblog-4.png" alt="">
                         <h3>The Art of Astrology Decoding the...</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <span><a
-                                    href="#">see more</a></span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat nunc nisl <a
+                                href="#">see more</a></p>
                     </div>
                 </div>
             </div>
         </section>
-
-
     </main>
-<footer>
-    <div class="container">
-        <div class="row gx-0 gap_80 justify-content-between">
-            <div class="col-auto">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="./assets/images/logo.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet <br> consectetur. Pellen sectetur elit at <br> erat.</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-auto">
-                <ul>
-                    <li>
-                        <h6 class="text-white">SERVICES</h6>
-                    </li>
-                    <li>
-                        <a href="#">Astrological Forecasts</a>
-                    </li>
-                    <li>
-                        <a href="#">Astrological Report</a>
-                    </li>
-                    <li>
-                        <a href="#">Horoscope Readings</a>
-                    </li>
-                    <li>
-                        <a href="#">Love Compatibility</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-auto">
-                <ul>
-                    <li>
-                        <h6 class="text-white">LINK</h6>
-                    </li>
-                    <li>
-                        <a href="#">Term Of Use</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-auto">
-                <ul>
-                    <li>
-                        <h6 class="text-white">CONTACT US</h6>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-phone pe-4"></i>+12 2629 7828</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-regular fa-envelope-open pe-4"></i>boodoo@domain.com</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-location-dot pe-4"></i>112 Washtucna,Washington</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-auto">
-                <ul>
-                    <li>
-                        <h6 class="text-white">MAPS</h6>
-                    </li>
-                    <li>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416444.189268806!2d54.503682027074596!3d-20.177805725720052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c512c4d376c97%3A0x9eb5e907da8e59eb!2sBoodoo%20House!5e0!3m2!1sen!2sin!4v1678965704321!5m2!1sen!2sin"
-                            width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="text-center">
-            <p>copyright@2023 Boodoo All Right Reserved</p>
-        </div>
-    </div>
-</footer>
 
-   
-
+    <footer id="feedback">
+        <div class="container">
+            <hr>
+            <div class="fb-data row">
+                <div class="logo-blog col-auto">
+                    <img src="./assets/images/logo.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur. Pellen sectetur elit at erat.</p>
+                </div>
+                <div class="col-auto">
+                    <h3>SERVICES</h3>
+                    <a href="#">Astrological Forecasts</a>
+                    <a href="#">Astrological Report</a>
+                    <a href="#">Horoscope Readings</a>
+                    <a href="#">Love Compatibility</a>
+                </div>
+                <div class="col-auto">
+                    <h3>LINK</h3>
+                    <a href="#">Term Of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="contact col-auto">
+                    <h3>CONTACT US</h3>
+                    <a href="#"><i class="fa-solid fa-phone"></i>+12 2629 7828</a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i>boodoo@domain.com</a>
+                    <a href="#"><i class="fa-solid fa-location-pin"></i>112 Washtucna,Washington</a>
+                </div>
+                <div class="maps col-auto">
+                    <h3>MAPS</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416444.189268806!2d54.503682027074596!3d-20.177805725720052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c512c4d376c97%3A0x9eb5e907da8e59eb!2sBoodoo%20House!5e0!3m2!1sen!2sin!4v1678965704321!5m2!1sen!2sin"
+                        width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <p><span>copyright@2023 Boodoo All Right Reserved</span></p>
+            <hr>
+        </div>
+    </footer>
 
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -684,7 +658,7 @@
             },
             breakpoints: {
                 640: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 20,
                 },
                 768: {
@@ -698,9 +672,6 @@
             },
         });
     </script>
-
-
-
 </body>
 
 </html>
