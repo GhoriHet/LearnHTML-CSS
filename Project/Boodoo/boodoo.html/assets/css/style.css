@@ -1,11 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-:root {
-    --white: #ffffff;
-    --red: #C8191C;
+    box-sizing: border-box;
 }
 
 html {
@@ -14,413 +10,614 @@ html {
 
 body {
     font-family: 'Alegreya';
-    color: var(--white);
+    /* background-color: brown; */
 }
 
 ul {
     list-style-type: none;
 }
 
-li {
-    display: inline-block;
-}
-
 a {
     text-decoration: none;
-    display: inline-block;
-    color: var(--white);
-}
-
-a:hover {
-    color: var(--red);
-}
-
-p {
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    margin-bottom: 0;
 }
 
 img {
-    display: inline-block;
-    object-fit: cover;
-    object-position: center;
+    max-width: 100%;
+    display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 0;
+/*********header************/
+.navbar>.container-fluid {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; */
+    /* background-color: #000; */
 }
-
-h1 {
-    font-size: 13rem;
-    line-height: 16rem;
-    margin-bottom: 5.5rem;
-}
-
-h2 {
-    font-size: 13rem;
-    line-height: 19rem;
-}
-
-h3 {
-    font-size: 8.4rem;
-    line-height: 11.4rem;
-}
-
-h4 {
-    font-size: 5.4rem;
-    line-height: 7.3rem;
-}
-
-h5 {
-    font-size: 4.4rem;
-    line-height: 6rem;
-}
-
-h6 {
-    color: var(--red);
-    font-size: 2.4rem;
-    line-height: 3.3rem;
-}
-
-.pt_200 {
-    padding-top: 20rem;
-}
-
-.pb_200 {
-    padding-bottom: 20rem;
-}
-
-.mb_100 {
-    margin-bottom: 10rem;
-}
-
-.red_text {
-    color: var(--red);
-}
-
-.red_btn {
-    background-color: var(--red);
-    color: var(--white);
-    padding: 1.5rem 1rem;
-    width: 30rem;
-    height: 6.3rem;
-    line-height: 100%;
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.4rem;
-    cursor: pointer;
-    border: 2px solid var(--red);
-    transition: all 0.3s;
-}
-
-.red_btn:hover {
-    background-color: transparent;
-    color: var(--red);
-}
-
-/* ========== Header ========== */
-header {
+/* .navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl */
+/* .main-header {
+    padding: 4rem 2rem 2rem 2rem;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
     width: 100%;
-    z-index: 999;
-    background-color: black;
-    /* padding: 4rem 0; */
-}
-
-.main_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
+} */
+
+.main-header nav ul {
+    display: flex;
 }
 
-.main_header nav a {
+.main-header nav ul li a {
     font-weight: 700;
     font-size: 1.8rem;
     line-height: 2.4rem;
-    margin-left: 5rem;
+    color: #FFFFFF;
+    margin-right: 5rem;
+
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
+.main-header nav ul li a:hover {
     color: #C8191C;
 }
 
-nav ul li a {
-    font-size: 2.2rem;
-    letter-spacing: 1.5px;
-    font-weight: 600;
+.main-header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+header .bg-dark {
+    /* background: #000; */
+}
+
+header .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+header .navbar-dark .navbar-toggler {
+
     margin-right: 2rem;
 }
 
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .show>.nav-link {
-    color: #C8191C;
-}
-header .bg-dark {
-    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-}
-/* ========== Hero section CSS ========== */
-.hero_sec {
-    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-    position: relative;
-    text-align: center;
-    padding: 37rem 0 32rem;
+.navbar>.container-fluid {
+    padding: 0rem 2rem;
 }
 
-.hero_sec::before {
+/**************************/
+
+/*********Hero Section**********/
+#hero {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    display: flex;
+    background-position: center center;
+    background-size: cover;
+}
+
+#hero::before {
     content: '';
-    background-image: url('../images/bgcwall.png');
-    background-repeat: no-repeat;
-    background-position: top center;
     position: absolute;
+    background-image: url(../images/bgcwall.png);
     inset: 0;
     opacity: 0.1;
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
-.hero_sec .container {
-    z-index: 1;
+.hero-data {
     position: relative;
+    z-index: 99;
+    text-align: center;
+    margin-bottom: 30rem;
 }
 
-.hero_sec h1+p {
-    max-width: 900px;
-    margin: 0 auto 5.5rem;
-}
-
-/* ========== Discover Section ========== */
-.discover_sec {
-    background: linear-gradient(0, #000000 16.49%, #C8191C 274.79%);
-}
-
-.discover_sec .img_box {
-    margin-bottom: 2rem;
-}
-
-.discover_sec .about_part .img_box {
-    padding-right: 9rem;
-    border-right: 0.2px solid var(--white);
-    margin-bottom: 10rem;
-    height: 50rem;
-}
-
-.discover_sec .about_part .img_box+p {
-    max-width: 54rem;
-}
-
-.discover_sec .about_part .content {
-    padding-left: 8rem;
-}
-
-.discover_sec .about_part .content h3 {
-    margin: 1.8rem 0 10rem;
-}
-
-/* ========== Super Section CSS =========== */
-#super {
-    /* padding: 20rem 0; */
-    padding: 5rem 0;
-    background: linear-gradient(180deg, #000000 37.37%, #C8191C 231.27%);
-}
-
-#super h2 {
+.hero-data h1 {
     font-weight: 700;
-    font-size: 130px;
-    line-height: 191px;
+    font-size: 13rem;
+    line-height: 16rem;
+    color: #FFFFFF;
+    margin-top: 30rem;
+
+}
+
+.hero-data h1 span {
+    color: #C8191C;
+}
+
+.hero-data p {
+    padding: 5.5rem 0;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.btn-theme {
+    padding: 1.5rem 7rem;
+    width: 30rem;
+    height: 6.3rem;
+    background: #C8191C;
+    font-weight: 600;
+    font-size: 2.4rem;
+    /* line-height: 3.3rem; */
     color: #FFFFFF;
 }
 
-#super p {
-    max-width: 48.5rem;
-    padding-top: 11.5rem;
+.btn-theme:hover {
+    color: #008;
 }
 
-.team-imgs {
-    padding-bottom: 10.4rem;
-    padding-left: 8.8rem;
-}
+/**************************/
 
-/* ============ Service Section CSS ============ */
-
-.service_sec {
-    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
-}
-
-.service_sec .service_block {
-    max-width: 68rem;
-}
-
-.service_sec .service_part {
-    gap: 15rem;
-}
-
-.service_sec .service_block .inner {
-    border: 2px solid var(--white);
-    padding: 5rem;
-}
-
-.service_sec .service_block img {
-    height: 32.4rem;
+/******Descover*************/
+#descover {
+    background: linear-gradient(0deg, #000000 16.49%, #C8191C 258.79%);
     width: 100%;
+    padding: 10rem 0;
+    margin-top: -0.5rem;
 }
 
-.service_sec h5 {
-    margin: 5rem 0 2rem;
+.discover-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17.2rem;
 }
 
-/* ============= Why section ============= */
-
-.why_sec {
-    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-}
-
-.why_sec h4 {
-    font-size: 3.2rem;
-    line-height: 4.4rem;
-    margin: 3rem 0;
-}
-
-/* ============== Horoscope Section ============= */
-.horoscope_sec {
-    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
-}
-
-.horoscope_sec img {
-    margin-right: 6rem;
-}
-
-.horoscope_sec .content {
-    max-width: 18rem;
-}
-
-.horoscope_sec .content h4 {
-    margin-bottom: 1rem;
-}
-
-.horoscope_sec .row:not(:last-child)>div:not(:last-child) {
-    margin-right: 8rem;
-}
-
-.horoscope_sec h2 {
-    font-size: 10rem;
-    line-height: 13.6rem;
-}
-
-/* =========== Appointment Section  =========== */
-
-.appointment_sec {
-    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-}
-
-.gap_80 {
-    gap: 8rem;
-}
-
-form>div.row {
-    margin-left: calc(var(--bs-gutter-x) * -3);
-    margin-right: calc(var(--bs-gutter-x) * -3);
-}
-
-form>div.row>div {
-    padding-left: calc(var(--bs-gutter-x) * 3);
-    padding-right: calc(var(--bs-gutter-x) * 3);
-}
-
-form label.form-label {
+.discover-icons h3 {
     font-weight: 700;
-    font-size: 3.2rem;
-    line-height: 4.4rem;
+    font-size: 5.4rem;
+    line-height: 7.3rem;
+    text-align: center;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    color: #FFFFFF;
 }
 
-form input.form-control {
+.main-title h5 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-transform: uppercase;
+    color: #C8191C;
+}
+
+.main-title h2 {
+    font-weight: 700;
+    font-size: 8.4rem;
+    line-height: 11.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
     margin-bottom: 8rem;
 }
 
-form input.form-control,
-form select.form-select {
-    border: 0.2rem solid var(--white);
-    padding: 1rem 3rem;
-    background-color: transparent;
-    outline: none;
+#descover .main-title h2 {
+    max-width: 57.4rem;
+}
+
+.discover-with p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-top: 12rem;
+}
+
+.discover-with h5 {
+    margin-top: 2.8rem;
+}
+
+.with-img .dis-img {
+    width: 72.9rem;
+    height: 50.6rem;
+    object-position: left center;
+    object-fit: cover;
+}
+
+.with-img .dis-img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.with-data {
+    padding-left: 15rem;
+    position: relative;
+}
+
+.with-data::before {
+    content: '';
+    position: absolute;
+    width: 0rem;
+    height: 46rem;
+    border: 1px solid #FFF;
+    left: 3rem;
+    top: 3.8rem;
+}
+
+.with-data .btn-theme {
+    margin-top: 3rem;
+    display: inline-block;
+
+}
+
+/**************************/
+
+
+/************Imageine Section********/
+#imageine {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    padding: 10rem 0;
+    margin-top: -0.5rem;
+}
+
+.super-imagine h2 {
+    font-weight: 700;
+    font-size: 14.0rem;
+    line-height: 19.1rem;
+    color: #FFFFFF;
+}
+
+.super-imagine p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-top: 11.5rem;
+    max-width: 46rem;
+}
+
+.super-imagine .image-img {
+    width: 90rem;
+    height: 33rem;
+    object-position: center bottom;
+    object-fit: cover;
+    margin-bottom: 10rem;
+    margin-left: 4rem;
+}
+
+.super-imagine .image-img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/**************************************/
+
+/***************Service Section***************/
+#SERVICES {
+    margin-top: -0.5rem;
+    padding: 10rem 0;
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
+}
+
+#SERVICES h2,
+#SERVICES h5 {
+    text-align: center;
+}
+
+#SERVICES h2 {
+    max-width: 148rem;
+    text-align: center;
+    margin-bottom: 10rem;
+    margin: 0 auto 10rem auto;
+}
+
+.forecast {
+    display: flex;
+    justify-content: center;
+    gap: 43px 90px;
+}
+
+.forecast .forecast-data {
+    padding: 6rem;
+}
+
+.forecast .forecast-data img {
+    width: 53rem;
+    height: 32rem;
+    object-position: center center;
+    object-fit: cover;
+}
+
+.forecast .forecast-data h4 {
+    font-size: 4.4rem;
+    line-height: 6.0rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 5rem;
+}
+
+.forecast .forecast-data p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+    max-width: 53rem;
+}
+
+/**************************************/
+
+/*************Why Section*************/
+#why {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    margin-top: -0.5rem;
+    padding: 10rem 0;
+}
+
+#why .main-title {
+    text-align: center;
+}
+
+#why .main-title h2 {
+    margin-bottom: 17.2rem;
+}
+
+.why-choose {
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-choose img {
+    margin: 0 auto;
+    width: 15rem;
+    height: 15rem;
+}
+
+.why-choose h3 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.why-choose p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/**************************************/
+/**************Horoscope Section************/
+#Horoscope {
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    margin-top: -0.5rem;
+    padding: 10rem 0;
+}
+
+#Horoscope .main-title {
+    text-align: center;
+}
+
+#Horoscope .main-title h2 {
+    max-width: 110rem;
+    margin: 0 auto 10rem auto;
+}
+
+.hs-box {
+    display: flex;
+    gap: 0 6rem;
+    margin-bottom: 10rem;
+}
+
+.hs-row {
+    display: flex;
+    gap: 0 8.6rem;
+}
+
+.hs-box .hs-img img {
+    width: 18rem;
+    height: 18rem;
+}
+
+.hs-box .hs-data h3 {
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 7.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.hs-box .hs-data p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+}
+
+#Horoscope a {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.client {
+    margin-top: 20rem;
+    justify-content: space-between;
+}
+
+.client h5 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #C8191C;
+    text-align: left;
+}
+
+.client h2 {
+    font-weight: 700;
+    font-size: 10rem;
+    line-height: 13.6rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* text-align: center; */
+}
+
+/**************************************/
+/***********Our-team Section**************/
+#Our-team {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    margin-top: -0.5rem;
+    padding: 10rem 0;
+
+}
+
+.team-data .main-title {
+    margin: 22.4rem 0;
+}
+
+.team-data .form-label {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.form-data {
+    padding-right: 8rem;
+}
+
+.team-data .form-select,
+.team-data .form-control {
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 3.3rem;
-    color: var(--white);
-    height: 10rem;
-}
-
-form select.form-select option {
-    color: #000000;
-    text-transform: lowercase;
-}
-
-form input.form-control:focus,
-form select.form-select:focus {
-    color: var(--white);
+    color: #FFFFFF;
     background-color: transparent;
-    border-color: var(--white);
-    outline: 0;
-    box-shadow: none;
-}
-
-form input::placeholder {
-    opacity: 0;
-    color: var(--white) !important;
-}
-
-/* ======== Get Started Section ============ */
-.get_started_sec {
-    background: linear-gradient(180deg, #514242 -74.63%, #2E0A0A 38.7%, #000000 151.34%);
+    margin-bottom: 8rem;
+    margin-top: 3rem;
+    margin-right: 8rem;
+    /* padding: 3.3rem 18.6rem 3.3rem 3rem; */
     width: 100%;
-    /* height: 50.5rem; */
-    /* background-blend-mode: multiply; */
-    position: relative;
-    padding: 9rem 0;
+    padding: 3.3rem;
 }
 
-.get_started_sec::before {
+/* .team-data .form-select {
+    padding: 3.3rem 30.6rem 3.3rem 3rem;
+} */
+.form-data {}
+
+.team-data input::placeholder {
+    color: #FFF;
+}
+
+/* .team-data .date{
+    padding: 3.3rem 18.6rem 3.3rem 3rem;
+
+} */
+/**************************************/
+
+/***********Membership Section**************/
+#membership {
+    position: relative;
+    background: linear-gradient(180deg, #514242 -74.63%, #2E0A0A 38.7%, #000000 151.34%);
+    background-size: cover;
+    padding: 6rem 0 11rem 0;
+    text-align: center;
+    margin-top: -0.5rem;
+}
+
+#membership::before {
     content: '';
-    background-image: url('../images/get\ started\ Sec.png');
-    background-repeat: no-repeat;
-    background-position: top center;
+    background: url(../images/get\ started\ Sec.png);
     position: absolute;
     inset: 0;
-    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% auto;
+    opacity: 0.07;
 }
 
-.button {
+.mem-ship {
     position: relative;
-    z-index: 999;
-    padding-top: 4rem;
+    z-index: 9;
 }
 
-/* ===========member-ship=========== */
-#member-ship {
-    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
-    padding: 20rem 0;
+#membership h2 {
+    font-weight: 700;
+    font-size: 8.4rem;
+    line-height: 11.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
-.box {
-    padding: 60px 80px;
-    border: 2px solid white;
-    width: 46.6rem;
-    height: 65rem;
+#membership p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 5rem;
+    max-width: 90rem;
+    margin: 0 auto 5rem auto;
 }
 
-.box h4 {
-    color: white;
+#membership .btn-theme {}
+
+/**************************************/
+/**************Membership Price**************/
+#mem-price {
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    margin-top: -0.5rem;
+    padding: 10rem 0;
 }
 
-.box h5 {
+#mem-price .main-title {
+    text-align: center;
+}
+
+.mp-data h3 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mp-data h2 {
+    font-weight: 700;
+    font-size: 7.2rem;
+    line-height: 9.8rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 3rem;
+}
+
+.mp-data h2 span {
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 3.3rem;
@@ -429,51 +626,68 @@ form input::placeholder {
     color: #FFFFFF;
 }
 
-.box span {
+.mp-data p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.mp-data p i {
+    display: inline-block;
+    font-size: 4.4rem;
+    width: 4rem;
+    height: 4rem;
     color: #fff;
-    font-size: 2.4rem;
+    margin-right: 2rem;
 }
 
-.box p i {
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 3rem;
+.mp-data .btn-theme {
+    margin-top: 8rem;
+    display: block;
 }
 
-.box:hover {
-    background-color: red;
-    color: #fff;
-    border: none;
+.mp-data-box {
+    padding: 6rem 7.7rem;
 }
 
-.box:hover .red_btn {
-    background-color: white;
-    color: red;
+.mp-data-box:hover {
+    background-color: #C8191C;
 }
 
-/* ==========HAPPY CLIENT=========== */
+.mp-data-box:hover .btn-theme {
+    background-color: #FFF;
+    color: #C8191C;
+}
+
+/*********************************************/
+/*************Say about section*************/
 #say-about {
     background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-    ;
     width: 100%;
-    /* height: 100vh; */
-    padding: 20rem 0;
+    margin-top: -0.5rem;
+    padding: 10rem 0;
 }
 
-#say-about .main-title h3 {
+#say-about .main-title h2 {
     max-width: 140rem;
     font-weight: 700;
-    font-size: 10rem;
-    line-height: 11.4rem;
+    font-size: 14.0rem;
+    line-height: 19.1rem;
     text-align: center;
     color: #FFFFFF;
     margin: 0 auto;
 }
 
+/* .arrow-img {
+    width: ;
+} */
 .arrow-img img {
-    margin: 0 auto;
+    margin: 0 auto 14rem auto;
     text-align: center;
-    padding-top: 8rem;
 }
 
 .swiper-wrapper {
@@ -482,16 +696,16 @@ form input::placeholder {
 
 .swiper-wrapper .client-say {
     padding-left: 3rem;
-    width: 48rem;
-    height: 76rem;
-
+    /* width: 48rem;
+    height: 76rem; */
+    margin: 0 2.1rem;
 }
 
 .client-say .client-img {
     Width: 47.6rem;
     Height: 51.2rem;
     margin-bottom: 10rem;
-    padding-top: 10rem;
+
 }
 
 .client-say .client-img img {
@@ -504,18 +718,18 @@ form input::placeholder {
     position: relative;
 }
 
-.client-say .client-data span {
+.client-say .client-data img {
     position: absolute;
     width: 9.8rem;
     height: 8.5rem;
     color: rgba(255, 255, 255, 0.2);
     font-size: 30rem;
-    top: -26rem;
-    left: -1rem;
+    top: -5rem;
+    left: -3rem;
 }
 
 .client-say .client-data p {
-    max-width: 46.5rem;
+    max-width: 465px;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.4rem;
@@ -527,33 +741,37 @@ form input::placeholder {
     font-size: 2.4rem;
     line-height: 3.3rem;
     color: #FFFFFF;
-    padding-top: 1.5rem;
+
 }
 
 .mySwiper {
     position: relative;
-    width: 80%;
-    margin: 0 auto;
+    margin: 0 16rem;
+    /* padding: 0 16rem; */
 }
 
 .mySwiper .swiper-button-next {
     position: absolute;
-    top: 33rem;
+    top: 28rem;
     color: #FFF;
+    right: 1rem;
 }
 
 .mySwiper .swiper-button-prev {
     position: absolute;
-    top: 33rem;
+    top: 28rem;
     color: #FFF;
-    left: 0rem;
+    left: 1rem;
 }
 
-/* =========BLOG=========== */
+/*********************************************/
+
+/*****************Blog Section*************/
 #blog {
-    background: linear-gradient(0deg, #000000 16.49%, #C8191C 274.79%);
+    background: linear-gradient(0deg, #000000 36.84%, #C8191C 223.16%);
     width: 100%;
-    padding: 5rem 0;
+    padding: 10rem 0;
+    margin-top: -0.5rem;
 }
 
 #blog .main-title {
@@ -565,7 +783,6 @@ form input::placeholder {
     height: 45rem;
     object-fit: cover;
     object-position: center;
-    padding-top: 5rem;
 }
 
 .blog-data h3 {
@@ -587,63 +804,1165 @@ form input::placeholder {
     max-width: 36rem;
 }
 
-.blog-data p:hover span a {
-    color: #0085FF;
+.contact p a {
+    margin-right: 2.1rem;
+    color: #FFFFFF;
 }
 
-/* =========== Footer CSS =========== */
-footer {
-    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
-    padding-bottom: 15rem;
+.contact p a:hover {
+    color: blue;
+
 }
 
-footer ul {
-    max-width: 32rem;
-}
-
-footer ul li {
-    display: block;
-}
-
-footer ul li:not(:first-child) {
+.fb-data p {
     margin-top: 2rem;
 }
 
-footer>div>div:first-of-type {
-    padding: 8rem 0;
-    border-top: 0.2rem solid var(--white);
+
+/*********************************************/
+/****************Feedback Section*************/
+#feedback {
+    background: linear-gradient(180deg, #000000 36.84%, #C8191C 223.16%);
+    width: 100%;
+    padding: 10rem 0;
+    margin-top: -0.5rem;
 }
 
-footer>div>div:last-of-type {
-    border-bottom: 0.2rem solid var(--white);
-    padding-bottom: 4.5rem;
+#feedback hr {
+    border: none;
+    /* width: auto; */
+    height: 3px;
+    background-color: #FFF;
+    margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
+.fb-data {
+    margin: 8rem 0;
+    display: flex;
+    justify-content: space-between;
+}
 
-    h1 {
-        font-size: 5rem;
-        line-height: 6.5rem;
-        margin-bottom: 4rem;
-    }
+.fb-data .maps img {
+    width: 32.1rem;
+    height: 18.5rem;
+}
+
+.fb-data h3 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.fb-data p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+}
+
+.fb-data .logo-blog p {
+    width: 27.3rem;
+}
+
+#feedback p span {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto 4.5rem auto;
+}
+
+.fb-data a {
+    display: block;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+
+.fb-data a i {
+    margin-right: 2rem;
 
 }
 
-@media screen and (max-width: 1650px) {
+.form-data {
+    padding: 0 3rem;
+}
+
+/*********************************************/
+
+@media screen and (min-width:1500px) {
     .container {
         max-width: 150rem;
-        padding: 0 2rem;
-    }
-    h1 {
-        font-size: 10rem;
-        line-height: 11rem;
-        margin-bottom: 4rem;
+        padding: 0 1rem;
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width:1700px) {
     .container {
-        max-width: 161rem;
-        padding: 0 2rem;
+        max-width: 170rem;
+        padding: 0 1rem;
     }
+
+}
+
+@media screen and (max-width:1700px) {
+    .hero-data h1 {
+        font-size: 12rem;
+    }
+
+    .super-imagine h2 {
+        font-size: 12.5rem;
+    }
+
+    .super-imagine .image-img {
+        width: 81rem;
+    }
+
+    .with-data::before {
+        left: 7rem;
+    }
+
+    .forecast {
+        /* gap: 6rem 0; */
+    }
+
+    .mySwiper {
+        margin: 0px 14rem;
+    }
+}
+
+@media screen and (max-width:1650px) {
+    .container {
+        max-width: 160rem;
+        padding: 0 3rem;
+    }
+
+    .hero-data h1 {
+        font-size: 9rem;
+        line-height: 11rem;
+        margin-top: 30rem;
+    }
+
+    .hero-data p {
+        padding: 2.5rem 0 5.5rem 0;
+    }
+
+    #descover {
+        padding: 3rem 0;
+    }
+
+    .discover-icons {
+        margin-bottom: 5.2rem;
+        padding: 0 7rem;
+    }
+
+    .discover-icons h3 {
+        font-size: 3.7rem;
+        line-height: 6.3rem;
+    }
+
+    .main-title h2 {
+        font-size: 6.4rem;
+        line-height: 9rem;
+
+    }
+
+    .main-title h5 {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+
+    #descover .main-title h2 {
+        margin-bottom: 6rem;
+        max-width: 46.4rem;
+        /* padding-right: 5rem; */
+
+    }
+
+    .with-data::before {
+        height: 36rem;
+        top: 2.8rem;
+        left: 5rem;
+    }
+
+    .discover-with p {
+        margin-top: -2rem;
+        margin-left: 4rem;
+    }
+
+    .with-img .dis-img {
+        padding: 0 4.2rem 10.4rem 4rem;
+    }
+
+    .super-imagine h2 {
+        font-size: 9rem;
+        padding-left: 4rem;
+        line-height: 14.1rem;
+    }
+
+    .super-imagine .image-img {
+        width: 56rem;
+        margin-bottom: 5rem;
+        margin-left: 8rem;
+    }
+
+    .sp-img-1 h2 {
+        margin-top: 7rem;
+    }
+
+    .sp-img-2 {
+        padding-left: 12rem;
+    }
+
+    .super-imagine p {
+        margin-top: 6.5rem;
+        margin-left: 4rem;
+    }
+
+    #SERVICES h2 {
+        font-size: 6.4rem;
+        line-height: 7rem;
+        max-width: 128rem;
+        text-align: center;
+        margin-bottom: 10rem;
+        margin: 0 auto 2rem auto;
+    }
+
+    .forecast .forecast-data img {
+        width: 45rem;
+        height: 25rem;
+    }
+
+    .forecast .forecast-data h4 {
+        font-size: 3rem;
+        line-height: 2rem;
+        margin-top: 3rem;
+    }
+
+    .forecast .forecast-data p {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        max-width: 36rem;
+    }
+
+    .forecast .forecast-data {
+        padding: 3rem 3rem;
+    }
+
+    #why .main-title h2 {
+        margin-bottom: 6.2rem;
+    }
+
+    .why-choose img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .why-choose h3 {
+        font-size: 2.2rem;
+        line-height: 3.4rem;
+    }
+
+    #Horoscope .main-title h2 {
+        max-width: 74rem;
+        margin: 0 auto 4rem auto;
+        font-size: 5.4rem;
+        line-height: 6rem;
+    }
+
+    #membership {
+        padding: 3rem 0 10rem 0;
+    }
+
+    .mp-data-box {
+        padding: 4rem 4.7rem;
+    }
+
+    .mp-data p {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .mp-data p i {
+        font-size: 4rem;
+    }
+
+    .mp-data .btn-theme {
+        margin-top: 6rem;
+    }
+
+    .arrow-img {
+        width: 1rem;
+        height: 20rem;
+        margin: 0 auto;
+    }
+
+    .arrow-img img {
+        width: 100%;
+        height: 70%;
+        margin: 0 auto;
+    }
+
+    #say-about .main-title h2 {
+        font-size: 7rem;
+        line-height: 9.1rem;
+        max-width: 127rem;
+    }
+
+
+    .client-say .client-img {
+        Width: 34.6rem;
+        Height: 37.2rem;
+    }
+
+    .swiper-wrapper .client-say {
+        padding-left: 0rem;
+        margin: 0px -1.9rem;
+    }
+
+    .arrow-img img {
+        margin: 0 auto 9rem auto;
+        text-align: center;
+
+    }
+
+    .mySwiper {
+        margin: 0px 25rem;
+    }
+
+    .mySwiper .swiper-button-prev {
+        position: absolute;
+        top: 21rem;
+        color: #FFF;
+        left: 2rem;
+    }
+
+    .mySwiper .swiper-button-next {
+        position: absolute;
+        top: 21rem;
+        color: #FFF;
+        right: 2rem;
+    }
+
+    .swiper-wrapper {
+        margin: 2rem 10rem;
+    }
+
+    .hs-box .hs-img img {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .hs-box .hs-data h3 {
+        font-size: 4.4rem;
+        line-height: 6.3rem;
+    }
+
+    .hs-box {
+        gap: 0 3rem;
+        margin-bottom: 6rem;
+    }
+
+    #Horoscope .btn-theme {
+        width: 25rem;
+    }
+
+    .client {
+        margin-top: 11rem;
+    }
+
+    .client h5 {
+        font-size: 3rem;
+        line-height: 2.4rem;
+    }
+
+    .client h2 {
+        font-size: 7rem;
+        line-height: 10.6rem;
+    }
+
+    .team-data .form-label {
+        font-size: 2.8rem;
+        line-height: 2.4rem;
+    }
+
+    .team-data .form-select,
+    .team-data .form-control {
+        font-size: 2rem;
+        line-height: 2.3rem;
+        margin-bottom: 6rem;
+        margin-top: 2rem;
+        margin-right: 8rem;
+        padding: 2.3rem;
+    }
+
+    .team-data .main-title {
+        margin: 16.4rem 0;
+    }
+
+    .mp-data h2 {
+        font-size: 6.2rem;
+        line-height: 6.8rem;
+    }
+
+    #Our-team {
+        padding: 7rem 0;
+    }
+
+    #say-about {
+        padding: 7rem 0;
+    }
+
+    #imageine {
+        padding: 7rem 0;
+    }
+
+    #SERVICES {
+        padding: 7rem 0;
+    }
+
+    #why {
+        padding: 7rem 0;
+    }
+
+    #Horoscope {
+        padding: 7rem 0;
+    }
+
+    #mem-price {
+        padding: 7rem 0;
+    }
+
+    #blog {
+        padding: 7rem 0;
+    }
+
+    #feedback {
+        padding: 7rem 0;
+    }
+
+}
+
+@media screen and (max-width:1500px) {
+
+    /* .client-say .client-img {
+        Width: 28.6rem;
+        Height: 32.2rem;
+    } */
+    .mySwiper {
+        margin: -4rem 13rem 0 15rem;
+    }
+
+    /* .arrow-img img {
+        margin: 0 auto 3rem auto;
+    } */
+    .client-say .client-data p {
+        max-width: 41.4rem;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .main-header {
+        padding: 3rem 2rem 0rem 2rem;
+    }
+
+    .discover-icons h3 {
+        font-size: 4.4rem;
+    }
+
+    .discover-icons img {
+        width: 68%;
+    }
+
+    .discover-icons {
+        margin-bottom: 5.2rem;
+        padding: 0 3rem;
+    }
+
+    .with-img .dis-img {
+        height: 40.6rem;
+        width: 55.9rem;
+        padding: 0 4.2rem 10.4rem 4rem;
+    }
+
+    .main-title h2 {
+        font-size: 4.6rem;
+        line-height: 7rem;
+        margin-bottom: 3rem;
+    }
+
+    #SERVICES h2 {
+        font-size: 4.6rem;
+        line-height: 6rem;
+        max-width: 87rem;
+    }
+
+    #descover .main-title h2 {
+        margin-bottom: 5rem;
+    }
+
+    .with-data::before {
+        height: 37rem;
+        left: 3rem;
+    }
+
+    .discover-with p {
+        margin-top: -3rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+
+    .super-imagine .image-img {
+        width: 55rem;
+        height: 29rem;
+        margin-bottom: 2rem;
+    }
+
+    .super-imagine h2 {
+        font-size: 7.5rem;
+        line-height: 11.1rem;
+        margin-top: 2rem;
+    }
+
+    .super-imagine p {
+        margin-top: 4.5rem;
+        max-width: 43rem;
+        font-size: 1.4rem;
+    }
+
+    .navbar-brand img {
+        max-width: 80%;
+    }
+
+    .navbar>.container-fluid {
+        padding: 1rem 1rem;
+    }
+
+    .hero-data h1 {
+        font-size: 7rem;
+        line-height: 8rem;
+        margin-top: 25rem;
+    }
+
+    header .navbar-dark .navbar-nav .nav-link {
+        font-size: 1.8rem;
+    }
+
+    #hero {
+        height: 92vh;
+    }
+
+    .discover-icons img {
+        width: 47%;
+    }
+
+    .discover-icons h3 {
+        font-size: 3.4rem;
+    }
+
+    .main-title h5 {
+        font-size: 2rem;
+        line-height: 1.3rem;
+    }
+
+    .with-data::before {
+        height: 31rem;
+        left: 4rem;
+        top: 2.4rem;
+    }
+
+    .with-data .btn-theme {
+        margin-top: 1rem;
+        padding: 1.5rem 4rem;
+        width: 20rem;
+        height: 5.3rem;
+        font-size: 1.8rem;
+    }
+
+    .super-imagine .sp-img-1 h2 {
+        margin-top: 7rem;
+    }
+
+    .forecast .forecast-data img {
+        width: 33rem;
+        height: 19rem;
+    }
+
+    .forecast .forecast-data h4 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        margin-top: 1rem;
+    }
+
+    .forecast .forecast-data p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        margin-top: 1rem;
+    }
+
+    .forecast .forecast-data {
+        padding: 2rem;
+    }
+
+    .forecast {
+        gap: 3rem 5rem;
+    }
+
+    #why .main-title h2 {
+        margin-bottom: 5.2rem;
+    }
+
+    .why-choose img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .why-choose h3 {
+        font-size: 2.2rem;
+    }
+
+    .why-choose p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .hs-box {
+        gap: 0 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .hs-box .hs-img img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .hs-box .hs-data h3 {
+        font-size: 3.4rem;
+        line-height: 4.3rem;
+    }
+
+    .hs-box .hs-data p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    #Horoscope .btn-theme {
+        width: 20rem;
+        height: 5.3rem;
+        font-size: 1.8rem;
+        padding: 1.5rem 4rem;
+    }
+
+    .client {
+        margin-top: 6rem;
+    }
+
+    .client h5 {
+        font-size: 1.8rem;
+        line-height: 0.4rem;
+    }
+
+    .client h2 {
+        font-size: 6rem;
+        line-height: 6.6rem;
+    }
+
+    .team-data .form-label {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+
+    .team-data .form-control,
+    .team-data .form-select {
+        font-size: 2rem;
+        line-height: 2.3rem;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+        margin-right: 8rem;
+        padding: 2rem;
+    }
+
+    .team-data .main-title {
+        margin: 11.4rem 0;
+    }
+
+    #membership h2 {
+        font-size: 4.6rem;
+        line-height: 7.4rem;
+    }
+
+    #membership .btn-theme {
+        padding: 1.5rem 4rem;
+        width: 20rem;
+        height: 5.3rem;
+        font-size: 1.8rem;
+    }
+
+    #membership p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin: 0 auto 4rem auto;
+    }
+
+    .mp-data-box {
+        padding: 3rem 2.7rem;
+    }
+
+    .mp-data h3 {
+        font-size: 1.8rem;
+        line-height: 0.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .mp-data h2 {
+        font-size: 3.5rem;
+        line-height: 6.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .mp-data p {
+        font-size: 1.4rem;
+    }
+
+    .mp-data p i {
+        font-size: 3.4rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .mp-data .btn-theme {
+        padding: 1.5rem 4rem;
+        width: 20rem;
+        height: 5.5rem;
+        font-size: 1.8rem;
+        margin: 5rem auto 0 auto;
+    }
+
+    #say-about .main-title h2 {
+        font-size: 5rem;
+        line-height: 7.1rem;
+        max-width: 53rem;
+    }
+
+    .arrow-img {
+        width: 1rem;
+        height: 20rem;
+        margin: 0 auto -5rem auto;
+    }
+
+    /* .arrow-img img {
+        width: 100%;
+        height: 70%;
+        margin: 0 auto;
+    } */
+
+    .client-say .client-img {
+        Width: 28.6rem;
+        Height: 31.2rem;
+        margin-bottom: 4rem;
+    }
+
+    .mySwiper {
+        margin: 0px 11rem;
+    }
+
+    .mySwiper .swiper-button-prev,
+    .mySwiper .swiper-button-next {
+        top: 20rem;
+    }
+
+    .client-say .client-data img {
+        width: 5.8rem;
+        height: 4.5rem;
+        top: -2rem;
+        left: -2rem;
+    }
+
+    .fb-data {
+        margin: 5rem 0;
+
+    }
+
+    .fb-data h3 {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+
+    .fb-data a {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+
+    .fb-data .maps img {
+        width: 28.1rem;
+        height: 16.5rem;
+    }
+
+    .fb-data p {
+        font-size: 1.4rem;
+    }
+
+    #membership {
+        padding: 3rem 0 6rem 0;
+    }
+
+    .blog-data h3 {
+        margin-top: 4rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .blog-data p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+
+    .blog-data img {
+        width: 23.1rem;
+        height: 37rem;
+    }
+
+    .client-say .client-data p {
+        max-width: 360px;
+        font-size: 1.4rem;
+    }
+
+    #Horoscope .main-title h2 {
+        font-size: 4.6rem;
+        line-height: 5rem;
+    }
+
+    #Our-team .btn-theme {
+        padding: 1.5rem 4rem;
+        width: 20rem;
+        height: 5.3rem;
+        font-size: 1.8rem;
+
+    }
+
+    #Our-team {
+        padding: 5rem 0;
+    }
+
+    #say-about {
+        padding: 5rem 0;
+    }
+
+    #imageine {
+        padding: 5rem 0;
+    }
+
+    #SERVICES {
+        padding: 5rem 0;
+    }
+
+    #why {
+        padding: 5rem 0;
+    }
+
+    #Horoscope {
+        padding: 5rem 0;
+    }
+
+    #mem-price {
+        padding: 5rem 0;
+    }
+
+    #blog {
+        padding: 5rem 0;
+    }
+
+    #feedback {
+        padding: 5rem 0;
+    }
+
+    .sp-img-2 {
+        padding-left: 0rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .container p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .navbar-brand img {
+        max-width: 60%;
+    }
+
+    header .navbar-dark .navbar-nav .nav-link {
+        font-size: 1.4rem;
+    }
+
+    .hero-data h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+        margin-top: 19rem;
+    }
+
+    .hero-data p {
+        padding: 1.5rem 0 3.5rem 0;
+    }
+    .hero-data .btn-theme {
+        margin-top: 1rem;
+        padding: 1rem 4rem;
+        width: 20rem;
+        height: 5.3rem;
+        font-size: 1.4rem;
+    }
+    .discover-icons h3 {
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+    }
+    .main-title h5 {
+        font-size: 1.8rem;
+        line-height: 0.3rem;
+    }
+    .main-title h2 {
+        font-size: 3.6rem;
+        line-height: 6rem;
+    }
+    #descover .main-title h2 {
+        margin-bottom: 2rem;
+        max-width: 25.4rem;
+    }
+    .with-img .dis-img {
+        height: 34.6rem;
+        width: 44.9rem;
+        padding: 0 4.2rem 9.4rem 4rem;
+    }
+    .discover-with p {
+        margin-top: -5rem;
+    }    
+    .with-data::before {
+        height: 25rem;
+        top: 2rem;
+    }
+    .with-data .btn-theme {
+        padding: 1rem 3rem;
+        width: 16rem;
+        height: 4.3rem;
+        font-size: 1.4rem;
+    }        
+    .super-imagine .image-img {
+        width: 40rem;
+        height: 22rem;
+        margin-bottom: 1rem;
+    }
+    .super-imagine h2 {
+        font-size: 5.5rem;
+        line-height: 7.1rem;
+        margin-top: 2rem;
+    }
+    .sp-img-2 h2{
+        padding-left: 5rem;
+    }
+    .forecast .forecast-data img {
+        width: 23rem;
+        height: 15rem;
+    }
+    .forecast .forecast-data h4 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .forecast .forecast-data p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-top: 1rem;
+    }
+    .forecast .forecast-data {
+        padding: 2rem;
+    }
+    .why-choose img {
+        width: 7rem;
+        height: 7rem;
+    }
+    .why-choose h3 {
+        font-size: 1.8rem;
+    }    
+    #Horoscope .main-title h2 {
+        font-size: 3.6rem;
+        line-height: 4rem;
+        max-width: 46rem;
+    }
+    .hs-box .hs-data h3 {
+        font-size: 2.4rem;
+        line-height: 2.3rem;
+    }
+    .hs-box .hs-img img {
+        width: 7rem;
+        height: 7rem;
+    }
+    #Horoscope .btn-theme {
+        width: 15rem;
+        height: 4.3rem;
+        font-size: 1.4rem;
+        padding: 1rem 4rem;
+    }
+    .client h5 {
+        font-size: 1.6rem;
+        line-height: 0.4rem;
+    }
+    .client h2 {
+        font-size: 4rem;
+        line-height: 4.6rem;
+    }
+    .team-data .form-label {
+        font-size: 2rem;
+        line-height: 1.4rem;
+    }
+    .team-data .form-control , .team-data .form-select {
+        font-size: 1.4rem;
+        line-height: 1.3rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        margin-right: 8rem;
+        padding: 1.5rem;
+    }  
+    .team-data .form-select {
+        padding: 1.8rem;
+    }  
+    #Our-team .btn-theme {
+        padding: 1rem 4rem;
+        width: 15rem;
+        height: 4.3rem;
+        font-size: 1.4rem;
+    }
+    .team-data  .main-title h2 {
+        font-size: 2.6rem;
+        line-height: 4rem;
+        padding-right: 11rem;
+    }
+    #membership h2 {
+        font-size: 3.6rem;
+        line-height: 5.4rem;
+    }
+    #membership p {
+        margin: 0 auto 3rem auto;
+    }
+    #membership .btn-theme {
+        padding: 1rem 4rem;
+        width: 15rem;
+        height: 4.3rem;
+        font-size: 1.4rem;
+    }
+    .mp-data .btn-theme {
+        padding: 1rem 3.5rem;
+        width: 15rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
+        margin: 4rem auto 0 auto;
+    }
+    #say-about .main-title h2 {
+        font-size: 3rem;
+        line-height: 4.1rem;
+        max-width: 30rem;
+    }
+    .arrow-img img {
+        width: 66%;
+        height: 44%;
+        margin: 0 auto;
+    }
+    .mySwiper {
+        margin: 0px 10rem;
+    }
+    .client-say .client-img {
+        Width: 21.6rem;
+        Height: 26.2rem;
+        margin-bottom: 3rem;
+    }  
+    .mySwiper .swiper-button-prev {
+        position: absolute;
+        top: 15rem;
+        color: #FFF;
+        left: 2rem;
+    }    
+    .mySwiper .swiper-button-next {
+        position: absolute;
+        top: 15rem;
+        color: #FFF;
+        right: 1rem;
+    }       
+    .client-say .client-data p {
+        max-width: 302px;
+        font-size: 1.4rem;
+    }
+    .client-say .client-data h4 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }  
+    .blog-data img {
+        width: 20.1rem;
+        height: 29rem;
+    }
+    .blog-data h3 {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .logo-blog img{
+        width: 46%;
+        height: 27%;
+    }   
+    .fb-data a {
+        margin-bottom: 1rem;
+    }  
+    .fb-data {
+        margin: 3rem 0;
+        justify-content: flex-start;
+        gap: 3rem 0;
+    }       
+    #feedback p span {
+        font-size: 1.4rem;
+        margin: 0 auto 1.5rem auto;
+    }     
+    #Our-team {
+        padding: 3rem 0;
+    }
+
+    #say-about {
+        padding: 3rem 0;
+    }
+
+    #imageine {
+        padding: 3rem 0;
+    }
+
+    #SERVICES {
+        padding: 3rem 0;
+    }
+
+    #why {
+        padding: 3rem 0;
+    }
+
+    #Horoscope {
+        padding: 3rem 0;
+    }
+
+    #mem-price {
+        padding: 3rem 0;
+    }
+
+    #blog {
+        padding: 3rem 0;
+    }
+
+    #feedback {
+        padding: 3rem 0;
+    }
+
+}
+@media screen and (max-width:992px) {
+
 }
