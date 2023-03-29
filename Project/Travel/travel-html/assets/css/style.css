@@ -286,28 +286,28 @@ header .row nav ul>i {
     margin-top: 3.6rem;
 }
 
-
 #scroll-btn {
     position: fixed;
     bottom: 1.5rem;
     right: 2rem;
     background-color: gray;
     z-index: 9;
-    padding: 0.6rem;
+    padding: 1.6rem;
     cursor: pointer;
     border-radius: 1rem;
-    /* display: none; */
+    display: none;
+    width: 6rem;
+    height: 6rem;
 }
 
-#scroll-btn span {
-    font-size: 1.7rem;
-    font-weight: 600;
+#scroll-btn span i {
+    font-size: 3rem;
+    font-weight: 700;
     color: black;
 }
-/* .hide-btn {
-    background-color: lightcoral;
-    display: block;
-} */
+.show {
+    display: initial !important;
+}
 /****************************************/
 
 /*************Explore Section**********/

@@ -90,7 +90,7 @@
                         Bali, Istanbul, Rome, Paris.</p>
                 </div>
                 <div id="scroll-btn">
-                    <span>Back To Top</span>
+                    <span><i class="fa-solid fa-chevron-up"></i></span>
                 </div>
             </div>
         </section>
@@ -804,12 +804,32 @@
         //             }
         //         });
         // });
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('#scroll-btn').fadeIn();
-            } else {
-                $('#scroll-btn').fadeOut();
-            }
+
+
+        // $(window).scroll(function () {
+        //     if ($(this).scrollTop() > 100) {
+        //         $('#scroll-btn').fadeIn();
+        //     } else {
+        //         $('#scroll-btn').fadeOut();
+        //     }
+        // });
+
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
+                    $('#scroll-btn').addClass("show");
+                } else {
+                    $('#scroll-btn').removeClass("show");
+                }
+            });
+
+            $("#scroll-btn").click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                });
+            });
+
         });
 
     </script>
