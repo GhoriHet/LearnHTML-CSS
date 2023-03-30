@@ -297,19 +297,19 @@
                 <div class="client row ">
                     <div class="col-md-auto">
                         <h5>Partner</h5>
-                        <h2>189+</h2>
+                        <h2 class="counter">189+</h2>
                     </div>
                     <div class="col-md-auto">
                         <h5>TEAMS</h5>
-                        <h2>322+</h2>
+                        <h2 class="counter1">322+</h2>
                     </div>
                     <div class="col-md-auto">
                         <h5>HAPPY CLient</h5>
-                        <h2>98K+</h2>
+                        <h2 class="counter2">98K+</h2>
                     </div>
                     <div class="col-md-auto">
                         <h5>serviced</h5>
-                        <h2>112k+</h2>
+                        <h2 class="counter3">112k+</h2>
                     </div>
                 </div>
             </div>
@@ -649,7 +649,42 @@
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        const counterUp = window.counterUp.default
+
+        const callback = entries => {
+            entries.forEach(entry => {
+                const el = entry.target
+                if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+                    counterUp(el, {
+                        duration: 2000,
+                        delay: 16,
+                    })
+                    el.classList.add('is-visible')
+                }
+            })
+        }
+
+        const IO = new IntersectionObserver(callback, { threshold: 1 })
+
+        const el = document.querySelector('.counter')
+        IO.observe(el)
+
+        const el1 = document.querySelector('.counter1')
+        IO.observe(el1)
+
+        const el2 = document.querySelector('.counter2')
+        IO.observe(el2)
+
+        const el3 = document.querySelector('.counter3')
+        IO.observe(el3)
+
+    </script>
+
     <script>
         $(document).ready(function () {
             $("body").scrollTop(function () {
